@@ -1,0 +1,5 @@
+@for $flex from 1 through 10 {
+  .flex-#{$flex} {
+    flex: $flex !important;
+  }
+}

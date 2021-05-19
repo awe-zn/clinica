@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./dist/css/style.css" />
+  </head>
+
+  <body data-page="client-subscription">
+    <header class="bg-brand-first">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col">
+            <img src="./dist/image/logo.png" alt="logo" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="d-flex flex-column">
+      <section class="bg-white-second remember-right" id="section-stages">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="position-relative">
+                <h1 class="fz-32 fw-bold text-brand-first pt-5 pb-awe-64 mb-0 ff-mulish">
+                  Contrate o seu Cartão da Clínica
+                </h1>
+
+                <div class="stages">
+                  <div class="stage current item-visible">
+                    <span>Seu plano</span>
+                  </div>
+                  <div class="stage item-visible">
+                    <span>Tipo de assinatura</span>
+                  </div>
+                  <div class="stage item-visible">
+                    <span>Dados do titular</span>
+                  </div>
+                  <div class="stage"><span>Dependentes?</span></div>
+                  <div class="stage"><span>Contrato</span></div>
+                  <div class="stage"><span>Pagamento</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-awe-108 pb-3 flex-1">
+        <form action="#">
+          <div class="tab-content">
+            <div class="tab-pane active" id="plan">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="./dist/image/ilustration-user-card.svg"
+                        alt="Ilustração de usuário segurando representação grande do cartão"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <h2 class="fz-24 text-gray-fourth ff-mulish mt-4 mt-lg-0 mb-4">Escolha o seu plano</h2>
+
+                    <div class="container p-0">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="mb-3">
+                            <input type="radio" name="plan" id="family-check" class="d-none" />
+                            <label for="family-check" class="card">
+                              <div class="title">
+                                <h2>Plano Família + Check-up</h2>
+                              </div>
+                              <div class="value">
+                                <span class="price">R$ <span class="max">29</span>,90</span>
+                                <span class="period">mensal</span>
+                                <span>Anual R$ 322,92</span>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="mb-3">
+                            <input type="radio" name="plan" id="family" class="d-none" />
+                            <label for="family" class="card">
+                              <div class="title">
+                                <h2>Plano Família</h2>
+                              </div>
+                              <div class="value">
+                                <span class="price">R$ <span class="max">24</span>,90</span>
+                                <span class="period">mensal</span>
+                                <span>Anual R$ 268,92</span>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button type="button" class="next-tab">subscription</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="subscription"><button type="button" class="next-tab">subscription</button></div>
+            <div class="tab-pane" id="sub-data"><button type="button" class="next-tab">sub-data</button></div>
+            <div class="tab-pane" id="dependents"><button type="button" class="next-tab">dependents</button></div>
+            <div class="tab-pane" id="contract"><button type="button" class="next-tab">contract</button></div>
+            <div class="tab-pane" id="payment"><button type="button" class="next-tab">payment</button></div>
+            <div class="tab-pane" id="payment">success</div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bg-brand-first">
+      <div class="container py-awe-12">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-between fz-14 ff-mulish text-white-first">
+              <div><span>Versão 1.7.0</span></div>
+              <div><span>Desenvolvido por technine</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./dist/js/index.js"></script>
+  </body>
+</html>

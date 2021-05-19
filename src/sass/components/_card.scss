@@ -1,0 +1,57 @@
+.card {
+  border: 1px solid $gray-fifth;
+
+  cursor: pointer;
+  transition: 0.3s all;
+  .title {
+    height: $card-title-height;
+    padding: 12px;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s all;
+
+    color: $card-title-color;
+    h2 {
+      font-weight: normal;
+      font-size: $card-title-font-size;
+      text-align: center;
+
+      margin-bottom: 0;
+    }
+  }
+  .value {
+    line-height: 1;
+    color: $gray-fourth;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 24px 48px 48px;
+    .price {
+      font-size: $card-title-font-size;
+
+      .max {
+        font-size: $card-title-font-size * 3;
+      }
+    }
+    .period {
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+input:checked + .card {
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.2);
+
+  .title {
+    background: $brand-second !important;
+    color: $white-first !important;
+  }
+}
