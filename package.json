@@ -5,9 +5,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
-    "@popperjs/core": "^2.9.2",
     "babel-loader": "^8.2.2",
-    "bootstrap": "^5.0.0",
     "esm": "^3.2.25",
     "gulp": "^4.0.2",
     "gulp-image": "^6.2.1",
@@ -17,5 +15,10 @@
     "gulp-webserver": "^0.9.1",
     "webpack": "^5.37.0",
     "webpack-stream": "^6.1.2"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.0",
+    "imask": "^6.0.7"
   }
 }

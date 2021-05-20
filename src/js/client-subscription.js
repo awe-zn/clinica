@@ -1,4 +1,7 @@
+import imask from 'imask';
+
 import hasClass from './utils/has-class';
+import validateInputsCurrentTab from './utils/validate-inputs-current-tab';
 
 let tabEls, firstStage, lastStage;
 
@@ -11,6 +14,7 @@ const clientSubscription = () => {
 function init() {
   initValues();
   initTabNavigation();
+  initMask();
 }
 
 function initValues() {
@@ -23,6 +27,10 @@ function initValues() {
 function initTabNavigation() {
   tabEls.forEach((tabEl) => {
     tabEl.addEventListener('click', () => {
+      const canPass = validateInputsCurrentTab();
+
+      if (!canPass) return null;
+
       const nextTab = document.querySelector('.tab-pane.active + *');
       const currentTab = document.querySelector('.tab-pane.active');
 
@@ -62,6 +70,13 @@ function updateVisibleStages() {
   const isLastVisible = !!visibleStages.find((stage) => stage === lastStage);
   !isFirstVisible ? sectionStagesEl.classList.add('remember-left') : sectionStagesEl.classList.remove('remember-left');
   !isLastVisible ? sectionStagesEl.classList.add('remember-right') : sectionStagesEl.classList.remove('remember-right');
+}
+
+function initMask() {
+  const cpfEl = document.querySelector('#titular_cpf-cnpj');
+  // imask(cpfEl, {
+  //   mask: '000.000.000-00',
+  // });
 }
 
 export default clientSubscription;

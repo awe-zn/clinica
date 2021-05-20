@@ -60,10 +60,10 @@
       <section class="pt-awe-108 pb-3 flex-1">
         <form action="#">
           <div class="tab-content">
-            <div class="tab-pane active" id="plan">
+            <div class="tab-pane" id="plan">
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-lg-5 col-xl-6">
                     <div class="d-flex justify-content-center">
                       <img
                         src="./dist/image/ilustration-user-card.svg"
@@ -73,14 +73,14 @@
                     </div>
                   </div>
 
-                  <div class="col-lg-6">
+                  <div class="col-lg-7 col-xl-6">
                     <h2 class="fz-24 text-gray-fourth ff-mulish mt-4 mt-lg-0 mb-4">Escolha o seu plano</h2>
 
                     <div class="container p-0">
                       <div class="row">
                         <div class="col-md-6">
                           <div class="mb-3">
-                            <input type="radio" name="plan" id="family-check" class="d-none" />
+                            <input type="radio" name="plan" value="family-check" id="family-check" class="d-none" />
                             <label for="family-check" class="card">
                               <div class="title">
                                 <h2>Plano Família + Check-up</h2>
@@ -95,7 +95,7 @@
                         </div>
                         <div class="col-md-6">
                           <div class="mb-3">
-                            <input type="radio" name="plan" id="family" class="d-none" />
+                            <input type="radio" name="plan" value="family" id="family" class="d-none" />
                             <label for="family" class="card">
                               <div class="title">
                                 <h2>Plano Família</h2>
@@ -111,13 +111,231 @@
                       </div>
                     </div>
 
-                    <button type="button" class="next-tab">subscription</button>
+                    <div class="d-flex justify-content-end">
+                      <button
+                        type="button"
+                        class="next-tab btn btn-brand-second text-white ff-mulish text-uppercase py-awe-12 px-4"
+                      >
+                        Prosseguir <i class="fas fa-chevron-right ms-2"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="subscription"><button type="button" class="next-tab">subscription</button></div>
-            <div class="tab-pane" id="sub-data"><button type="button" class="next-tab">sub-data</button></div>
+            <div class="tab-pane" id="subscription">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5 col-xl-6">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="./dist/image/ilustration-card-subscribe.svg"
+                        alt="Ilustração de usuário segurando representação grande do cartão"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-7 col-xl-6">
+                    <h2 class="fz-24 text-gray-fourth ff-mulish mt-4 mt-lg-0 mb-4">Escolha a sua assinatura</h2>
+
+                    <div class="container p-0">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="mb-3">
+                            <input type="radio" name="plan" id="monthly" class="d-none" checked />
+                            <label for="monthly" class="card">
+                              <div class="title">
+                                <h2>Assinatura mensal</h2>
+                              </div>
+                              <div class="value">
+                                <span class="price">R$ <span class="max">24</span>,90</span>
+                                <span class="period">mensal</span>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="mb-3">
+                            <input type="radio" name="plan" id="yearly" class="d-none" />
+                            <label for="yearly" class="card">
+                              <div class="title">
+                                <h2>Assinatura anual</h2>
+                              </div>
+                              <div class="value">
+                                <span class="price">R$ <span class="max">29</span>,90</span>
+                                <span class="period">mensal</span>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end">
+                      <button
+                        type="button"
+                        class="next-tab btn btn-brand-second text-white ff-mulish text-uppercase py-awe-12 px-4"
+                      >
+                        Prosseguir <i class="fas fa-chevron-right ms-2"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane active" id="sub-data">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h2 class="ff-mulish fz-24 text-gray-fourth fw-normal mb-awe-32">Dados do titular</h2>
+
+                    <div>
+                      <label for="titular_name" class="form-field">
+                        <input name="titular_name" id="titular_name" type="text" placeholder="Nome completo" required />
+                        <span>Nome completo</span>
+                      </label>
+                      <div class="d-grid grid-1 grid-md-2 gap-8 my-awe-32">
+                        <div>
+                          <label for="titular_birth-date" class="form-field">
+                            <input name="titular_birth-date" id="titular_birth-date" type="date" required />
+                            <span>Data de nascimento</span>
+                          </label>
+                        </div>
+                        <div>
+                          <label for="titular_cpf-cnpj" class="form-field">
+                            <input
+                              name="titular_cpf-cnpj"
+                              class="mask"
+                              id="titular_cpf-cnpj"
+                              type="text"
+                              placeholder="000.000.000-00"
+                              data-mask="[000.000.000-00,XX.XXX.XXX/0001-XX]"
+                              pattern="(^\d{3}.\d{3}.\d{3}-\d{2}$)"
+                              required
+                            />
+                            <span>CPF/CNPJ</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-grid grid-1 grid-md-2 gap-8">
+                        <div>
+                          <label for="titular_phone" class="form-field">
+                            <input
+                              name="titular_phone"
+                              id="titular_phone"
+                              type="text"
+                              placeholder="(00) 0 0000-0000"
+                              required
+                            />
+                            <span>Telefone</span>
+                          </label>
+                        </div>
+                        <div>
+                          <label for="titular_email" class="form-field">
+                            <input
+                              name="titular_email"
+                              id="titular_email"
+                              type="text"
+                              placeholder="exemplo@email.com"
+                            />
+                            <span>E-mail</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <h2 class="ff-mulish fz-24 text-gray-fourth fw-normal my-awe-32 mt-lg-0">Endereço</h2>
+
+                    <div class="mb-4">
+                      <div class="d-grid grid-1 grid-md-12 gap-8">
+                        <div class="column-md-5">
+                          <label for="titular_cep" class="form-field">
+                            <input name="titular_cep" id="titular_cep" type="text" placeholder="00000-000" required />
+                            <span>CEP</span>
+                          </label>
+                        </div>
+                        <div class="column-md-7">
+                          <label for="titular_addres" class="form-field">
+                            <input
+                              name="titular_addres"
+                              id="titular_addres"
+                              type="text"
+                              placeholder="Rua/avenida"
+                              required
+                            />
+                            <span>Logradouro</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-grid grid-1 grid-md-12 gap-8 my-awe-32">
+                        <div class="column-md-5">
+                          <label for="titular_addres-complement" class="form-field">
+                            <input
+                              name="titular_addres-complement"
+                              id="titular_addres-complement"
+                              type="text"
+                              placeholder="Complemento"
+                              required
+                            />
+                            <span>Complemento</span>
+                          </label>
+                        </div>
+                        <div class="column-md-7">
+                          <label for="titular_district" class="form-field">
+                            <input
+                              name="titular_district"
+                              id="titular_district"
+                              type="text"
+                              placeholder="Bairro"
+                              required
+                            />
+                            <span>Bairro</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-grid grid-1 grid-md-12 gap-8">
+                        <div class="column-md-5">
+                          <label for="titular_state" class="form-field">
+                            <input
+                              name="titular_state"
+                              id="titular_state"
+                              type="text"
+                              placeholder="Selecione o estado"
+                              required
+                            />
+                            <span>Estado</span>
+                          </label>
+                        </div>
+                        <div class="column-md-7">
+                          <label for="titular_city" class="form-field">
+                            <input
+                              name="titular_city"
+                              id="titular_city"
+                              type="text"
+                              placeholder="Selecione a cidade"
+                              required
+                            />
+                            <span>Cidade</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex justify-content-end">
+                      <button
+                        type="button"
+                        class="next-tab btn btn-brand-second text-white ff-mulish text-uppercase py-awe-12 px-4"
+                      >
+                        Prosseguir <i class="fas fa-chevron-right ms-2"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="tab-pane" id="dependents"><button type="button" class="next-tab">dependents</button></div>
             <div class="tab-pane" id="contract"><button type="button" class="next-tab">contract</button></div>
             <div class="tab-pane" id="payment"><button type="button" class="next-tab">payment</button></div>
@@ -140,6 +358,7 @@
       </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/113c46960f.js" crossorigin="anonymous"></script>
     <script src="./dist/js/index.js"></script>
   </body>
 </html>
