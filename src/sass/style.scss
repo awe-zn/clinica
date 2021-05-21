@@ -4,3 +4,11 @@
 @import 'utils';
 @import 'components';
 @import 'grid';
+
+.table-payment {
+  --bs-table-bg: #f2f2f2;
+  --bs-table-striped-bg: #ffffff;
+  --bs-table-striped-color: $gray-sixth;
+
+  color: $gray-sixth !important;
+}

@@ -16,7 +16,7 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    @each $prop, $abbrev in (gap: gap) {
+    @each $prop, $abbrev in (gap: gap, row-gap: gapy, column-gap: gapx) {
       @for $value from 1 through 12 {
         .#{$abbrev}#{$infix}-#{$value} {
           #{$prop}: #{$value * 4}px !important;

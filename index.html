@@ -60,7 +60,7 @@
       <section class="pt-awe-108 pb-3 flex-1">
         <form action="#">
           <div class="tab-content">
-            <div class="tab-pane" id="plan">
+            <div class="tab-pane active" id="plan">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-5 col-xl-6">
@@ -425,7 +425,7 @@
                               data-mask="000.000.000-00"
                               pattern="(^\d{3}.\d{3}.\d{3}-\d{2}$)"
                             />
-                            CPF
+                            <span>CPF</span>
                           </label>
                         </div>
                       </div>
@@ -520,8 +520,143 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane" id="payment"><button type="button" class="next-tab">payment</button></div>
-            <div class="tab-pane active" id="payment">success</div>
+            <div class="tab-pane" id="payment">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-xl-5">
+                    <h2 class="mb-4 fz-24 ff-mulish text-gray-fourth fw-normal">Resumo da compra</h2>
+
+                    <table class="table table-striped table-payment ff-mulish fz-14 border-transparent">
+                      <thead>
+                        <tr>
+                          <th>Item</th>
+                          <th>Preço</th>
+                          <th>Quantidade</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Taxa de adesão</td>
+                          <td>R$ 20,00</td>
+                          <td>1</td>
+                          <td>R$ 20,00</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td colspan="3" class="text-end fw-bold">Subtotal</td>
+                          <td>R$ 66,70</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+
+                  <div class="col-lg-5 offset-lg-1">
+                    <h2 class="my-4 mt-lg-0 fz-24 ff-mulish text-gray-fourth fw-normal">Dados do cartão de crédito</h2>
+
+                    <img src="./dist/image/card.svg" alt="Ilustração do cartão" class="img-fluid w-75 mb-4" />
+
+                    <div>
+                      <label for="card-name" class="form-field">
+                        <input id="card-name" name="card-name" type="text" placeholder="NOME COMPLETO" required />
+                        <span>Nome impresso no cartão</span>
+                      </label>
+
+                      <div class="d-grid gap-8 grid-6 my-4">
+                        <label for="card-name" class="form-field column-sm-4 column-6">
+                          <input
+                            id="card-name"
+                            name="card-name"
+                            type="text"
+                            class="mask"
+                            data-mask="0000 0000 0000 0000"
+                            pattern="(^[0-9]{4}[ ][0-9]{4}[ ][0-9]{4}[ ][0-9]{4}$)"
+                            placeholder="0000 0000 0000 0000"
+                            required
+                          />
+                          <span>Número do cartão</span>
+                        </label>
+                        <label for="card-code" class="form-field column-sm-2 column-6">
+                          <input
+                            id="card-code"
+                            name="card-code"
+                            type="text"
+                            placeholder="***"
+                            minlength="3"
+                            maxlength="3"
+                            required
+                          />
+                          <span>CVV</span>
+                        </label>
+                      </div>
+                      <label class="form-field d-grid gapx-8 grid-6 my-4 w-50">
+                        <select name="card-month" required class="column-sm-3 column-6 order-2">
+                          <option hidden selected disabled value="">Mês</option>
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                          <option value="4">04</option>
+                          <option value="5">05</option>
+                          <option value="6">06</option>
+                          <option value="7">07</option>
+                          <option value="8">08</option>
+                          <option value="9">09</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select>
+                        <select name="card-year" required class="column-sm-3 column-6 order-2 mt-3 mt-sm-0">
+                          <option hidden selected disabled value="">Ano</option>
+                          <option value="2024">2024</option>
+                          <option value="2025">2025</option>
+                          <option value="2026">2026</option>
+                          <option value="2027">2027</option>
+                          <option value="2028">2028</option>
+                          <option value="2029">2029</option>
+                          <option value="2030">2030</option>
+                        </select>
+                        <span class="column-6 order-1">Data de validade</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-xl-11">
+                    <div class="d-flex justify-content-end">
+                      <button
+                        type="button"
+                        class="next-tab btn btn-brand-second text-white ff-mulish text-uppercase py-awe-12 px-4"
+                      >
+                        Prosseguir <i class="fas fa-chevron-right ms-2"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="success">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-6 col-lg-5 order-2 order-md-1">
+                    <img src="./dist/image/congrats.svg" alt="Uhuuulll!" class="img-fluid w-100" />
+                    <p class="mb-5 mt-4 fw-bold ff-mulish text-brand-second pe-awe-32">
+                      você finalizou a sua compra e agora é só (instruir sobre o próximo passo, exemplo: quando receberá
+                      o cartão).
+                    </p>
+                    <a href="#" class="btn btn-brand-second text-white ff-mulish text-uppercase py-awe-12 px-4">
+                      VOLTAR PARA O SITE
+                    </a>
+                  </div>
+                  <div class="col-md-6 col-lg-5 order-1 order-md-1">
+                    <img
+                      src="./dist/image/users-holding-card.svg"
+                      alt="Usuários segurando cartão"
+                      class="img-fluid pb-4 pb-lg-0"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </form>
       </section>
@@ -540,7 +675,7 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="https://kit.fontawesome.com/113c46960f.js" crossorigin="anonymous"></script>
     <script src="./dist/js/index.js"></script>
   </body>
