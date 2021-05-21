@@ -5,16 +5,16 @@ import validateInputsCurrentTab from './utils/validate-inputs-current-tab';
 
 let tabEls, firstStage, lastStage;
 
-const clientSubscription = () => {
+function clientSubscription() {
   const bodyEl = document.querySelector('body');
 
   bodyEl.dataset.page === 'client-subscription' && (window.onload = init);
-};
+}
 
 function init() {
   initValues();
   initTabNavigation();
-  initMask();
+  initInputs();
 }
 
 function initValues() {
@@ -72,11 +72,105 @@ function updateVisibleStages() {
   !isLastVisible ? sectionStagesEl.classList.add('remember-right') : sectionStagesEl.classList.remove('remember-right');
 }
 
+function initInputs() {
+  initMask();
+  initStateAndCities();
+  initDependents();
+}
+
 function initMask() {
-  const cpfEl = document.querySelector('#titular_cpf-cnpj');
-  // imask(cpfEl, {
-  //   mask: '000.000.000-00',
-  // });
+  const maskersInputs = [...document.querySelectorAll('input.mask')];
+
+  maskersInputs.forEach((input) => imask(input, { mask: input.dataset.mask.split(',').map((mask) => ({ mask })) }));
+}
+
+async function initStateAndCities() {
+  const stateSelectEl = document.querySelector('#titular_state');
+  const states = await fetchStates();
+
+  states.forEach((state) => {
+    const el = document.createElement('option');
+    el.value = state.id;
+    el.textContent = state.nome;
+
+    stateSelectEl.appendChild(el);
+  });
+
+  const citySelectEl = document.querySelector('#titular_city');
+  stateSelectEl.addEventListener('change', async ({ target: { value } }) => {
+    const placeholderEl = citySelectEl.querySelector('option:first-child').cloneNode(true);
+    citySelectEl.innerHTML = '';
+    citySelectEl.appendChild(placeholderEl);
+    const cities = await fetchCities(value);
+
+    cities.forEach((city) => {
+      const el = document.createElement('option');
+      el.value = city.id;
+      el.textContent = city.nome;
+
+      citySelectEl.appendChild(el);
+    });
+  });
+}
+
+async function fetchStates() {
+  const res = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados');
+  let data = await res.json();
+
+  data = data.sort((a, b) => {
+    if (a.sigla > b.sigla) {
+      return 1;
+    }
+    if (a.sigla < b.sigla) {
+      return -1;
+    }
+    return 0;
+  });
+
+  return data;
+}
+
+async function fetchCities(initials) {
+  const res = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${initials}/municipios`);
+  let data = await res.json();
+
+  data = data.sort((a, b) => {
+    if (a.nome > b.nome) {
+      return 1;
+    }
+    if (a.nome < b.nome) {
+      return -1;
+    }
+    return 0;
+  });
+
+  return data;
+}
+
+function initDependents() {
+  new Vue({
+    el: '#dependents-area',
+    data: {
+      dependents: 0,
+    },
+    methods: {
+      handleMasks: function () {
+        const maskersInputs = [...document.querySelectorAll('.tab-pane.active input.mask')];
+
+        maskersInputs.forEach((input) =>
+          imask(input, { mask: input.dataset.mask.split(',').map((mask) => ({ mask })) })
+        );
+      },
+    },
+    updated() {
+      this.$nextTick(() => {
+        this.handleMasks();
+      });
+    },
+    mounted() {
+      this.handleMasks();
+    },
+  });
 }
 
 export default clientSubscription;

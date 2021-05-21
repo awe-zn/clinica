@@ -19,6 +19,7 @@ $gray-fourth:       #4f4f4f;
 $gray-fifth:        #e0e0e0;
 $gray-sixth:        #767676;
 $gray-seventh:      #9e9e9e;
+$gray-eighth:       #828282;
 $brand-first:       #3b6472;
 $brand-second:      #58c4cb;
 
@@ -43,6 +44,7 @@ $theme-colors: (
   'gray-fifth':       $gray-fifth,
   'gray-sixth':       $gray-sixth,
   'gray-seventh':     $gray-seventh,
+  'gray-eighth':      $gray-eighth,
   'brand-first':      $brand-first,
   'brand-second':     $brand-second,
 ) !default;
@@ -78,3 +80,6 @@ $form-label-size: 12px;
 $form-input-border: $gray-seventh;
 $form-input-size: 14px;
 $form-required-color: $red-first;
+
+$form-check-input-checked-bg-color: $brand-second;
+

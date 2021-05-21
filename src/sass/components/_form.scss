@@ -7,13 +7,16 @@
 
   color: $form-label-color;
   font-size: $form-label-size;
-  input {
+  input,
+  select {
     width: 100%;
     padding: 12px 14px;
     border: 0;
     border-bottom: 1px solid $form-input-border;
 
     font-size: $form-input-size;
+
+    background: transparent;
 
     &:focus {
       outline: none;
@@ -30,8 +33,12 @@
     &::placeholder {
       color: $gray-third;
     }
-    &:invalid {
-      border-color: red;
+  }
+  select:invalid {
+    color: $gray-third;
+
+    option {
+      color: initial;
     }
   }
 }

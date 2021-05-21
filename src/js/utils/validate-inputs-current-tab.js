@@ -23,15 +23,17 @@ function validateInputsRadio() {
     !elementSelected && (isAllAnswered = false);
   });
 
-  console.log(isAllAnswered);
-
   return isAllAnswered;
 }
 
 function validateInputsText() {
   let isAllAnswered = true;
 
-  !!document.querySelector('.tab-pane.active input[type="text"]:invalid') && (isAllAnswered = false);
+  const currentTabPane = document.querySelector('.tab-pane.active');
+
+  console.log(currentTabPane.querySelector('input:invalid, select:invalid'));
+
+  !!currentTabPane.querySelector('input:invalid, select:invalid') && (isAllAnswered = false);
 
   return isAllAnswered;
 }
