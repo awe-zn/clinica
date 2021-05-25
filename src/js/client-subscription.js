@@ -3,7 +3,7 @@ import imask from 'imask';
 import hasClass from './utils/has-class';
 import validateInputsCurrentTab from './utils/validate-inputs-current-tab';
 
-let tabEls, firstStage, lastStage;
+let nextTabEls, prevTabEls, firstStage, lastStage;
 
 function clientSubscription() {
   const bodyEl = document.querySelector('body');
@@ -18,23 +18,26 @@ function init() {
 }
 
 function initValues() {
-  tabEls = document.querySelectorAll('.next-tab');
+  nextTabEls = document.querySelectorAll('.next-tab');
+  prevTabEls = document.querySelectorAll('.prev-tab');
 
   firstStage = document.querySelector('.stage:first-child');
   lastStage = document.querySelector('.stage:last-child');
 }
 
 function initTabNavigation() {
-  tabEls.forEach((tabEl) => {
-    tabEl.addEventListener('click', () => {
+  nextTabEls.forEach((nextTabEl) => {
+    nextTabEl.addEventListener('click', () => {
       const canPass = validateInputsCurrentTab();
 
       if (!canPass) return null;
 
-      const nextTab = document.querySelector('.tab-pane.active + *');
+      const nextTab = document.querySelector('.tab-pane.active').nextElementSibling;
       const currentTab = document.querySelector('.tab-pane.active');
 
-      const nextStage = document.querySelector('.stage.current + *');
+      console.log(nextTab);
+
+      const nextStage = document.querySelector('.stage.current').nextElementSibling;
       const currentStage = document.querySelector('.stage.current');
 
       nextTab.classList.add('active');
@@ -43,6 +46,26 @@ function initTabNavigation() {
       nextStage && nextStage.classList.add('current');
       currentStage.classList.remove('current');
       currentStage.classList.add('active');
+
+      updateVisibleStages();
+    });
+  });
+  prevTabEls.forEach((prevTabEl) => {
+    prevTabEl.addEventListener('click', () => {
+      const prevTab = document.querySelector('.tab-pane.active').previousElementSibling;
+      if (!prevTab) return false;
+
+      const currentTab = document.querySelector('.tab-pane.active');
+
+      const prevStage = document.querySelector('.stage.current').previousElementSibling;
+      const currentStage = document.querySelector('.stage.current');
+
+      currentTab.classList.remove('active');
+      prevTab.classList.add('active');
+
+      currentStage.classList.remove('current');
+      prevStage.classList.remove('active');
+      prevStage.classList.add('current');
 
       updateVisibleStages();
     });
@@ -76,6 +99,7 @@ function initInputs() {
   initMask();
   initStateAndCities();
   initDependents();
+  initFiles();
 }
 
 function initMask() {
@@ -170,6 +194,27 @@ function initDependents() {
     mounted() {
       this.handleMasks();
     },
+  });
+}
+
+function initFiles() {
+  const filesLabelEls = [...document.querySelectorAll('.input-file')];
+  filesLabelEls.forEach((el) => {
+    el.querySelector(`input[type=file]#${el.htmlFor}`).addEventListener('input', ({ target }) => {
+      const valuesEl = el.querySelector('.input-values');
+      valuesEl.innerHTML = '';
+
+      const files = target.files;
+
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+
+        const nameArchEl = document.createElement('span');
+        nameArchEl.textContent = file.name;
+
+        valuesEl.appendChild(nameArchEl);
+      }
+    });
   });
 }
 

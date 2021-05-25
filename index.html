@@ -60,7 +60,7 @@
       <section class="pt-awe-108 pb-3 flex-1">
         <form action="#">
           <div class="tab-content">
-            <div class="tab-pane" id="plan">
+            <div class="tab-pane active" id="plan">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-5 col-xl-6">
@@ -143,7 +143,7 @@
                       <div class="row">
                         <div class="col-md-6">
                           <div class="mb-3">
-                            <input type="radio" name="plan" id="monthly" class="d-none" checked />
+                            <input type="radio" name="period" value="monthly" id="monthly" class="d-none" />
                             <label for="monthly" class="card">
                               <div class="title">
                                 <h2>Assinatura mensal</h2>
@@ -157,7 +157,7 @@
                         </div>
                         <div class="col-md-6">
                           <div class="mb-3">
-                            <input type="radio" name="plan" id="yearly" class="d-none" />
+                            <input type="radio" name="period" value="yearly" id="yearly" class="d-none" />
                             <label for="yearly" class="card">
                               <div class="title">
                                 <h2>Assinatura anual</h2>
@@ -171,8 +171,14 @@
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="d-flex justify-content-end">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                      <button type="button" class="prev-tab border-0 text-brand-second bg-transparent">
+                        <i class="fas fa-arrow-left me-2"></i> Voltar
+                      </button>
+
                       <button
                         type="button"
                         class="next-tab btn btn-brand-second text-white ff-mulish text-uppercase py-awe-12 px-4"
@@ -336,7 +342,11 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-between">
+                      <button type="button" class="prev-tab border-0 text-brand-second bg-transparent">
+                        <i class="fas fa-arrow-left me-2"></i> Voltar
+                      </button>
+
                       <button
                         type="button"
                         class="next-tab btn btn-brand-second text-white ff-mulish text-uppercase py-awe-12 px-4"
@@ -436,7 +446,11 @@
               <div class="container">
                 <div class="row">
                   <div class="col-12">
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-between">
+                      <button type="button" class="prev-tab border-0 text-brand-second bg-transparent">
+                        <i class="fas fa-arrow-left me-2"></i> Voltar
+                      </button>
+
                       <button
                         type="button"
                         class="next-tab btn btn-brand-second text-white ff-mulish text-uppercase py-awe-12 px-4"
@@ -506,21 +520,26 @@
                           </label>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                      <button type="button" class="prev-tab border-0 text-brand-second bg-transparent">
+                        <i class="fas fa-arrow-left me-2"></i> Voltar
+                      </button>
 
-                      <div class="d-flex justify-content-end">
-                        <button
-                          type="button"
-                          class="next-tab btn btn-brand-second text-white ff-mulish text-uppercase py-awe-12 px-4"
-                        >
-                          Prosseguir <i class="fas fa-chevron-right ms-2"></i>
-                        </button>
-                      </div>
+                      <button
+                        type="button"
+                        class="next-tab btn btn-brand-second text-white ff-mulish text-uppercase py-awe-12 px-4"
+                      >
+                        Prosseguir <i class="fas fa-chevron-right ms-2"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane active" id="payment">
+            <div class="tab-pane" id="payment">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-6 col-xl-5">
@@ -552,77 +571,135 @@
                     </table>
                   </div>
 
-                  <div class="col-lg-5 offset-lg-1">
-                    <h2 class="my-4 mt-0 fz-24 ff-mulish text-gray-fourth fw-normal">Dados do cartão de crédito</h2>
-
-                    <img src="./dist/image/card.svg" alt="Ilustração do cartão" class="img-fluid w-75 mb-4" />
-
+                  <div class="col-lg-6 offset-xl-1">
                     <div>
-                      <label for="card-name" class="form-field">
-                        <input id="card-name" name="card-name" type="text" placeholder="NOME COMPLETO" required />
-                        <span>Nome impresso no cartão</span>
-                      </label>
+                      <h2 class="my-4 mt-0 fz-24 ff-mulish text-gray-fourth fw-normal">Método de pagamento</h2>
 
-                      <div class="d-grid gap-8 grid-6 my-4">
-                        <label for="card-number" class="form-field column-sm-4 column-6">
-                          <input
-                            id="card-number"
-                            name="card-number"
-                            type="text"
-                            class="mask"
-                            data-mask="0000 0000 0000 0000"
-                            pattern="(^[0-9]{4}[ ][0-9]{4}[ ][0-9]{4}[ ][0-9]{4}$)"
-                            placeholder="0000 0000 0000 0000"
-                            required
-                          />
-                          <span>Número do cartão</span>
-                        </label>
-                        <label for="card-code" class="form-field column-sm-2 column-6">
-                          <input
-                            id="card-code"
-                            name="card-code"
-                            type="text"
-                            placeholder="***"
-                            minlength="3"
-                            maxlength="3"
-                            required
-                          />
-                          <span>CVV</span>
-                        </label>
+                      <ul class="nav nav-tabs tabs-payment ff-mulish">
+                        <li class="nav-item">
+                          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#money" type="button">
+                            Dinheiro
+                          </button>
+                        </li>
+                        <li class="nav-item">
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#payment-machine" type="button">
+                            Maquineta
+                          </button>
+                        </li>
+                        <li class="nav-item">
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#credit-card" type="button">
+                            Cartão de crédito
+                          </button>
+                        </li>
+                      </ul>
+
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="money">
+                          <label for="money-proof" class="input-file">
+                            <div class="input-label">
+                              <i class="fas fa-plus me-2"></i> ANEXAR COMPROVANTE DE PAGAMENTO
+                            </div>
+
+                            <div class="input-values"></div>
+                            <input type="file" name="money-proof" id="money-proof" required multiple />
+                          </label>
+                        </div>
+                        <div class="tab-pane" id="payment-machine">
+                          <label for="payment-machine-proof" class="input-file">
+                            <div class="input-label">
+                              <i class="fas fa-plus me-2"></i> ANEXAR COMPROVANTE DA MAQUINETA
+                            </div>
+
+                            <div class="input-values"></div>
+                            <input
+                              type="file"
+                              name="payment-machine-proof"
+                              id="payment-machine-proof"
+                              required
+                              multiple
+                            />
+                          </label>
+                        </div>
+                        <div class="tab-pane" id="credit-card">
+                          <div>
+                            <h2 class="my-4 mt-0 fz-24 ff-mulish text-gray-fourth fw-normal">
+                              Dados do cartão de crédito
+                            </h2>
+
+                            <img src="./dist/image/card.svg" alt="Ilustração do cartão" class="img-fluid w-75 mb-4" />
+
+                            <label for="card-name" class="form-field">
+                              <input id="card-name" name="card-name" type="text" placeholder="NOME COMPLETO" required />
+                              <span>Nome impresso no cartão</span>
+                            </label>
+
+                            <div class="d-grid gap-8 grid-6 my-4">
+                              <label for="card-number" class="form-field column-sm-4 column-6">
+                                <input
+                                  id="card-number"
+                                  name="card-number"
+                                  type="text"
+                                  class="mask"
+                                  data-mask="0000 0000 0000 0000"
+                                  pattern="(^[0-9]{4}[ ][0-9]{4}[ ][0-9]{4}[ ][0-9]{4}$)"
+                                  placeholder="0000 0000 0000 0000"
+                                  required
+                                />
+                                <span>Número do cartão</span>
+                              </label>
+                              <label for="card-code" class="form-field column-sm-2 column-6">
+                                <input
+                                  id="card-code"
+                                  name="card-code"
+                                  type="text"
+                                  placeholder="***"
+                                  minlength="3"
+                                  maxlength="3"
+                                  required
+                                />
+                                <span>CVV</span>
+                              </label>
+                            </div>
+                            <label class="form-field d-grid gapx-8 grid-6 my-4 w-50">
+                              <select name="card-month" required class="column-sm-3 column-6 order-2">
+                                <option hidden selected disabled value="">Mês</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                              <select name="card-year" required class="column-sm-3 column-6 order-2 mt-3 mt-sm-0">
+                                <option hidden selected disabled value="">Ano</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                              </select>
+                              <span class="column-6 order-1">Data de validade</span>
+                            </label>
+                          </div>
+                        </div>
                       </div>
-                      <label class="form-field d-grid gapx-8 grid-6 my-4 w-50">
-                        <select name="card-month" required class="column-sm-3 column-6 order-2">
-                          <option hidden selected disabled value="">Mês</option>
-                          <option value="1">01</option>
-                          <option value="2">02</option>
-                          <option value="3">03</option>
-                          <option value="4">04</option>
-                          <option value="5">05</option>
-                          <option value="6">06</option>
-                          <option value="7">07</option>
-                          <option value="8">08</option>
-                          <option value="9">09</option>
-                          <option value="10">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
-                        </select>
-                        <select name="card-year" required class="column-sm-3 column-6 order-2 mt-3 mt-sm-0">
-                          <option hidden selected disabled value="">Ano</option>
-                          <option value="2024">2024</option>
-                          <option value="2025">2025</option>
-                          <option value="2026">2026</option>
-                          <option value="2027">2027</option>
-                          <option value="2028">2028</option>
-                          <option value="2029">2029</option>
-                          <option value="2030">2030</option>
-                        </select>
-                        <span class="column-6 order-1">Data de validade</span>
-                      </label>
                     </div>
                   </div>
 
-                  <div class="col-lg-12 col-xl-11">
-                    <div class="d-flex justify-content-end">
+                  <div class="col-lg-12">
+                    <div class="d-flex justify-content-between">
+                      <button type="button" class="prev-tab border-0 text-brand-second bg-transparent">
+                        <i class="fas fa-arrow-left me-2"></i> Voltar
+                      </button>
+
                       <button
                         type="button"
                         class="next-tab btn btn-brand-second text-white ff-mulish text-uppercase py-awe-12 px-4"

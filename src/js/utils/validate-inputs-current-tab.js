@@ -31,7 +31,15 @@ function validateInputsText() {
 
   const currentTabPane = document.querySelector('.tab-pane.active');
 
-  !!currentTabPane.querySelector('input:invalid, select:invalid') && (isAllAnswered = false);
+  const secondaryCurrentTabPane = currentTabPane.querySelector('.tab-pane.active');
+
+  if (secondaryCurrentTabPane) {
+    !!secondaryCurrentTabPane.querySelector('input:invalid, select:invalid') && (isAllAnswered = false);
+  }
+
+  !secondaryCurrentTabPane &&
+    !!currentTabPane.querySelector('input:invalid, select:invalid') &&
+    (isAllAnswered = false);
 
   return isAllAnswered;
 }

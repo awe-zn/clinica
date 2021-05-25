@@ -42,3 +42,28 @@
     }
   }
 }
+
+.input-file {
+  font-family: 'Mulish', sans-serif;
+
+  .input-label {
+    border: 1px solid $brand-second;
+    border-radius: 4px;
+    padding: 12px 30px;
+
+    color: $brand-second;
+
+    cursor: pointer;
+  }
+  .input-values {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 16px;
+
+    color: $gray-fourth;
+  }
+  input {
+    display: none;
+  }
+}
