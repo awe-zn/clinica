@@ -21,6 +21,8 @@ $gray-sixth:        #767676;
 $gray-seventh:      #9e9e9e;
 $gray-eighth:       #828282;
 $gray-nineth:       #f2f2f2;
+$gray-nineth:       #f2f2f2;
+$gray-tenth:        #111111;
 $brand-first:       #3b6472;
 $brand-second:      #58c4cb;
 
@@ -47,6 +49,7 @@ $theme-colors: (
   'gray-seventh':     $gray-seventh,
   'gray-eighth':      $gray-eighth,
   'gray-nineth':      $gray-nineth,
+  'gray-tenth':       $gray-tenth,
   'brand-first':      $brand-first,
   'brand-second':     $brand-second,
   'transparent':      #fff0,
@@ -56,14 +59,26 @@ $spacer: 1rem;
 $awe-spacers: (
   'awe-12': $spacer * 0.75,
   'awe-32': $spacer * 2,
+  'awe-40': $spacer * 2.5,
   'awe-64': $spacer * 4,
+  'awe-80': $spacer * 5,
   'awe-108': $spacer * 8,
 ) !default;
 
-$font-family-sans-serif: 'roboto', sans-serif;
+$font-family-sans-serif: 'Roboto', sans-serif;
 
-$font-sizes: (14, 24, 32, 72);
-$font-familys: ('mulish', 'roboto');
+$font-sizes: (12: 12px, 14: 14px, 24: 24px, 32: 32px, 72: 72px);
+$font-families: ('mulish', 'roboto');
+
+$font-weight-thin:          100;
+$font-weight-extra-light:   200;
+$font-weight-light:         300;
+$font-weight-regular:       400;
+$font-weight-medium:        500;
+$font-weight-semi-bold:     600;
+$font-weight-bold:          700;
+$font-weight-extra-bold:    800;
+$font-weight-black:         900;
 
 $stages-text-label: $gray-third;
 $stages-text-size: 12px;
@@ -85,5 +100,6 @@ $form-input-size: 14px;
 $form-required-color: $red-first;
 
 $form-check-input-checked-bg-color: $brand-second;
+$form-check-input-border: 2px solid rgba($gray-tenth, 0.25);
 
 $table-group-separator-color: #fff0;

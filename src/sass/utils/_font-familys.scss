@@ -1,5 +1,0 @@
-@each $font-family in $font-familys {
-  .ff-#{to-lower-case($font-family)} {
-    font-family: #{$font-family}, Arial, sans-serif;
-  }
-}

@@ -1,0 +1,61 @@
+.sidebar {
+  width: 250px;
+  min-height: calc(100vh - 45px);
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  .links {
+    ul {
+      list-style-type: none;
+
+      margin: 0;
+      padding: 0;
+
+      font-family: 'Mulish';
+
+      li {
+        &.divider {
+          border-bottom: 2px solid $gray-fifth;
+        }
+
+        a {
+          display: flex;
+
+          text-decoration: none;
+          color: $gray-fourth;
+          font-weight: 500;
+
+          padding: 12px 16px;
+
+          transition: 0.3s all;
+          user-select: none;
+
+          &.active,
+          &:hover {
+            background: $brand-second;
+
+            color: white;
+          }
+          &.exit {
+            color: $red-first;
+
+            &:hover {
+              color: white;
+
+              background: $red-first;
+            }
+          }
+          .icon {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  & + .page-content {
+    margin-left: 250px;
+  }
+}

@@ -1,0 +1,32 @@
+@import 'utilities/flex';
+@import 'utilities/font-families';
+
+$utilities: (
+  'font-weight': (
+    property: font-weight,
+    class: fw,
+    values: (
+      'thin': $font-weight-thin,
+      'extra-light': $font-weight-extra-light,
+      'light': $font-weight-light,
+      'regular': $font-weight-regular,
+      'medium': $font-weight-medium,
+      'semi-bold': $font-weight-semi-bold,
+      'bold': $font-weight-bold,
+      'extra-bold': $font-weight-extra-bold,
+      'black': $font-weight-black,
+    ),
+  ),
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    'font-size': (
+      property: font-size,
+      class: fz,
+      responsive: true,
+      values: $font-sizes,
+    ),
+  )
+);

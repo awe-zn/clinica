@@ -32,12 +32,15 @@ function initTabNavigation() {
 
       if (!canPass) return null;
 
-      const nextTab = document.querySelector('.tab-pane.active').nextElementSibling;
-      const currentTab = document.querySelector('.tab-pane.active');
+      const nextTab = document.querySelector(
+        '.tab-stages > .tab-pane.active'
+      ).nextElementSibling;
+      const currentTab = document.querySelector(
+        '.tab-stages > .tab-pane.active'
+      );
 
-      console.log(nextTab);
-
-      const nextStage = document.querySelector('.stage.current').nextElementSibling;
+      const nextStage =
+        document.querySelector('.stage.current').nextElementSibling;
       const currentStage = document.querySelector('.stage.current');
 
       nextTab.classList.add('active');
@@ -52,12 +55,16 @@ function initTabNavigation() {
   });
   prevTabEls.forEach((prevTabEl) => {
     prevTabEl.addEventListener('click', () => {
-      const prevTab = document.querySelector('.tab-pane.active').previousElementSibling;
+      const prevTab =
+        document.querySelector('.tab-pane.active').previousElementSibling;
       if (!prevTab) return false;
 
-      const currentTab = document.querySelector('.tab-pane.active');
+      const currentTab = document.querySelector(
+        '.tab-stages > .tab-pane.active'
+      );
 
-      const prevStage = document.querySelector('.stage.current').previousElementSibling;
+      const prevStage =
+        document.querySelector('.stage.current').previousElementSibling;
       const currentStage = document.querySelector('.stage.current');
 
       currentTab.classList.remove('active');
@@ -75,11 +82,17 @@ function initTabNavigation() {
 function updateVisibleStages() {
   const sectionStagesEl = document.querySelector('#section-stages');
   const stagesArea = document.querySelector('.stages');
-  let visibleStages = Array(...stagesArea.querySelectorAll('.stage.item-visible'));
-  const firstNotVisible = stagesArea.querySelector('.stage:not(.item-visible):not(.active)');
+  let visibleStages = Array(
+    ...stagesArea.querySelectorAll('.stage.item-visible')
+  );
+  const firstNotVisible = stagesArea.querySelector(
+    '.stage:not(.item-visible):not(.active)'
+  );
 
   let allVisibleActive = 0;
-  visibleStages.forEach((stage) => hasClass(stage, 'active') && allVisibleActive++);
+  visibleStages.forEach(
+    (stage) => hasClass(stage, 'active') && allVisibleActive++
+  );
   firstNotVisible &&
     allVisibleActive === 3 &&
     (() => {
@@ -91,8 +104,12 @@ function updateVisibleStages() {
   visibleStages = Array(...stagesArea.querySelectorAll('.stage.item-visible'));
   const isFirstVisible = !!visibleStages.find((stage) => stage === firstStage);
   const isLastVisible = !!visibleStages.find((stage) => stage === lastStage);
-  !isFirstVisible ? sectionStagesEl.classList.add('remember-left') : sectionStagesEl.classList.remove('remember-left');
-  !isLastVisible ? sectionStagesEl.classList.add('remember-right') : sectionStagesEl.classList.remove('remember-right');
+  !isFirstVisible
+    ? sectionStagesEl.classList.add('remember-left')
+    : sectionStagesEl.classList.remove('remember-left');
+  !isLastVisible
+    ? sectionStagesEl.classList.add('remember-right')
+    : sectionStagesEl.classList.remove('remember-right');
 }
 
 function initInputs() {
@@ -105,7 +122,11 @@ function initInputs() {
 function initMask() {
   const maskersInputs = [...document.querySelectorAll('input.mask')];
 
-  maskersInputs.forEach((input) => imask(input, { mask: input.dataset.mask.split(',').map((mask) => ({ mask })) }));
+  maskersInputs.forEach((input) =>
+    imask(input, {
+      mask: input.dataset.mask.split(',').map((mask) => ({ mask })),
+    })
+  );
 }
 
 async function initStateAndCities() {
@@ -122,7 +143,9 @@ async function initStateAndCities() {
 
   const citySelectEl = document.querySelector('#titular_city');
   stateSelectEl.addEventListener('change', async ({ target: { value } }) => {
-    const placeholderEl = citySelectEl.querySelector('option:first-child').cloneNode(true);
+    const placeholderEl = citySelectEl
+      .querySelector('option:first-child')
+      .cloneNode(true);
     citySelectEl.innerHTML = '';
     citySelectEl.appendChild(placeholderEl);
     const cities = await fetchCities(value);
@@ -138,7 +161,9 @@ async function initStateAndCities() {
 }
 
 async function fetchStates() {
-  const res = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados');
+  const res = await fetch(
+    'https://servicodados.ibge.gov.br/api/v1/localidades/estados'
+  );
   let data = await res.json();
 
   data = data.sort((a, b) => {
@@ -155,7 +180,9 @@ async function fetchStates() {
 }
 
 async function fetchCities(initials) {
-  const res = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${initials}/municipios`);
+  const res = await fetch(
+    `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${initials}/municipios`
+  );
   let data = await res.json();
 
   data = data.sort((a, b) => {
@@ -179,10 +206,14 @@ function initDependents() {
     },
     methods: {
       handleMasks: function () {
-        const maskersInputs = [...document.querySelectorAll('.tab-pane.active input.mask')];
+        const maskersInputs = [
+          ...document.querySelectorAll('.tab-pane.active input.mask'),
+        ];
 
         maskersInputs.forEach((input) =>
-          imask(input, { mask: input.dataset.mask.split(',').map((mask) => ({ mask })) })
+          imask(input, {
+            mask: input.dataset.mask.split(',').map((mask) => ({ mask })),
+          })
         );
       },
     },
@@ -200,21 +231,24 @@ function initDependents() {
 function initFiles() {
   const filesLabelEls = [...document.querySelectorAll('.input-file')];
   filesLabelEls.forEach((el) => {
-    el.querySelector(`input[type=file]#${el.htmlFor}`).addEventListener('input', ({ target }) => {
-      const valuesEl = el.querySelector('.input-values');
-      valuesEl.innerHTML = '';
+    el.querySelector(`input[type=file]#${el.htmlFor}`).addEventListener(
+      'input',
+      ({ target }) => {
+        const valuesEl = el.querySelector('.input-values');
+        valuesEl.innerHTML = '';
 
-      const files = target.files;
+        const files = target.files;
 
-      for (let i = 0; i < files.length; i++) {
-        const file = files[i];
+        for (let i = 0; i < files.length; i++) {
+          const file = files[i];
 
-        const nameArchEl = document.createElement('span');
-        nameArchEl.textContent = file.name;
+          const nameArchEl = document.createElement('span');
+          nameArchEl.textContent = file.name;
 
-        valuesEl.appendChild(nameArchEl);
+          valuesEl.appendChild(nameArchEl);
+        }
       }
-    });
+    );
   });
 }
 

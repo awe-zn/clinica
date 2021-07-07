@@ -4,9 +4,11 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
+  justify-content: flex-end;
 
   color: $form-label-color;
   font-size: $form-label-size;
+
   input,
   select {
     width: 100%;
@@ -18,10 +20,22 @@
 
     background: transparent;
 
+    &.icon {
+      background-repeat: no-repeat;
+      background-position: 14px center;
+      padding-left: calc(2 * 14px + 18px);
+
+      &.icon-email {
+        background-image: url('../image/icons/mail.svg');
+      }
+      &.icon-password {
+        background-image: url('../image/icons/lock.svg');
+      }
+    }
     &:focus {
       outline: none;
     }
-    &:required + span:after {
+    &.validate-required:required + span:after {
       content: '*';
 
       margin-left: 4px;
@@ -39,6 +53,17 @@
 
     option {
       color: initial;
+    }
+  }
+  .input-feedback {
+    order: -10;
+
+    display: none;
+
+    color: #eb5757;
+
+    &.show {
+      display: block;
     }
   }
 }

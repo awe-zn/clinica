@@ -1,7 +1,6 @@
 @import 'bootstrap';
 
 @import 'reboot';
-@import 'utils';
 @import 'components';
 @import 'grid';
 
@@ -16,6 +15,10 @@
 .tabs-payment {
   justify-content: space-between;
 
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+
   border-bottom: 0;
   padding: 16px;
   border: 1px solid $gray-fifth;
@@ -28,6 +31,11 @@
     padding: 0;
     padding-left: 32px;
     border: none;
+
+    @media (max-width: 576px) {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
 
     position: relative;
     &::before {
@@ -50,4 +58,44 @@
       background: $brand-second;
     }
   }
+}
+
+a.root {
+  transition: 0.3s filter;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.divider-area {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #9e9e9e !important;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+  .label {
+    z-index: 10;
+    background: white;
+  }
+}
+
+.text-hover-white:hover {
+  color: white !important;
+}
+
+.img-avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.text-hover-white:hover {
+  color: #fff !important;
 }
