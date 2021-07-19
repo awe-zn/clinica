@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../../dist/css/style.css" />
+    <link rel="stylesheet" href="../../../dist/css/style.css" />
   </head>
 
   <body>
@@ -35,14 +35,19 @@
               >
                 <div class="pb-awe-40 d-flex">
                   <img
-                    src="../../dist/image/logo-blue.png"
+                    src="../../../dist/image/logo-blue.png"
                     alt="Logo"
                     class="mx-auto img-fluid"
                   />
                 </div>
                 <div>
-                  <h1 class="text-gray-tenth ff-mulish fz-24 mb-4">Login</h1>
-                  <form action="../clients/" class="d-flex flex-column">
+                  <h1 class="text-gray-tenth ff-mulish fz-24 mb-3">
+                    Recuperar senha
+                  </h1>
+                  <p class="text-gray-eighth mb-awe-32">
+                    Digite seu e-mail abaixo para recuperar a sua senha
+                  </p>
+                  <form action="./index.html" class="d-flex flex-column">
                     <label for="email" class="form-field mb-4">
                       <input
                         id="email"
@@ -50,35 +55,11 @@
                         class="icon icon-email"
                         type="email"
                         placeholder="admin@technine.com.br"
+                        autocomplete="off"
                         required
                       />
                       <span>E-mail</span>
                     </label>
-                    <label for="password" class="form-field mb-1">
-                      <input
-                        id="password"
-                        name="password"
-                        class="icon icon-password"
-                        type="password"
-                        placeholder="admin@technine.com.br"
-                        required
-                      />
-                      <span>Senha</span>
-                    </label>
-                    <a
-                      href="./recovery.html"
-                      class="
-                        fz-12
-                        fw-bold
-                        ff-mulish
-                        text-brand-second
-                        ms-auto
-                        mb-4
-                        root
-                      "
-                    >
-                      Esqueci minha senha
-                    </a>
                     <button
                       type="submit"
                       class="
@@ -89,37 +70,18 @@
                         mb-1
                       "
                     >
-                      ENTRAR
+                      ENVIAR
                     </button>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="remember-connection"
-                      />
-                      <label
-                        class="form-check-label fz-12 ff-mulish text-gray-tenth"
-                        for="remember-connection"
-                      >
-                        Continuar conectado
-                      </label>
-                    </div>
-                    <div
-                      class="d-flex justify-content-center divider-area my-4"
-                    >
-                      <span class="text-gray-seventh px-2 label">ou</span>
-                    </div>
                     <a
-                      href="../clients/signup/"
+                      href="./index.html"
                       class="
-                        btn btn-outline-brand-second
-                        bnt-block
-                        text-hover-white
+                        fw-bold
                         ff-mulish
+                        text-decoration-none text-brand-second
+                        mt-5
                       "
                     >
-                      PEDIR MEU CARTÃO
+                      <i class="fas fa-arrow-left me-1"></i> Voltar
                     </a>
                   </form>
                 </div>
@@ -134,6 +96,6 @@
       src="https://kit.fontawesome.com/113c46960f.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../../dist/js/index.js"></script>
+    <script src="../../../dist/js/index.js"></script>
   </body>
 </html>

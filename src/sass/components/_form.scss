@@ -12,7 +12,7 @@
   input,
   select {
     width: 100%;
-    padding: 12px 14px;
+    padding: $form-padding-y $form-padding-x;
     border: 0;
     border-bottom: 1px solid $form-input-border;
 
@@ -47,6 +47,16 @@
     &::placeholder {
       color: $gray-third;
     }
+  }
+  select {
+    background-image: url('../image/icons/arrow-select.svg');
+    background-repeat: no-repeat;
+    background-position: center right $form-padding-x;
+    padding-right: calc(#{$form-padding-x} * 2 + 8px) !important;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   select:invalid {
     color: $gray-third;

@@ -1,60 +1,65 @@
-$light-teal:        #c8fff2;
-$light-blue:        #c8f2ff;
-$light-purple:      #c8dbff;
-$light-violet:      #e0c8ff;
-$dark-teal:         #3e8473;
-$dark-blue:         #3f7485;
-$dark-purple:       #3f5785;
+// Color variables definition 
+$light-teal:          #c8fff2;
+$light-blue:          #c8f2ff;
+$light-purple:        #c8dbff;
+$light-violet:        #e0c8ff;
+$dark-teal:           #3e8473;
+$dark-blue:           #3f7485;
+$dark-purple:         #3f5785;
 
-$red-first:         #eb5757;
-$blue-first:        #44a8d1;
-$blue-second:       #58c5cc;
-$blue-third:        #2d9cdb;
-$white-first:       #ffffff;
-$white-second:      #f5f5f5;
-$gray-first:        #6c6c6a;
-$gray-second:       #9e9e9e;
-$gray-third:        #c8c8c8;
-$gray-fourth:       #4f4f4f;
-$gray-fifth:        #e0e0e0;
-$gray-sixth:        #767676;
-$gray-seventh:      #9e9e9e;
-$gray-eighth:       #828282;
-$gray-nineth:       #f2f2f2;
-$gray-nineth:       #f2f2f2;
-$gray-tenth:        #111111;
-$brand-first:       #3b6472;
-$brand-second:      #58c4cb;
+$red-first:           #eb5757;
+$blue-first:          #44a8d1;
+$blue-second:         #58c5cc;
+$blue-third:          #2d9cdb;
+$white-first:         #ffffff;
+$white-second:        #f5f5f5;
+$gray-first:          #6c6c6a;
+$gray-second:         #9e9e9e;
+$gray-third:          #c8c8c8;
+$gray-fourth:         #4f4f4f;
+$gray-fifth:          #e0e0e0;
+$gray-sixth:          #767676;
+$gray-seventh:        #9e9e9e;
+$gray-eighth:         #828282;
+$gray-nineth:         #f2f2f2;
+$gray-tenth:          #111111;
+$gray-eleventh:       #333333;
+$brand-first:         #3b6472;
+$brand-second:        #58c4cb;
+$brand-second-opac:   #58c4cb54;
 
 $theme-colors: (
-  'light-teal':       $light-teal,
-  'light-blue':       $light-blue,
-  'light-purple':     $light-purple,
-  'light-violet':     $light-violet,
-  'dark-teal':        $dark-teal,
-  'dark-blue':        $dark-blue,
-  'dark-purple':      $dark-purple,
-  'red-first':        $red-first,
-  'blue-first':       $blue-first,
-  'blue-second':      $blue-second,
-  'blue-third':       $blue-third,
-  'white-first':      $white-first,
-  'white-second':     $white-second,
-  'gray-first':       $gray-first,
-  'gray-second':      $gray-second,
-  'gray-third':       $gray-third,
-  'gray-fourth':      $gray-fourth,
-  'gray-fifth':       $gray-fifth,
-  'gray-sixth':       $gray-sixth,
-  'gray-seventh':     $gray-seventh,
-  'gray-eighth':      $gray-eighth,
-  'gray-nineth':      $gray-nineth,
-  'gray-tenth':       $gray-tenth,
-  'brand-first':      $brand-first,
-  'brand-second':     $brand-second,
-  'transparent':      #fff0,
+  'light-teal':         $light-teal,
+  'light-blue':         $light-blue,
+  'light-purple':       $light-purple,
+  'light-violet':       $light-violet,
+  'dark-teal':          $dark-teal,
+  'dark-blue':          $dark-blue,
+  'dark-purple':        $dark-purple,
+  'red-first':          $red-first,
+  'blue-first':         $blue-first,
+  'blue-second':        $blue-second,
+  'blue-third':         $blue-third,
+  'white-first':        $white-first,
+  'white-second':       $white-second,
+  'gray-first':         $gray-first,
+  'gray-second':        $gray-second,
+  'gray-third':         $gray-third,
+  'gray-fourth':        $gray-fourth,
+  'gray-fifth':         $gray-fifth,
+  'gray-sixth':         $gray-sixth,
+  'gray-seventh':       $gray-seventh,
+  'gray-eighth':        $gray-eighth,
+  'gray-nineth':        $gray-nineth,
+  'gray-tenth':         $gray-tenth,
+  'gray-eleventh':      $gray-eleventh,
+  'brand-first':        $brand-first,
+  'brand-second':       $brand-second,
+  'brand-second-opac':  $brand-second-opac,
+  'transparent':        #fff0,
 ) !default;
 
+// Spacers variable definition
 $spacer: 1rem;
 $awe-spacers: (
   'awe-12': $spacer * 0.75,
@@ -62,12 +67,14 @@ $awe-spacers: (
   'awe-40': $spacer * 2.5,
   'awe-64': $spacer * 4,
   'awe-80': $spacer * 5,
+  'awe-96': $spacer * 6,
   'awe-108': $spacer * 8,
 ) !default;
+$enable-negative-margins: true;
 
-$font-family-sans-serif: 'Roboto', sans-serif;
-
-$font-sizes: (12: 12px, 14: 14px, 24: 24px, 32: 32px, 72: 72px);
+// Font features variables definition
+$font-family-sans-serif: 'Mulish', 'Roboto', sans-serif;
+$font-sizes: (12: 12px, 14: 14px, 16: 16px, 18: 18px, 20: 20px, 24: 24px, 32: 32px, 72: 72px);
 $font-families: ('mulish', 'roboto');
 
 $font-weight-thin:          100;
@@ -80,6 +87,7 @@ $font-weight-bold:          700;
 $font-weight-extra-bold:    800;
 $font-weight-black:         900;
 
+// Stages variables definition
 $stages-text-label: $gray-third;
 $stages-text-size: 12px;
 $stages-figure-size: 64px;
@@ -88,18 +96,47 @@ $stages-figure-background: $white-first;
 $stages-figure-background-current: $brand-first;
 $stage-text-label-current: $brand-first;
 
+// Card variables definition
 $card-title-height: 80px;
 $card-title-color: $blue-third;
 $card-title-font-size: 24px;
 $card-title-font-size: 24px;
 
+// Form variables definition
 $form-label-color: $gray-sixth;
 $form-label-size: 12px;
 $form-input-border: $gray-seventh;
 $form-input-size: 14px;
 $form-required-color: $red-first;
+$form-padding-x: 14px;
+$form-padding-y: 12px;
 
 $form-check-input-checked-bg-color: $brand-second;
 $form-check-input-border: 2px solid rgba($gray-tenth, 0.25);
 
-$table-group-separator-color: #fff0;
+// Table variables definition
+$table-group-separator-color:     #fff0;
+$table-cell-padding-y:            .5rem;
+$table-cell-padding-x:            1.5rem;
+
+// Pagination variables definition
+$pagination-padding-y:            0rem;
+$pagination-padding-x:            0.5rem;
+$pagination-border-width:         0;
+
+$pagination-color:                $brand-second;
+$pagination-border-radius:        0;
+
+$pagination-hover-color:          $white-first;
+$pagination-hover-bg:             $brand-second;
+$pagination-hover-border-color:   $brand-second;
+
+$pagination-focus-color:          $white-first;
+$pagination-focus-bg:             rgba($brand-second, 0.75);
+$pagination-focus-box-shadow:     0 0 0 0.25rem rgba($blue-second, 0.5);
+
+$pagination-active-color:         $white-first;
+$pagination-active-bg:            $brand-second;
+$pagination-active-border-color:  $brand-second;
+
+

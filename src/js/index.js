@@ -1,5 +1,6 @@
 import bootstrap from 'bootstrap';
 import feather from 'feather-icons';
+import './utils/toggle-class';
 
 feather.replace();
 

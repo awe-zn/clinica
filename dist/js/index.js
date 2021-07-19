@@ -3652,6 +3652,28 @@ function hasClass(el, className) {
 
 /***/ }),
 
+/***/ "./src/js/utils/toggle-class.js":
+/*!**************************************!*\
+  !*** ./src/js/utils/toggle-class.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+
+
+var toggleClassEls = (0,_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__.default)(document.querySelectorAll('.toggle-class'));
+
+toggleClassEls.forEach(function (el) {
+  el.addEventListener('click', function (_ref) {
+    var dataset = _ref.target.dataset;
+    document.querySelector("".concat(dataset.target)).classList.toggle(dataset.toggle);
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/utils/validate-inputs-current-tab.js":
 /*!*****************************************************!*\
   !*** ./src/js/utils/validate-inputs-current-tab.js ***!
@@ -16877,12 +16899,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
 /* harmony import */ var feather_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! feather-icons */ "./node_modules/feather-icons/dist/feather.js");
 /* harmony import */ var feather_icons__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(feather_icons__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _client_subscription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./client-subscription */ "./src/js/client-subscription.js");
+/* harmony import */ var _utils_toggle_class__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/toggle-class */ "./src/js/utils/toggle-class.js");
+/* harmony import */ var _client_subscription__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./client-subscription */ "./src/js/client-subscription.js");
+
 
 
 feather_icons__WEBPACK_IMPORTED_MODULE_1___default().replace();
 
-(0,_client_subscription__WEBPACK_IMPORTED_MODULE_2__.default)();
+(0,_client_subscription__WEBPACK_IMPORTED_MODULE_3__.default)();
 })();
 
 /******/ })()

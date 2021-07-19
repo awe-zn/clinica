@@ -15,3 +15,19 @@ input[type='date']::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #58c4cb #ffffff;
+}
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #58c4cb;
+  border-radius: 8px;
+  border: 3px solid #ffffff;
+}

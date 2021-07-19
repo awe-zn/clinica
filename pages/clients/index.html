@@ -30,21 +30,27 @@
       <nav class="links">
         <ul>
           <li>
-            <a href="#" class="active">
+            <a href="./" class="active">
               <i data-feather="home" class="icon"></i>Home
             </a>
           </li>
           <li class="divider">
-            <a href="#"><i data-feather="star" class="icon"></i>Benefícios</a>
+            <a href="./benefits.html">
+              <i data-feather="star" class="icon"></i>Benefícios
+            </a>
           </li>
           <li>
-            <a href="#"><i data-feather="users" class="icon"></i>Dependentes</a>
+            <a href="./dependents.html">
+              <i data-feather="users" class="icon"></i>Dependentes
+            </a>
           </li>
           <li class="divider">
-            <a href="#"><i data-feather="user" class="icon"></i>Meu perfil</a>
+            <a href="./profile.html">
+              <i data-feather="user" class="icon"></i>Meu perfil
+            </a>
           </li>
           <li>
-            <a href="#" class="exit">
+            <a href="./login/index.html" class="exit">
               <i data-feather="log-out" class="icon"></i>Sair
             </a>
           </li>
@@ -53,10 +59,23 @@
     </div>
 
     <div class="page-content">
-      <header>
+      <header class="bg-white-second">
         <div class="container py-awe-32">
           <div class="row">
             <div class="col">
+              <div class="d-flex align-items-center h-100">
+                <button
+                  class="border-0 bg-transparent toggle-class hamburguer"
+                  data-toggle="hide"
+                  data-target=".sidebar"
+                >
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </button>
+              </div>
+            </div>
+            <div class="col-auto ml-auto">
               <div class="d-flex justify-content-end align-items-center">
                 <a href="#" class="text-decoration-none">
                   <img
@@ -73,6 +92,266 @@
           </div>
         </div>
       </header>
+      <main>
+        <section class="bg-white-second">
+          <div class="container pt-3 pb-awe-96">
+            <div class="row">
+              <div class="col-12">
+                <div>
+                  <h1 class="fz-32 text-brand-first fw-bold m-0">
+                    Cartão da Clínica virtual
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mt-n5">
+          <div class="container">
+            <div class="row gapy-3">
+              <div class="col-xxl-8 col-lg-6 col-xl-7">
+                <div class="p-awe-32 bg-white rounded shadow">
+                  <h2 class="text-gray-fourth fw-regular fz-24 mb-awe-32">
+                    Dados do seu cartão
+                  </h2>
+                  <div class="row">
+                    <div class="col-12 col-xl-8">
+                      <img
+                        src="../../dist/image/card-index.svg"
+                        alt="Cartao"
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="d-flex flex-column gap-4 mt-4 mt-xl-0">
+                        <div class="d-flex flex-column">
+                          <span class="text-gray-sixth fz-14">Titular</span>
+                          <span class="text-gray-eleventh fz-18">
+                            Nome do Titular
+                          </span>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <span class="text-gray-sixth fz-14">
+                            N° do Cartão
+                          </span>
+                          <span class="text-gray-eleventh fz-18">
+                            000 000 000 00
+                          </span>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <span class="text-gray-sixth fz-14">
+                            Cartão válido até
+                          </span>
+                          <span class="text-gray-eleventh fz-18">
+                            20/12/2022
+                          </span>
+                          <span class="text-gray-eleventh fz-12">
+                            Acaba em 1 ano e 6 meses
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-lg-6 col-xl-5">
+                <div class="p-awe-32 bg-white rounded shadow">
+                  <h2 class="text-gray-fourth fw-regular fz-24 mb-awe-32">
+                    Informações do plano
+                  </h2>
+                  <div>
+                    <label for="family-check" class="card active">
+                      <div class="title">
+                        <h2>Plano Família + Check-up</h2>
+                      </div>
+                      <div class="value">
+                        <span class="price">
+                          R$ <span class="max">29</span>,90
+                        </span>
+                        <span class="period">mensal</span>
+                        <span>Anual R$ 322,92</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container pt-awe-40">
+            <div class="row">
+              <div class="col-12">
+                <div class="p-awe-32 bg-white rounded shadow">
+                  <h2 class="text-gray-fourth fw-regular fz-24 mb-3">
+                    Benefícios utilizados
+                  </h2>
+                  <div class="row row-cols-1 row-cols-lg-3 gapy-2 mb-3">
+                    <div class="col">
+                      <div
+                        class="
+                          border border-gray-fifth
+                          px-4
+                          py-3
+                          rounded
+                          d-flex
+                          flex-column
+                        "
+                      >
+                        <span class="text-gray-fourth fw-regular fz-32">
+                          24
+                        </span>
+                        <span class="text-gray-eighth">
+                          Total de benefícios utilizados
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div
+                        class="
+                          border border-gray-fifth
+                          px-4
+                          py-3
+                          rounded
+                          d-flex
+                          flex-column
+                        "
+                      >
+                        <span class="text-gray-fourth fw-regular fz-32">
+                          24
+                        </span>
+                        <span class="text-gray-eighth">
+                          Outra informação que desejar
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div
+                        class="
+                          border border-gray-fifth
+                          px-4
+                          py-3
+                          rounded
+                          d-flex
+                          flex-column
+                        "
+                      >
+                        <span class="text-gray-fourth fw-regular fz-32">
+                          24
+                        </span>
+                        <span class="text-gray-eighth">
+                          Outra informação que desejar
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-striped text-gray-fourth fz-14">
+                      <thead>
+                        <tr>
+                          <th>Usuário</th>
+                          <th>Benefício</th>
+                          <th>Desconto</th>
+                          <th>Valor</th>
+                          <th>Empresa</th>
+                          <th>Data de uso</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Nome do Usuário</td>
+                          <td>Nome do Benefício</td>
+                          <td>45%</td>
+                          <td>R$ 45,00</td>
+                          <td>Nome da Empresa</td>
+                          <td>22/12/2020</td>
+                        </tr>
+                        <tr>
+                          <td>Nome do Usuário</td>
+                          <td>Nome do Benefício</td>
+                          <td>45%</td>
+                          <td>R$ 45,00</td>
+                          <td>Nome da Empresa</td>
+                          <td>22/12/2020</td>
+                        </tr>
+                        <tr>
+                          <td>Nome do Usuário</td>
+                          <td>Nome do Benefício</td>
+                          <td>45%</td>
+                          <td>R$ 45,00</td>
+                          <td>Nome da Empresa</td>
+                          <td>22/12/2020</td>
+                        </tr>
+                        <tr>
+                          <td>Nome do Usuário</td>
+                          <td>Nome do Benefício</td>
+                          <td>45%</td>
+                          <td>R$ 45,00</td>
+                          <td>Nome da Empresa</td>
+                          <td>22/12/2020</td>
+                        </tr>
+                        <tr>
+                          <td>Nome do Usuário</td>
+                          <td>Nome do Benefício</td>
+                          <td>45%</td>
+                          <td>R$ 45,00</td>
+                          <td>Nome da Empresa</td>
+                          <td>22/12/2020</td>
+                        </tr>
+                        <tr>
+                          <td>Nome do Usuário</td>
+                          <td>Nome do Benefício</td>
+                          <td>45%</td>
+                          <td>R$ 45,00</td>
+                          <td>Nome da Empresa</td>
+                          <td>22/12/2020</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a
+                          class="page-link h-100 d-flex align-items-center px-1"
+                          href="#"
+                        >
+                          <i
+                            data-feather="chevron-left"
+                            height="16"
+                            width="16"
+                          ></i>
+                        </a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link h-100 d-flex align-items-center px-1"
+                          href="#"
+                        >
+                          <i
+                            data-feather="chevron-right"
+                            height="16"
+                            width="16"
+                          ></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
 
     <footer class="bg-brand-first">
