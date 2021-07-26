@@ -87,6 +87,10 @@
       top: 0;
 
       z-index: 100;
+
+      .name-user {
+        color: $gray-fourth !important;
+      }
     }
   }
   & ~ footer {

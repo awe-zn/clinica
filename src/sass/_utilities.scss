@@ -17,6 +17,13 @@ $utilities: (
       'black': $font-weight-black,
     ),
   ),
+  'color':
+    map-merge(
+      map-get($utilities, 'color'),
+      (
+        state: hover,
+      )
+    ),
 );
 
 $utilities: map-merge(

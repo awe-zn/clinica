@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica - Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="../../../dist/image/favicon.ico" />
+
+    <link rel="stylesheet" href="../../../dist/css/style.css" />
+  </head>
+
+  <body data-page="single-client-admin">
+    <div class="sidebar">
+      <header class="d-flex justify-content-center p-4">
+        <div class="logo-area">
+          <img
+            src="../../../dist/image/logo-blue.svg"
+            alt="Logo"
+            class="img-fluid img-logo"
+          />
+        </div>
+      </header>
+      <nav class="links">
+        <ul>
+          <li>
+            <a href="../">
+              <i data-feather="home" class="icon"></i>Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i data-feather="grid" class="icon"></i>Planos </a>
+          </li>
+          <li>
+            <a href="../subscribers.html">
+              <i data-feather="edit-3" class="icon"></i>Assinaturas
+            </a>
+          </li>
+          <li>
+            <a href="../clients/" class="active">
+              <i data-feather="users" class="icon"></i>Clientes
+            </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <i data-feather="message-square" class="icon"></i>
+              Registrar atendimento
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i data-feather="users" class="icon"></i>Vendas </a>
+          </li>
+          <li>
+            <a href="#">
+              <i data-feather="file-plus" class="icon"></i>Pré-cadastro
+            </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <i data-feather="award" class="icon"></i>Ranking de vendas
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i data-feather="briefcase" class="icon"></i>Empresas
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i data-feather="star" class="icon"></i>Benefícios </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <i data-feather="file-text" class="icon"></i>Contratos
+            </a>
+          </li>
+          <li>
+            <a href="../profile.html">
+              <i data-feather="user" class="icon"></i>Meu perfil
+            </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <i data-feather="users" class="icon"></i>Administradoes
+            </a>
+          </li>
+          <li>
+            <a href="../login/index.html" class="exit">
+              <i data-feather="log-out" class="icon"></i>Sair
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="page-content">
+      <header class="bg-brand-first">
+        <div class="container py-awe-32">
+          <div class="row">
+            <div class="col">
+              <div class="d-flex align-items-center h-100">
+                <button
+                  class="border-0 bg-transparent toggle-class hamburguer"
+                  data-toggle="hide"
+                  data-target=".sidebar"
+                >
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </button>
+              </div>
+            </div>
+            <div class="col-auto ml-auto">
+              <div class="d-flex justify-content-end align-items-center">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    src="../../../dist/image/avatar.png"
+                    alt="Avatar do usuário"
+                    class="img-fluid img-avatar me-2"
+                  />
+                  <span class="text-white ff-mulish fw-semi-bold name-user">
+                    Arthur Comiere
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="bg-brand-first">
+          <div class="container pt-3 pb-awe-64">
+            <div class="row">
+              <div class="col-12">
+                <div>
+                  <h1 class="fz-32 text-white fw-bold mb-awe-12">
+                    Cliente: Maria Josefina Gomes Maia
+                  </h1>
+                  <nav>
+                    <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                        <a href="#">Clientes</a>
+                      </li>
+                      <li class="breadcrumb-item active">
+                        Cliente: Maria Josefina Gomes Maia
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mt-n5">
+          <div class="container">
+            <div class="row row-cols-1 gapy-12">
+              <div class="col">
+                <div class="rounded shadow bg-white p-awe-32">
+                  <div class="row row-cols-1 row-cols-lg-2 gapy-3">
+                    <div class="col">
+                      <div
+                        class="
+                          border border-gray-fifth
+                          p-4
+                          rounded
+                          d-flex
+                          flex-column
+                        "
+                      >
+                        <span class="text-brand-second fz-20 fw-bold mb-awe-32">
+                          Maria Josefina Gomes Maia
+                        </span>
+
+                        <div class="row row-cols-1 row-cols-lg-2 gapy-4">
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">CPF</span>
+                              <span class="text-gray-eleventh">
+                                834.872.914-97
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">E-mail</span>
+                              <span class="text-gray-eleventh">
+                                ricardo@gmail.com
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">
+                                Data de nascimento
+                              </span>
+                              <span class="text-gray-eleventh">12/12/2001</span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">
+                                Telefone
+                              </span>
+                              <span class="text-gray-eleventh">
+                                9 9999-9999
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div
+                        class="
+                          border border-gray-fifth
+                          p-4
+                          rounded
+                          d-flex
+                          flex-column
+                          align-items-start
+                        "
+                      >
+                        <span class="text-brand-second fz-20 fw-bold">
+                          Andréa Carvalho de Menezes
+                        </span>
+                        <span
+                          class="
+                            badge
+                            rounded-pill
+                            text-green-first
+                            bg-green-first-opac
+                            mb-awe-32
+                          "
+                        >
+                          Dependente
+                        </span>
+
+                        <div class="row row-cols-1 row-cols-lg-2 gapy-4">
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">CPF</span>
+                              <span class="text-gray-eleventh">
+                                834.872.914-97
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">E-mail</span>
+                              <span class="text-gray-eleventh">
+                                ricardo@gmail.com
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">
+                                Data de nascimento
+                              </span>
+                              <span class="text-gray-eleventh">12/12/2001</span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">
+                                Telefone
+                              </span>
+                              <span class="text-gray-eleventh">
+                                9 9999-9999
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">
+                                Parentesco
+                              </span>
+                              <span class="text-gray-eleventh">Filho</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="rounded shadow bg-white p-awe-32">
+                  <h2 class="fz-24 text-gray-fourth mb-4">Endereço</h2>
+
+                  <div class="row gapy-6 mb-4 mb-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                      <div class="d-flex flex-column">
+                        <span class="fz-14 text-gray-sixth">CEP</span>
+                        <span class="text-gray-eleventh">000000-000</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                      <div class="d-flex flex-column">
+                        <span class="fz-14 text-gray-sixth">Logradouro</span>
+                        <span class="text-gray-eleventh">
+                          Rua Tal de Fulano
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row gapy-6">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                      <div class="d-flex flex-column">
+                        <span class="fz-14 text-gray-sixth">Cidade/UF</span>
+                        <span class="text-gray-eleventh">Cidade/UF</span>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                      <div class="d-flex flex-column">
+                        <span class="fz-14 text-gray-sixth">Bairro</span>
+                        <span class="text-gray-eleventh"> Nome do bairro </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div
+                  class="
+                    rounded
+                    shadow
+                    bg-white
+                    p-awe-32
+                    d-flex
+                    flex-column
+                    align-items-start
+                  "
+                >
+                  <h2 class="fz-24 text-gray-fourth mb-3">Assinatura</h2>
+                  <a
+                    href="#"
+                    class="
+                      text-brand-second
+                      fw-bold
+                      d-flex
+                      flex-row
+                      align-items-end
+                      lh-1
+                      mb-4
+                    "
+                  >
+                    <i data-feather="external-link"></i>
+                    VER NA VINDI
+                  </a>
+
+                  <div class="no-more-tables w-100">
+                    <table class="table text-gray-fourth fz-12">
+                      <thead>
+                        <tr class="fz-14">
+                          <th>Status</th>
+                          <th>Plano</th>
+                          <th>Período</th>
+                          <th>&nbsp;</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-title="Status">
+                            <span
+                              class="
+                                badge
+                                rounded-pill
+                                text-green-first
+                                bg-green-first-opac
+                              "
+                            >
+                              Ativo
+                            </span>
+                          </td>
+                          <td data-title="Plano">Mensal</td>
+                          <td data-title="Período">12/12/2020 - 12/09/2021</td>
+                          <td>
+                            <a
+                              href="#"
+                              class="
+                                text-brand-second
+                                fw-bold
+                                text-decoration-none
+                              "
+                              >Cancelar assinatura?</a
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="rounded shadow bg-white p-awe-32">
+                  <h2 class="fz-24 text-gray-fourth mb-4">Pagamentos</h2>
+
+                  <div class="no-more-tables">
+                    <table class="table table-striped text-gray-fourth fz-12">
+                      <thead>
+                        <tr class="fz-14">
+                          <th>Bandeira</th>
+                          <th>Final</th>
+                          <th>Validade</th>
+                          <th>Ações</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-title="Bandeira">
+                            <img
+                              src="../../../dist/image/card-flags/master-card.svg"
+                              alt="Bandeira MasterCard"
+                            />
+                          </td>
+                          <td data-title="Final">0000</td>
+                          <td data-title="Validade">00/00/0000</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Bandeira">
+                            <img
+                              src="../../../dist/image/card-flags/master-card.svg"
+                              alt="Bandeira MasterCard"
+                            />
+                          </td>
+                          <td data-title="Final">0000</td>
+                          <td data-title="Validade">00/00/0000</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Bandeira">
+                            <img
+                              src="../../../dist/image/card-flags/master-card.svg"
+                              alt="Bandeira MasterCard"
+                            />
+                          </td>
+                          <td data-title="Final">0000</td>
+                          <td data-title="Validade">00/00/0000</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="rounded shadow bg-white p-awe-32">
+                  <h2 class="fz-24 text-gray-fourth mb-4">Pagamentos</h2>
+
+                  <div class="row gapy-3 mb-4">
+                    <div class="col-xl-3 col-md-6">
+                      <label for="payment-date" class="form-field">
+                        <input
+                          id="payment-date"
+                          name="payment-date"
+                          class="icon icon-calendar mask"
+                          data-mask="00/00/0000"
+                          placeholder="00/00/0000"
+                        />
+                        <span>Data do pagamento</span>
+                      </label>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                      <label for="status" class="form-field">
+                        <select id="status" name="status">
+                          <option hidden disabled selected>
+                            Selecione um plano
+                          </option>
+                          <option>Plano #1</option>
+                          <option>Plano #2</option>
+                        </select>
+                        <span>Plano</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="no-more-tables">
+                    <table class="table table-striped text-gray-fourth fz-12">
+                      <thead>
+                        <tr class="fz-14">
+                          <th>Data</th>
+                          <th>Valor</th>
+                          <th>Origem</th>
+                          <th>Plano</th>
+                          <th>Ações</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-title="Data">00/00/0000</td>
+                          <td data-title="Valor">R$ 56,00</td>
+                          <td data-title="Origem">Pago</td>
+                          <td data-title="Plano">Nome do plano</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Data">00/00/0000</td>
+                          <td data-title="Valor">R$ 56,00</td>
+                          <td data-title="Origem">Pago</td>
+                          <td data-title="Plano">Nome do plano</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Data">00/00/0000</td>
+                          <td data-title="Valor">R$ 56,00</td>
+                          <td data-title="Origem">Pago</td>
+                          <td data-title="Plano">Nome do plano</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Data">00/00/0000</td>
+                          <td data-title="Valor">R$ 56,00</td>
+                          <td data-title="Origem">Pago</td>
+                          <td data-title="Plano">Nome do plano</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Data">00/00/0000</td>
+                          <td data-title="Valor">R$ 56,00</td>
+                          <td data-title="Origem">Pago</td>
+                          <td data-title="Plano">Nome do plano</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Data">00/00/0000</td>
+                          <td data-title="Valor">R$ 56,00</td>
+                          <td data-title="Origem">Pago</td>
+                          <td data-title="Plano">Nome do plano</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a
+                          class="page-link h-100 d-flex align-items-center px-1"
+                          href="#"
+                        >
+                          <i
+                            data-feather="chevron-left"
+                            width="16"
+                            height="16"
+                          ></i>
+                        </a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link h-100 d-flex align-items-center px-1"
+                          href="#"
+                        >
+                          <i
+                            data-feather="chevron-right"
+                            width="16"
+                            height="16"
+                          ></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="rounded shadow bg-white p-awe-32">
+                  <h2 class="fz-24 text-gray-fourth mb-4">Registros de usos</h2>
+
+                  <div class="row gapy-3 mb-4">
+                    <div class="col-xl-4 col-lg-5 col-sm-6">
+                      <label for="search" class="form-field">
+                        <input
+                          id="search"
+                          name="search"
+                          type="text"
+                          placeholder="Buscar"
+                        />
+                        <span>Buscar por usuário</span>
+                      </label>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                      <label for="date-register" class="form-field">
+                        <input
+                          id="date-register"
+                          name="date-register"
+                          class="icon icon-calendar mask"
+                          data-mask="00/00/0000"
+                          placeholder="00/00/0000"
+                        />
+                        <span>Data do registro</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="no-more-tables">
+                    <table class="table table-striped text-gray-fourth fz-12">
+                      <thead>
+                        <tr class="fz-14">
+                          <th>Usuário</th>
+                          <th>Benefício</th>
+                          <th>Valor</th>
+                          <th>Data do registro</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-title="Usuário">Nome do usuário</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Data do registro">00/00/0000</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Usuário">Nome do usuário</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Data do registro">00/00/0000</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Usuário">Nome do usuário</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Data do registro">00/00/0000</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Usuário">Nome do usuário</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Data do registro">00/00/0000</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Usuário">Nome do usuário</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Data do registro">00/00/0000</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Usuário">Nome do usuário</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Data do registro">00/00/0000</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Usuário">Nome do usuário</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Data do registro">00/00/0000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a
+                          class="page-link h-100 d-flex align-items-center px-1"
+                          href="#"
+                        >
+                          <i
+                            data-feather="chevron-left"
+                            width="16"
+                            height="16"
+                          ></i>
+                        </a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a
+                          class="page-link h-100 d-flex align-items-center px-1"
+                          href="#"
+                        >
+                          <i
+                            data-feather="chevron-right"
+                            width="16"
+                            height="16"
+                          ></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="bg-brand-first">
+      <div class="container py-awe-12">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="
+                d-flex
+                justify-content-between
+                fz-14
+                ff-mulish
+                text-white-first
+              "
+            >
+              <div><span>Versão 1.7.0</span></div>
+              <div>
+                <span>
+                  Desenvolvido por
+                  <a
+                    href="https://technine.com.br"
+                    class="text-decoration-none text-reset"
+                  >
+                    Technine
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/113c46960f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../../dist/js/index.js"></script>
+  </body>
+</html>

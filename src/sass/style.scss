@@ -18,6 +18,15 @@
   color: $gray-sixth !important;
 }
 
+ul.pagination {
+  margin-bottom: 0;
+  user-select: none;
+}
+
+.img-logo {
+  height: 48px !important;
+}
+
 .tabs-payment {
   justify-content: space-between;
 

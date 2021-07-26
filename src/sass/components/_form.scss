@@ -23,6 +23,7 @@
     &.icon {
       background-repeat: no-repeat;
       background-position: 14px center;
+      background-size: 24px 24px;
       padding-left: calc(2 * 14px + 18px);
 
       &.icon-email {
@@ -30,6 +31,9 @@
       }
       &.icon-password {
         background-image: url('../image/icons/lock.svg');
+      }
+      &.icon-calendar {
+        background-image: url('../image/icons/calendar.svg');
       }
     }
     &:focus {

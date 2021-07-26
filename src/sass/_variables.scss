@@ -1,4 +1,4 @@
-// Color variables definition 
+// color variables definition 
 $light-teal:          #c8fff2;
 $light-blue:          #c8f2ff;
 $light-purple:        #c8dbff;
@@ -24,6 +24,10 @@ $gray-eighth:         #828282;
 $gray-nineth:         #f2f2f2;
 $gray-tenth:          #111111;
 $gray-eleventh:       #333333;
+$yellow-first:        #f79e1b;
+$yellow-first-opac:   #f79f1b33;
+$green-first:         #219653;
+$green-first-opac:    #21965433;
 $brand-first:         #3b6472;
 $brand-second:        #58c4cb;
 $brand-second-opac:   #58c4cb54;
@@ -53,15 +57,20 @@ $theme-colors: (
   'gray-nineth':        $gray-nineth,
   'gray-tenth':         $gray-tenth,
   'gray-eleventh':      $gray-eleventh,
+  'yellow-first':       $yellow-first,
+  'yellow-first-opac':  $yellow-first-opac,
+  'green-first':        $green-first,
+  'green-first-opac':   $green-first-opac,
   'brand-first':        $brand-first,
   'brand-second':       $brand-second,
   'brand-second-opac':  $brand-second-opac,
   'transparent':        #fff0,
 ) !default;
 
-// Spacers variable definition
+// spacers variable definition
 $spacer: 1rem;
 $awe-spacers: (
+  'awe-6': $spacer * 0.375,
   'awe-12': $spacer * 0.75,
   'awe-32': $spacer * 2,
   'awe-40': $spacer * 2.5,
@@ -72,8 +81,8 @@ $awe-spacers: (
 ) !default;
 $enable-negative-margins: true;
 
-// Font features variables definition
-$font-family-sans-serif: 'Mulish', 'Roboto', sans-serif;
+// font features variables definition
+$font-family-sans-serif: 'mulish', 'roboto', sans-serif;
 $font-sizes: (12: 12px, 14: 14px, 16: 16px, 18: 18px, 20: 20px, 24: 24px, 32: 32px, 72: 72px);
 $font-families: ('mulish', 'roboto');
 
@@ -87,7 +96,7 @@ $font-weight-bold:          700;
 $font-weight-extra-bold:    800;
 $font-weight-black:         900;
 
-// Stages variables definition
+// stages variables definition
 $stages-text-label: $gray-third;
 $stages-text-size: 12px;
 $stages-figure-size: 64px;
@@ -96,13 +105,13 @@ $stages-figure-background: $white-first;
 $stages-figure-background-current: $brand-first;
 $stage-text-label-current: $brand-first;
 
-// Card variables definition
+// card variables definition
 $card-title-height: 80px;
 $card-title-color: $blue-third;
 $card-title-font-size: 24px;
 $card-title-font-size: 24px;
 
-// Form variables definition
+// form variables definition
 $form-label-color: $gray-sixth;
 $form-label-size: 12px;
 $form-input-border: $gray-seventh;
@@ -114,12 +123,18 @@ $form-padding-y: 12px;
 $form-check-input-checked-bg-color: $brand-second;
 $form-check-input-border: 2px solid rgba($gray-tenth, 0.25);
 
-// Table variables definition
+// table variables definition
 $table-group-separator-color:     #fff0;
 $table-cell-padding-y:            .5rem;
-$table-cell-padding-x:            1.5rem;
+$table-cell-padding-x:            1rem;
 
-// Pagination variables definition
+// badge variables definition
+$badge-font-weight:               $font-weight-regular;
+$badge-font-size:                 10px;
+$badge-padding-y:                 .5em;
+$badge-padding-x:                 $badge-padding-y * 2;
+
+// pagination variables definition
 $pagination-padding-y:            0rem;
 $pagination-padding-x:            0.5rem;
 $pagination-border-width:         0;
@@ -139,4 +154,8 @@ $pagination-active-color:         $white-first;
 $pagination-active-bg:            $brand-second;
 $pagination-active-border-color:  $brand-second;
 
-
+// breadcrumb variables definition
+$breadcrumb-divider:              quote(">");
+$breadcrumb-color:                $gray-fifth;
+$breadcrumb-divider-color:        $gray-fifth;
+$breadcrumb-active-color:         $brand-second;

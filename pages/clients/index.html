@@ -13,17 +13,19 @@
       rel="stylesheet"
     />
 
+    <link rel="icon" href="../../dist/image/favicon.ico" />
+
     <link rel="stylesheet" href="../../dist/css/style.css" />
   </head>
 
-  <body data-page="client">
+  <body>
     <div class="sidebar">
       <header class="d-flex justify-content-center p-4">
         <div class="logo-area">
           <img
-            src="../../dist/image/logo-blue.png"
+            src="../../dist/image/logo-blue.svg"
             alt="Logo"
-            class="img-fluid"
+            class="img-fluid img-logo"
           />
         </div>
       </header>
@@ -59,7 +61,7 @@
     </div>
 
     <div class="page-content">
-      <header class="bg-white-second">
+      <header class="bg-brand-first">
         <div class="container py-awe-32">
           <div class="row">
             <div class="col">
@@ -83,7 +85,7 @@
                     alt="Avatar do usuário"
                     class="img-fluid img-avatar me-2"
                   />
-                  <span class="text-gray-fourth ff-mulish fw-semi-bold">
+                  <span class="text-white ff-mulish fw-semi-bold name-user">
                     Arthur Comiere
                   </span>
                 </a>
@@ -93,12 +95,12 @@
         </div>
       </header>
       <main>
-        <section class="bg-white-second">
+        <section class="bg-brand-first">
           <div class="container pt-3 pb-awe-96">
             <div class="row">
               <div class="col-12">
                 <div>
-                  <h1 class="fz-32 text-brand-first fw-bold m-0">
+                  <h1 class="fz-32 text-white fw-bold m-0">
                     Cartão da Clínica virtual
                   </h1>
                 </div>
@@ -110,7 +112,7 @@
           <div class="container">
             <div class="row gapy-3">
               <div class="col-xxl-8 col-lg-6 col-xl-7">
-                <div class="p-awe-32 bg-white rounded shadow">
+                <div class="p-awe-32 bg-white rounded shadow h-100">
                   <h2 class="text-gray-fourth fw-regular fz-24 mb-awe-32">
                     Dados do seu cartão
                   </h2>
@@ -155,7 +157,7 @@
                 </div>
               </div>
               <div class="col-xxl-4 col-lg-6 col-xl-5">
-                <div class="p-awe-32 bg-white rounded shadow">
+                <div class="p-awe-32 bg-white rounded shadow h-100">
                   <h2 class="text-gray-fourth fw-regular fz-24 mb-awe-32">
                     Informações do plano
                   </h2>
@@ -190,62 +192,98 @@
                     <div class="col">
                       <div
                         class="
+                          d-flex
+                          flex-row
+                          align-items-center
+                          gapx-3
                           border border-gray-fifth
                           px-4
                           py-3
                           rounded
-                          d-flex
-                          flex-column
                         "
                       >
-                        <span class="text-gray-fourth fw-regular fz-32">
-                          24
-                        </span>
-                        <span class="text-gray-eighth">
-                          Total de benefícios utilizados
-                        </span>
+                        <div class="d-flex flex-column flex-1">
+                          <span class="text-gray-fourth fw-regular fz-32">
+                            24
+                          </span>
+                          <span class="text-gray-eighth">
+                            Total de benefícios utilizados
+                          </span>
+                        </div>
+                        <div class="p-2 bg-brand-first rounded-circle">
+                          <i
+                            data-feather="heart"
+                            width="24"
+                            height="24"
+                            stroke="white"
+                          ></i>
+                        </div>
                       </div>
                     </div>
                     <div class="col">
                       <div
                         class="
+                          d-flex
+                          flex-row
+                          align-items-center
+                          gapx-3
                           border border-gray-fifth
                           px-4
                           py-3
                           rounded
-                          d-flex
-                          flex-column
                         "
                       >
-                        <span class="text-gray-fourth fw-regular fz-32">
-                          24
-                        </span>
-                        <span class="text-gray-eighth">
-                          Outra informação que desejar
-                        </span>
+                        <div class="d-flex flex-column flex-1">
+                          <span class="text-gray-fourth fw-regular fz-32">
+                            24
+                          </span>
+                          <span class="text-gray-eighth">
+                            Outra informação que desejar
+                          </span>
+                        </div>
+                        <div class="p-2 bg-brand-first rounded-circle">
+                          <i
+                            data-feather="globe"
+                            width="24"
+                            height="24"
+                            stroke="white"
+                          ></i>
+                        </div>
                       </div>
                     </div>
                     <div class="col">
                       <div
                         class="
+                          d-flex
+                          flex-row
+                          align-items-center
+                          gapx-3
                           border border-gray-fifth
                           px-4
                           py-3
                           rounded
-                          d-flex
-                          flex-column
                         "
                       >
-                        <span class="text-gray-fourth fw-regular fz-32">
-                          24
-                        </span>
-                        <span class="text-gray-eighth">
-                          Outra informação que desejar
-                        </span>
+                        <div class="d-flex flex-column flex-1">
+                          <span class="text-gray-fourth fw-regular fz-32">
+                            24
+                          </span>
+                          <span class="text-gray-eighth">
+                            Outra informação que desejar
+                          </span>
+                        </div>
+                        <div class="p-2 bg-brand-first rounded-circle">
+                          <i
+                            data-feather="user"
+                            width="24"
+                            height="24"
+                            stroke="white"
+                          ></i>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="table-responsive">
+                  <div class="no-more-tables">
                     <table class="table table-striped text-gray-fourth fz-14">
                       <thead>
                         <tr>
@@ -259,59 +297,59 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Nome do Usuário</td>
-                          <td>Nome do Benefício</td>
-                          <td>45%</td>
-                          <td>R$ 45,00</td>
-                          <td>Nome da Empresa</td>
-                          <td>22/12/2020</td>
+                          <td data-title="Usuário">Nome do Usuário</td>
+                          <td data-title="Benefício">Nome do Benefício</td>
+                          <td data-title="Desconto">45%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da Empresa</td>
+                          <td data-title="Data de uso">22/12/2020</td>
                         </tr>
                         <tr>
-                          <td>Nome do Usuário</td>
-                          <td>Nome do Benefício</td>
-                          <td>45%</td>
-                          <td>R$ 45,00</td>
-                          <td>Nome da Empresa</td>
-                          <td>22/12/2020</td>
+                          <td data-title="Usuário">Nome do Usuário</td>
+                          <td data-title="Benefício">Nome do Benefício</td>
+                          <td data-title="Desconto">45%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da Empresa</td>
+                          <td data-title="Data de uso">22/12/2020</td>
                         </tr>
                         <tr>
-                          <td>Nome do Usuário</td>
-                          <td>Nome do Benefício</td>
-                          <td>45%</td>
-                          <td>R$ 45,00</td>
-                          <td>Nome da Empresa</td>
-                          <td>22/12/2020</td>
+                          <td data-title="Usuário">Nome do Usuário</td>
+                          <td data-title="Benefício">Nome do Benefício</td>
+                          <td data-title="Desconto">45%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da Empresa</td>
+                          <td data-title="Data de uso">22/12/2020</td>
                         </tr>
                         <tr>
-                          <td>Nome do Usuário</td>
-                          <td>Nome do Benefício</td>
-                          <td>45%</td>
-                          <td>R$ 45,00</td>
-                          <td>Nome da Empresa</td>
-                          <td>22/12/2020</td>
+                          <td data-title="Usuário">Nome do Usuário</td>
+                          <td data-title="Benefício">Nome do Benefício</td>
+                          <td data-title="Desconto">45%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da Empresa</td>
+                          <td data-title="Data de uso">22/12/2020</td>
                         </tr>
                         <tr>
-                          <td>Nome do Usuário</td>
-                          <td>Nome do Benefício</td>
-                          <td>45%</td>
-                          <td>R$ 45,00</td>
-                          <td>Nome da Empresa</td>
-                          <td>22/12/2020</td>
+                          <td data-title="Usuário">Nome do Usuário</td>
+                          <td data-title="Benefício">Nome do Benefício</td>
+                          <td data-title="Desconto">45%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da Empresa</td>
+                          <td data-title="Data de uso">22/12/2020</td>
                         </tr>
                         <tr>
-                          <td>Nome do Usuário</td>
-                          <td>Nome do Benefício</td>
-                          <td>45%</td>
-                          <td>R$ 45,00</td>
-                          <td>Nome da Empresa</td>
-                          <td>22/12/2020</td>
+                          <td data-title="Usuário">Nome do Usuário</td>
+                          <td data-title="Benefício">Nome do Benefício</td>
+                          <td data-title="Desconto">45%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da Empresa</td>
+                          <td data-title="Data de uso">22/12/2020</td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                   <nav>
                     <ul class="pagination">
-                      <li class="page-item">
+                      <li class="page-item disabled">
                         <a
                           class="page-link h-100 d-flex align-items-center px-1"
                           href="#"
@@ -368,7 +406,17 @@
               "
             >
               <div><span>Versão 1.7.0</span></div>
-              <div><span>Desenvolvido por technine</span></div>
+              <div>
+                <span>
+                  Desenvolvido por
+                  <a
+                    href="https://technine.com.br"
+                    class="text-decoration-none text-reset"
+                  >
+                    Technine
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
