@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica - Vendas - Cadastrar novo</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="../../../dist/image/favicon.ico" />
+
+    <link rel="stylesheet" href="../../../dist/css/style.css" />
+  </head>
+
+  <body data-page="subscribers-admin">
+    <div class="sidebar">
+      <header class="d-flex justify-content-center p-4">
+        <div class="logo-area">
+          <img
+            src="../../../dist/image/logo-blue.svg"
+            alt="Logo"
+            class="img-fluid img-logo"
+          />
+        </div>
+      </header>
+      <nav class="links">
+        <ul>
+          <li>
+            <a href="../">
+              <i data-feather="home" class="icon"></i>Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i data-feather="grid" class="icon"></i>Planos </a>
+          </li>
+          <li>
+            <a href="../subscribers.html">
+              <i data-feather="edit-3" class="icon"></i>Assinaturas
+            </a>
+          </li>
+          <li>
+            <a href="../clients/">
+              <i data-feather="users" class="icon"></i>Clientes
+            </a>
+          </li>
+          <li class="divider">
+            <a href="../register-service.html">
+              <i data-feather="message-square" class="icon"></i>
+              Registrar atendimento
+            </a>
+          </li>
+          <li>
+            <a href="../sales/" class="active">
+              <i data-feather="users" class="icon"></i> Vendas
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i data-feather="file-plus" class="icon"></i>Pré-cadastro
+            </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <i data-feather="award" class="icon"></i>Ranking de vendas
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i data-feather="briefcase" class="icon"></i>Empresas
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i data-feather="star" class="icon"></i>Benefícios </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <i data-feather="file-text" class="icon"></i>Contratos
+            </a>
+          </li>
+          <li>
+            <a href="../profile.html">
+              <i data-feather="user" class="icon"></i>Meu perfil
+            </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <i data-feather="users" class="icon"></i>Administradoes
+            </a>
+          </li>
+          <li>
+            <a href="../login/index.html" class="exit">
+              <i data-feather="log-out" class="icon"></i>Sair
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="page-content">
+      <header class="bg-brand-first">
+        <div class="container py-awe-32">
+          <div class="row">
+            <div class="col">
+              <div class="d-flex align-items-center h-100">
+                <button
+                  class="border-0 bg-transparent toggle-class hamburguer"
+                  data-toggle="hide"
+                  data-target=".sidebar"
+                >
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </button>
+              </div>
+            </div>
+            <div class="col-auto ml-auto">
+              <div class="d-flex justify-content-end align-items-center">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    src="../../../dist/image/avatar.png"
+                    alt="Avatar do usuário"
+                    class="img-fluid img-avatar me-2"
+                  />
+                  <span class="text-white ff-mulish fw-semi-bold name-user">
+                    Arthur Comiere
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="bg-brand-first">
+          <div class="container pt-3 pb-awe-64">
+            <div class="row">
+              <div class="col-12">
+                <div>
+                  <h1 class="fz-32 text-white fw-bold mb-awe-12">
+                    Cadastrar novo
+                  </h1>
+                  <nav>
+                    <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                        <a href="#">Vendas</a>
+                      </li>
+                      <li class="breadcrumb-item active">Cadastrar novo</li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mt-n5">
+          <div class="container">
+            <div class="row">
+              <div class="col-xxl-8 col-lg-10 col-md-12">
+                <div
+                  class="rounded bg-white shadow p-awe-32 d-flex flex-column"
+                >
+                  <h2 class="fz-24 text-gray-fourth mb-4">Dados de acesso</h2>
+                  <form
+                    action="./index.html"
+                    novalidate
+                    class="d-flex flex-column gapy-4"
+                  >
+                    <label for="name" class="form-field">
+                      <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Nome completo"
+                        class="validate-required"
+                        required
+                      />
+                      <span>Nome completo</span>
+                    </label>
+                    <label for="email" class="form-field">
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Ex: paulo@email.com"
+                        class="validate-required"
+                        required
+                      />
+                      <span>E-mail</span>
+                    </label>
+                    <label for="password" class="form-field">
+                      <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        placeholder="Crie a senha"
+                        class="validate-required"
+                        required
+                      />
+                      <span>Senha</span>
+                    </label>
+                    <label for="password" class="form-field">
+                      <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        placeholder="Digite a senha novamente"
+                        class="validate-required"
+                        required
+                      />
+                      <span>Confirmar senha</span>
+                    </label>
+                    <div class="mt-awe-12 d-flex flex-row flex-wrap gap-4">
+                      <a
+                        href="./index.html"
+                        class="
+                          text-brand-second text-decoration-none
+                          fw-bold
+                          d-flex
+                          flex-row
+                          align-items-center
+                          gapx-2
+                        "
+                      >
+                        <i data-feather="arrow-left"></i> Voltar
+                      </a>
+
+                      <button
+                        class="btn btn-brand-second text-white ms-auto"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-end-register"
+                      >
+                        CADASTRAR NOVO
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="bg-brand-first">
+      <div class="container py-awe-12">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="
+                d-flex
+                justify-content-between
+                fz-14
+                ff-mulish
+                text-white-first
+              "
+            >
+              <div><span>Versão 1.7.0</span></div>
+              <div>
+                <span>
+                  Desenvolvido por
+                  <a
+                    href="https://technine.com.br"
+                    class="text-decoration-none text-reset"
+                  >
+                    Technine
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="modal-end-register">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body p-awe-32">
+            <div class="d-flex flex-column gapy-4">
+              <div class="d-flex flex-row align-items-center">
+                <button
+                  class="ms-auto border-0 bg-transparent p-3 pe-0 pt-0"
+                  data-bs-dismiss="modal"
+                >
+                  <i data-feather="x"></i>
+                </button>
+              </div>
+              <div class="d-flex flex-column align-items-center gapy-5">
+                <div>
+                  <i
+                    data-feather="check"
+                    height="96"
+                    width="96"
+                    stroke="#3b6472"
+                  ></i>
+                </div>
+                <span class="fz-24 text-center text-gray-fourth">
+                  Usuário cadastrado com sucesso!
+                </span>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="
+                    btn btn-outline-brand-second
+                    text-white-hover
+                    px-awe-56
+                    fw-bold
+                  "
+                  href="./index.html"
+                >
+                  OK
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/113c46960f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../../dist/js/index.js"></script>
+  </body>
+</html>

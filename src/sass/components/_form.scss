@@ -22,9 +22,9 @@
 
     &.icon {
       background-repeat: no-repeat;
-      background-position: 14px center;
-      background-size: 24px 24px;
-      padding-left: calc(2 * 14px + 18px);
+      background-position: $form-padding-x center;
+      background-size: $form-input-icon-size;
+      padding-left: calc(2 * #{$form-padding-x} + #{$form-input-icon-size});
 
       &.icon-email {
         background-image: url('../image/icons/mail.svg');
@@ -79,6 +79,28 @@
     &.show {
       display: block;
     }
+  }
+  .button-post-input {
+    background: none;
+
+    border: none;
+    padding: 0;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: $form-padding-y;
+
+    img,
+    svg {
+      width: $form-post-input-size;
+      height: $form-post-input-size;
+    }
+  }
+  .input-post-button {
+    padding-right: calc(
+      ((#{$form-padding-y} * 2) + #{$form-post-input-size})
+    ) !important;
   }
 }
 

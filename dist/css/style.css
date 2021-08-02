@@ -9593,6 +9593,10 @@ fieldset:disabled .btn {
   gap: 2.5rem !important;
 }
 
+.gap-awe-56 {
+  gap: 3.5rem !important;
+}
+
 .gap-awe-64 {
   gap: 4rem !important;
 }
@@ -9773,6 +9777,10 @@ fieldset:disabled .btn {
   margin: 2.5rem !important;
 }
 
+.m-awe-56 {
+  margin: 3.5rem !important;
+}
+
 .m-awe-64 {
   margin: 4rem !important;
 }
@@ -9835,6 +9843,11 @@ fieldset:disabled .btn {
 .mx-awe-40 {
   margin-right: 2.5rem !important;
   margin-left: 2.5rem !important;
+}
+
+.mx-awe-56 {
+  margin-right: 3.5rem !important;
+  margin-left: 3.5rem !important;
 }
 
 .mx-awe-64 {
@@ -9912,6 +9925,11 @@ fieldset:disabled .btn {
   margin-bottom: 2.5rem !important;
 }
 
+.my-awe-56 {
+  margin-top: 3.5rem !important;
+  margin-bottom: 3.5rem !important;
+}
+
 .my-awe-64 {
   margin-top: 4rem !important;
   margin-bottom: 4rem !important;
@@ -9983,6 +10001,10 @@ fieldset:disabled .btn {
   margin-top: 2.5rem !important;
 }
 
+.mt-awe-56 {
+  margin-top: 3.5rem !important;
+}
+
 .mt-awe-64 {
   margin-top: 4rem !important;
 }
@@ -10041,6 +10063,10 @@ fieldset:disabled .btn {
 
 .me-awe-40 {
   margin-right: 2.5rem !important;
+}
+
+.me-awe-56 {
+  margin-right: 3.5rem !important;
 }
 
 .me-awe-64 {
@@ -10103,6 +10129,10 @@ fieldset:disabled .btn {
   margin-bottom: 2.5rem !important;
 }
 
+.mb-awe-56 {
+  margin-bottom: 3.5rem !important;
+}
+
 .mb-awe-64 {
   margin-bottom: 4rem !important;
 }
@@ -10161,6 +10191,10 @@ fieldset:disabled .btn {
 
 .ms-awe-40 {
   margin-left: 2.5rem !important;
+}
+
+.ms-awe-56 {
+  margin-left: 3.5rem !important;
 }
 
 .ms-awe-64 {
@@ -10373,6 +10407,10 @@ fieldset:disabled .btn {
   padding: 2.5rem !important;
 }
 
+.p-awe-56 {
+  padding: 3.5rem !important;
+}
+
 .p-awe-64 {
   padding: 4rem !important;
 }
@@ -10431,6 +10469,11 @@ fieldset:disabled .btn {
 .px-awe-40 {
   padding-right: 2.5rem !important;
   padding-left: 2.5rem !important;
+}
+
+.px-awe-56 {
+  padding-right: 3.5rem !important;
+  padding-left: 3.5rem !important;
 }
 
 .px-awe-64 {
@@ -10503,6 +10546,11 @@ fieldset:disabled .btn {
   padding-bottom: 2.5rem !important;
 }
 
+.py-awe-56 {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
 .py-awe-64 {
   padding-top: 4rem !important;
   padding-bottom: 4rem !important;
@@ -10569,6 +10617,10 @@ fieldset:disabled .btn {
   padding-top: 2.5rem !important;
 }
 
+.pt-awe-56 {
+  padding-top: 3.5rem !important;
+}
+
 .pt-awe-64 {
   padding-top: 4rem !important;
 }
@@ -10623,6 +10675,10 @@ fieldset:disabled .btn {
 
 .pe-awe-40 {
   padding-right: 2.5rem !important;
+}
+
+.pe-awe-56 {
+  padding-right: 3.5rem !important;
 }
 
 .pe-awe-64 {
@@ -10681,6 +10737,10 @@ fieldset:disabled .btn {
   padding-bottom: 2.5rem !important;
 }
 
+.pb-awe-56 {
+  padding-bottom: 3.5rem !important;
+}
+
 .pb-awe-64 {
   padding-bottom: 4rem !important;
 }
@@ -10735,6 +10795,10 @@ fieldset:disabled .btn {
 
 .ps-awe-40 {
   padding-left: 2.5rem !important;
+}
+
+.ps-awe-56 {
+  padding-left: 3.5rem !important;
 }
 
 .ps-awe-64 {
@@ -10811,6 +10875,10 @@ fieldset:disabled .btn {
 
 .fz-32 {
   font-size: 32px !important;
+}
+
+.fz-40 {
+  font-size: 40px !important;
 }
 
 .fz-72 {
@@ -11563,6 +11631,9 @@ fieldset:disabled .btn {
   .gap-sm-awe-40 {
     gap: 2.5rem !important;
   }
+  .gap-sm-awe-56 {
+    gap: 3.5rem !important;
+  }
   .gap-sm-awe-64 {
     gap: 4rem !important;
   }
@@ -11698,6 +11769,9 @@ fieldset:disabled .btn {
   .m-sm-awe-40 {
     margin: 2.5rem !important;
   }
+  .m-sm-awe-56 {
+    margin: 3.5rem !important;
+  }
   .m-sm-awe-64 {
     margin: 4rem !important;
   }
@@ -11746,6 +11820,10 @@ fieldset:disabled .btn {
   .mx-sm-awe-40 {
     margin-right: 2.5rem !important;
     margin-left: 2.5rem !important;
+  }
+  .mx-sm-awe-56 {
+    margin-right: 3.5rem !important;
+    margin-left: 3.5rem !important;
   }
   .mx-sm-awe-64 {
     margin-right: 4rem !important;
@@ -11807,6 +11885,10 @@ fieldset:disabled .btn {
     margin-top: 2.5rem !important;
     margin-bottom: 2.5rem !important;
   }
+  .my-sm-awe-56 {
+    margin-top: 3.5rem !important;
+    margin-bottom: 3.5rem !important;
+  }
   .my-sm-awe-64 {
     margin-top: 4rem !important;
     margin-bottom: 4rem !important;
@@ -11863,6 +11945,9 @@ fieldset:disabled .btn {
   .mt-sm-awe-40 {
     margin-top: 2.5rem !important;
   }
+  .mt-sm-awe-56 {
+    margin-top: 3.5rem !important;
+  }
   .mt-sm-awe-64 {
     margin-top: 4rem !important;
   }
@@ -11907,6 +11992,9 @@ fieldset:disabled .btn {
   }
   .me-sm-awe-40 {
     margin-right: 2.5rem !important;
+  }
+  .me-sm-awe-56 {
+    margin-right: 3.5rem !important;
   }
   .me-sm-awe-64 {
     margin-right: 4rem !important;
@@ -11953,6 +12041,9 @@ fieldset:disabled .btn {
   .mb-sm-awe-40 {
     margin-bottom: 2.5rem !important;
   }
+  .mb-sm-awe-56 {
+    margin-bottom: 3.5rem !important;
+  }
   .mb-sm-awe-64 {
     margin-bottom: 4rem !important;
   }
@@ -11997,6 +12088,9 @@ fieldset:disabled .btn {
   }
   .ms-sm-awe-40 {
     margin-left: 2.5rem !important;
+  }
+  .ms-sm-awe-56 {
+    margin-left: 3.5rem !important;
   }
   .ms-sm-awe-64 {
     margin-left: 4rem !important;
@@ -12158,6 +12252,9 @@ fieldset:disabled .btn {
   .p-sm-awe-40 {
     padding: 2.5rem !important;
   }
+  .p-sm-awe-56 {
+    padding: 3.5rem !important;
+  }
   .p-sm-awe-64 {
     padding: 4rem !important;
   }
@@ -12203,6 +12300,10 @@ fieldset:disabled .btn {
   .px-sm-awe-40 {
     padding-right: 2.5rem !important;
     padding-left: 2.5rem !important;
+  }
+  .px-sm-awe-56 {
+    padding-right: 3.5rem !important;
+    padding-left: 3.5rem !important;
   }
   .px-sm-awe-64 {
     padding-right: 4rem !important;
@@ -12260,6 +12361,10 @@ fieldset:disabled .btn {
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;
   }
+  .py-sm-awe-56 {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
   .py-sm-awe-64 {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
@@ -12312,6 +12417,9 @@ fieldset:disabled .btn {
   .pt-sm-awe-40 {
     padding-top: 2.5rem !important;
   }
+  .pt-sm-awe-56 {
+    padding-top: 3.5rem !important;
+  }
   .pt-sm-awe-64 {
     padding-top: 4rem !important;
   }
@@ -12353,6 +12461,9 @@ fieldset:disabled .btn {
   }
   .pe-sm-awe-40 {
     padding-right: 2.5rem !important;
+  }
+  .pe-sm-awe-56 {
+    padding-right: 3.5rem !important;
   }
   .pe-sm-awe-64 {
     padding-right: 4rem !important;
@@ -12396,6 +12507,9 @@ fieldset:disabled .btn {
   .pb-sm-awe-40 {
     padding-bottom: 2.5rem !important;
   }
+  .pb-sm-awe-56 {
+    padding-bottom: 3.5rem !important;
+  }
   .pb-sm-awe-64 {
     padding-bottom: 4rem !important;
   }
@@ -12437,6 +12551,9 @@ fieldset:disabled .btn {
   }
   .ps-sm-awe-40 {
     padding-left: 2.5rem !important;
+  }
+  .ps-sm-awe-56 {
+    padding-left: 3.5rem !important;
   }
   .ps-sm-awe-64 {
     padding-left: 4rem !important;
@@ -12488,6 +12605,9 @@ fieldset:disabled .btn {
   }
   .fz-sm-32 {
     font-size: 32px !important;
+  }
+  .fz-sm-40 {
+    font-size: 40px !important;
   }
   .fz-sm-72 {
     font-size: 72px !important;
@@ -12617,6 +12737,9 @@ fieldset:disabled .btn {
   }
   .gap-md-awe-40 {
     gap: 2.5rem !important;
+  }
+  .gap-md-awe-56 {
+    gap: 3.5rem !important;
   }
   .gap-md-awe-64 {
     gap: 4rem !important;
@@ -12753,6 +12876,9 @@ fieldset:disabled .btn {
   .m-md-awe-40 {
     margin: 2.5rem !important;
   }
+  .m-md-awe-56 {
+    margin: 3.5rem !important;
+  }
   .m-md-awe-64 {
     margin: 4rem !important;
   }
@@ -12801,6 +12927,10 @@ fieldset:disabled .btn {
   .mx-md-awe-40 {
     margin-right: 2.5rem !important;
     margin-left: 2.5rem !important;
+  }
+  .mx-md-awe-56 {
+    margin-right: 3.5rem !important;
+    margin-left: 3.5rem !important;
   }
   .mx-md-awe-64 {
     margin-right: 4rem !important;
@@ -12862,6 +12992,10 @@ fieldset:disabled .btn {
     margin-top: 2.5rem !important;
     margin-bottom: 2.5rem !important;
   }
+  .my-md-awe-56 {
+    margin-top: 3.5rem !important;
+    margin-bottom: 3.5rem !important;
+  }
   .my-md-awe-64 {
     margin-top: 4rem !important;
     margin-bottom: 4rem !important;
@@ -12918,6 +13052,9 @@ fieldset:disabled .btn {
   .mt-md-awe-40 {
     margin-top: 2.5rem !important;
   }
+  .mt-md-awe-56 {
+    margin-top: 3.5rem !important;
+  }
   .mt-md-awe-64 {
     margin-top: 4rem !important;
   }
@@ -12962,6 +13099,9 @@ fieldset:disabled .btn {
   }
   .me-md-awe-40 {
     margin-right: 2.5rem !important;
+  }
+  .me-md-awe-56 {
+    margin-right: 3.5rem !important;
   }
   .me-md-awe-64 {
     margin-right: 4rem !important;
@@ -13008,6 +13148,9 @@ fieldset:disabled .btn {
   .mb-md-awe-40 {
     margin-bottom: 2.5rem !important;
   }
+  .mb-md-awe-56 {
+    margin-bottom: 3.5rem !important;
+  }
   .mb-md-awe-64 {
     margin-bottom: 4rem !important;
   }
@@ -13052,6 +13195,9 @@ fieldset:disabled .btn {
   }
   .ms-md-awe-40 {
     margin-left: 2.5rem !important;
+  }
+  .ms-md-awe-56 {
+    margin-left: 3.5rem !important;
   }
   .ms-md-awe-64 {
     margin-left: 4rem !important;
@@ -13213,6 +13359,9 @@ fieldset:disabled .btn {
   .p-md-awe-40 {
     padding: 2.5rem !important;
   }
+  .p-md-awe-56 {
+    padding: 3.5rem !important;
+  }
   .p-md-awe-64 {
     padding: 4rem !important;
   }
@@ -13258,6 +13407,10 @@ fieldset:disabled .btn {
   .px-md-awe-40 {
     padding-right: 2.5rem !important;
     padding-left: 2.5rem !important;
+  }
+  .px-md-awe-56 {
+    padding-right: 3.5rem !important;
+    padding-left: 3.5rem !important;
   }
   .px-md-awe-64 {
     padding-right: 4rem !important;
@@ -13315,6 +13468,10 @@ fieldset:disabled .btn {
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;
   }
+  .py-md-awe-56 {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
   .py-md-awe-64 {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
@@ -13367,6 +13524,9 @@ fieldset:disabled .btn {
   .pt-md-awe-40 {
     padding-top: 2.5rem !important;
   }
+  .pt-md-awe-56 {
+    padding-top: 3.5rem !important;
+  }
   .pt-md-awe-64 {
     padding-top: 4rem !important;
   }
@@ -13408,6 +13568,9 @@ fieldset:disabled .btn {
   }
   .pe-md-awe-40 {
     padding-right: 2.5rem !important;
+  }
+  .pe-md-awe-56 {
+    padding-right: 3.5rem !important;
   }
   .pe-md-awe-64 {
     padding-right: 4rem !important;
@@ -13451,6 +13614,9 @@ fieldset:disabled .btn {
   .pb-md-awe-40 {
     padding-bottom: 2.5rem !important;
   }
+  .pb-md-awe-56 {
+    padding-bottom: 3.5rem !important;
+  }
   .pb-md-awe-64 {
     padding-bottom: 4rem !important;
   }
@@ -13492,6 +13658,9 @@ fieldset:disabled .btn {
   }
   .ps-md-awe-40 {
     padding-left: 2.5rem !important;
+  }
+  .ps-md-awe-56 {
+    padding-left: 3.5rem !important;
   }
   .ps-md-awe-64 {
     padding-left: 4rem !important;
@@ -13543,6 +13712,9 @@ fieldset:disabled .btn {
   }
   .fz-md-32 {
     font-size: 32px !important;
+  }
+  .fz-md-40 {
+    font-size: 40px !important;
   }
   .fz-md-72 {
     font-size: 72px !important;
@@ -13672,6 +13844,9 @@ fieldset:disabled .btn {
   }
   .gap-lg-awe-40 {
     gap: 2.5rem !important;
+  }
+  .gap-lg-awe-56 {
+    gap: 3.5rem !important;
   }
   .gap-lg-awe-64 {
     gap: 4rem !important;
@@ -13808,6 +13983,9 @@ fieldset:disabled .btn {
   .m-lg-awe-40 {
     margin: 2.5rem !important;
   }
+  .m-lg-awe-56 {
+    margin: 3.5rem !important;
+  }
   .m-lg-awe-64 {
     margin: 4rem !important;
   }
@@ -13856,6 +14034,10 @@ fieldset:disabled .btn {
   .mx-lg-awe-40 {
     margin-right: 2.5rem !important;
     margin-left: 2.5rem !important;
+  }
+  .mx-lg-awe-56 {
+    margin-right: 3.5rem !important;
+    margin-left: 3.5rem !important;
   }
   .mx-lg-awe-64 {
     margin-right: 4rem !important;
@@ -13917,6 +14099,10 @@ fieldset:disabled .btn {
     margin-top: 2.5rem !important;
     margin-bottom: 2.5rem !important;
   }
+  .my-lg-awe-56 {
+    margin-top: 3.5rem !important;
+    margin-bottom: 3.5rem !important;
+  }
   .my-lg-awe-64 {
     margin-top: 4rem !important;
     margin-bottom: 4rem !important;
@@ -13973,6 +14159,9 @@ fieldset:disabled .btn {
   .mt-lg-awe-40 {
     margin-top: 2.5rem !important;
   }
+  .mt-lg-awe-56 {
+    margin-top: 3.5rem !important;
+  }
   .mt-lg-awe-64 {
     margin-top: 4rem !important;
   }
@@ -14017,6 +14206,9 @@ fieldset:disabled .btn {
   }
   .me-lg-awe-40 {
     margin-right: 2.5rem !important;
+  }
+  .me-lg-awe-56 {
+    margin-right: 3.5rem !important;
   }
   .me-lg-awe-64 {
     margin-right: 4rem !important;
@@ -14063,6 +14255,9 @@ fieldset:disabled .btn {
   .mb-lg-awe-40 {
     margin-bottom: 2.5rem !important;
   }
+  .mb-lg-awe-56 {
+    margin-bottom: 3.5rem !important;
+  }
   .mb-lg-awe-64 {
     margin-bottom: 4rem !important;
   }
@@ -14107,6 +14302,9 @@ fieldset:disabled .btn {
   }
   .ms-lg-awe-40 {
     margin-left: 2.5rem !important;
+  }
+  .ms-lg-awe-56 {
+    margin-left: 3.5rem !important;
   }
   .ms-lg-awe-64 {
     margin-left: 4rem !important;
@@ -14268,6 +14466,9 @@ fieldset:disabled .btn {
   .p-lg-awe-40 {
     padding: 2.5rem !important;
   }
+  .p-lg-awe-56 {
+    padding: 3.5rem !important;
+  }
   .p-lg-awe-64 {
     padding: 4rem !important;
   }
@@ -14313,6 +14514,10 @@ fieldset:disabled .btn {
   .px-lg-awe-40 {
     padding-right: 2.5rem !important;
     padding-left: 2.5rem !important;
+  }
+  .px-lg-awe-56 {
+    padding-right: 3.5rem !important;
+    padding-left: 3.5rem !important;
   }
   .px-lg-awe-64 {
     padding-right: 4rem !important;
@@ -14370,6 +14575,10 @@ fieldset:disabled .btn {
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;
   }
+  .py-lg-awe-56 {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
   .py-lg-awe-64 {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
@@ -14422,6 +14631,9 @@ fieldset:disabled .btn {
   .pt-lg-awe-40 {
     padding-top: 2.5rem !important;
   }
+  .pt-lg-awe-56 {
+    padding-top: 3.5rem !important;
+  }
   .pt-lg-awe-64 {
     padding-top: 4rem !important;
   }
@@ -14463,6 +14675,9 @@ fieldset:disabled .btn {
   }
   .pe-lg-awe-40 {
     padding-right: 2.5rem !important;
+  }
+  .pe-lg-awe-56 {
+    padding-right: 3.5rem !important;
   }
   .pe-lg-awe-64 {
     padding-right: 4rem !important;
@@ -14506,6 +14721,9 @@ fieldset:disabled .btn {
   .pb-lg-awe-40 {
     padding-bottom: 2.5rem !important;
   }
+  .pb-lg-awe-56 {
+    padding-bottom: 3.5rem !important;
+  }
   .pb-lg-awe-64 {
     padding-bottom: 4rem !important;
   }
@@ -14547,6 +14765,9 @@ fieldset:disabled .btn {
   }
   .ps-lg-awe-40 {
     padding-left: 2.5rem !important;
+  }
+  .ps-lg-awe-56 {
+    padding-left: 3.5rem !important;
   }
   .ps-lg-awe-64 {
     padding-left: 4rem !important;
@@ -14598,6 +14819,9 @@ fieldset:disabled .btn {
   }
   .fz-lg-32 {
     font-size: 32px !important;
+  }
+  .fz-lg-40 {
+    font-size: 40px !important;
   }
   .fz-lg-72 {
     font-size: 72px !important;
@@ -14727,6 +14951,9 @@ fieldset:disabled .btn {
   }
   .gap-xl-awe-40 {
     gap: 2.5rem !important;
+  }
+  .gap-xl-awe-56 {
+    gap: 3.5rem !important;
   }
   .gap-xl-awe-64 {
     gap: 4rem !important;
@@ -14863,6 +15090,9 @@ fieldset:disabled .btn {
   .m-xl-awe-40 {
     margin: 2.5rem !important;
   }
+  .m-xl-awe-56 {
+    margin: 3.5rem !important;
+  }
   .m-xl-awe-64 {
     margin: 4rem !important;
   }
@@ -14911,6 +15141,10 @@ fieldset:disabled .btn {
   .mx-xl-awe-40 {
     margin-right: 2.5rem !important;
     margin-left: 2.5rem !important;
+  }
+  .mx-xl-awe-56 {
+    margin-right: 3.5rem !important;
+    margin-left: 3.5rem !important;
   }
   .mx-xl-awe-64 {
     margin-right: 4rem !important;
@@ -14972,6 +15206,10 @@ fieldset:disabled .btn {
     margin-top: 2.5rem !important;
     margin-bottom: 2.5rem !important;
   }
+  .my-xl-awe-56 {
+    margin-top: 3.5rem !important;
+    margin-bottom: 3.5rem !important;
+  }
   .my-xl-awe-64 {
     margin-top: 4rem !important;
     margin-bottom: 4rem !important;
@@ -15028,6 +15266,9 @@ fieldset:disabled .btn {
   .mt-xl-awe-40 {
     margin-top: 2.5rem !important;
   }
+  .mt-xl-awe-56 {
+    margin-top: 3.5rem !important;
+  }
   .mt-xl-awe-64 {
     margin-top: 4rem !important;
   }
@@ -15072,6 +15313,9 @@ fieldset:disabled .btn {
   }
   .me-xl-awe-40 {
     margin-right: 2.5rem !important;
+  }
+  .me-xl-awe-56 {
+    margin-right: 3.5rem !important;
   }
   .me-xl-awe-64 {
     margin-right: 4rem !important;
@@ -15118,6 +15362,9 @@ fieldset:disabled .btn {
   .mb-xl-awe-40 {
     margin-bottom: 2.5rem !important;
   }
+  .mb-xl-awe-56 {
+    margin-bottom: 3.5rem !important;
+  }
   .mb-xl-awe-64 {
     margin-bottom: 4rem !important;
   }
@@ -15162,6 +15409,9 @@ fieldset:disabled .btn {
   }
   .ms-xl-awe-40 {
     margin-left: 2.5rem !important;
+  }
+  .ms-xl-awe-56 {
+    margin-left: 3.5rem !important;
   }
   .ms-xl-awe-64 {
     margin-left: 4rem !important;
@@ -15323,6 +15573,9 @@ fieldset:disabled .btn {
   .p-xl-awe-40 {
     padding: 2.5rem !important;
   }
+  .p-xl-awe-56 {
+    padding: 3.5rem !important;
+  }
   .p-xl-awe-64 {
     padding: 4rem !important;
   }
@@ -15368,6 +15621,10 @@ fieldset:disabled .btn {
   .px-xl-awe-40 {
     padding-right: 2.5rem !important;
     padding-left: 2.5rem !important;
+  }
+  .px-xl-awe-56 {
+    padding-right: 3.5rem !important;
+    padding-left: 3.5rem !important;
   }
   .px-xl-awe-64 {
     padding-right: 4rem !important;
@@ -15425,6 +15682,10 @@ fieldset:disabled .btn {
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;
   }
+  .py-xl-awe-56 {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
   .py-xl-awe-64 {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
@@ -15477,6 +15738,9 @@ fieldset:disabled .btn {
   .pt-xl-awe-40 {
     padding-top: 2.5rem !important;
   }
+  .pt-xl-awe-56 {
+    padding-top: 3.5rem !important;
+  }
   .pt-xl-awe-64 {
     padding-top: 4rem !important;
   }
@@ -15518,6 +15782,9 @@ fieldset:disabled .btn {
   }
   .pe-xl-awe-40 {
     padding-right: 2.5rem !important;
+  }
+  .pe-xl-awe-56 {
+    padding-right: 3.5rem !important;
   }
   .pe-xl-awe-64 {
     padding-right: 4rem !important;
@@ -15561,6 +15828,9 @@ fieldset:disabled .btn {
   .pb-xl-awe-40 {
     padding-bottom: 2.5rem !important;
   }
+  .pb-xl-awe-56 {
+    padding-bottom: 3.5rem !important;
+  }
   .pb-xl-awe-64 {
     padding-bottom: 4rem !important;
   }
@@ -15602,6 +15872,9 @@ fieldset:disabled .btn {
   }
   .ps-xl-awe-40 {
     padding-left: 2.5rem !important;
+  }
+  .ps-xl-awe-56 {
+    padding-left: 3.5rem !important;
   }
   .ps-xl-awe-64 {
     padding-left: 4rem !important;
@@ -15653,6 +15926,9 @@ fieldset:disabled .btn {
   }
   .fz-xl-32 {
     font-size: 32px !important;
+  }
+  .fz-xl-40 {
+    font-size: 40px !important;
   }
   .fz-xl-72 {
     font-size: 72px !important;
@@ -15782,6 +16058,9 @@ fieldset:disabled .btn {
   }
   .gap-xxl-awe-40 {
     gap: 2.5rem !important;
+  }
+  .gap-xxl-awe-56 {
+    gap: 3.5rem !important;
   }
   .gap-xxl-awe-64 {
     gap: 4rem !important;
@@ -15918,6 +16197,9 @@ fieldset:disabled .btn {
   .m-xxl-awe-40 {
     margin: 2.5rem !important;
   }
+  .m-xxl-awe-56 {
+    margin: 3.5rem !important;
+  }
   .m-xxl-awe-64 {
     margin: 4rem !important;
   }
@@ -15966,6 +16248,10 @@ fieldset:disabled .btn {
   .mx-xxl-awe-40 {
     margin-right: 2.5rem !important;
     margin-left: 2.5rem !important;
+  }
+  .mx-xxl-awe-56 {
+    margin-right: 3.5rem !important;
+    margin-left: 3.5rem !important;
   }
   .mx-xxl-awe-64 {
     margin-right: 4rem !important;
@@ -16027,6 +16313,10 @@ fieldset:disabled .btn {
     margin-top: 2.5rem !important;
     margin-bottom: 2.5rem !important;
   }
+  .my-xxl-awe-56 {
+    margin-top: 3.5rem !important;
+    margin-bottom: 3.5rem !important;
+  }
   .my-xxl-awe-64 {
     margin-top: 4rem !important;
     margin-bottom: 4rem !important;
@@ -16083,6 +16373,9 @@ fieldset:disabled .btn {
   .mt-xxl-awe-40 {
     margin-top: 2.5rem !important;
   }
+  .mt-xxl-awe-56 {
+    margin-top: 3.5rem !important;
+  }
   .mt-xxl-awe-64 {
     margin-top: 4rem !important;
   }
@@ -16127,6 +16420,9 @@ fieldset:disabled .btn {
   }
   .me-xxl-awe-40 {
     margin-right: 2.5rem !important;
+  }
+  .me-xxl-awe-56 {
+    margin-right: 3.5rem !important;
   }
   .me-xxl-awe-64 {
     margin-right: 4rem !important;
@@ -16173,6 +16469,9 @@ fieldset:disabled .btn {
   .mb-xxl-awe-40 {
     margin-bottom: 2.5rem !important;
   }
+  .mb-xxl-awe-56 {
+    margin-bottom: 3.5rem !important;
+  }
   .mb-xxl-awe-64 {
     margin-bottom: 4rem !important;
   }
@@ -16217,6 +16516,9 @@ fieldset:disabled .btn {
   }
   .ms-xxl-awe-40 {
     margin-left: 2.5rem !important;
+  }
+  .ms-xxl-awe-56 {
+    margin-left: 3.5rem !important;
   }
   .ms-xxl-awe-64 {
     margin-left: 4rem !important;
@@ -16378,6 +16680,9 @@ fieldset:disabled .btn {
   .p-xxl-awe-40 {
     padding: 2.5rem !important;
   }
+  .p-xxl-awe-56 {
+    padding: 3.5rem !important;
+  }
   .p-xxl-awe-64 {
     padding: 4rem !important;
   }
@@ -16423,6 +16728,10 @@ fieldset:disabled .btn {
   .px-xxl-awe-40 {
     padding-right: 2.5rem !important;
     padding-left: 2.5rem !important;
+  }
+  .px-xxl-awe-56 {
+    padding-right: 3.5rem !important;
+    padding-left: 3.5rem !important;
   }
   .px-xxl-awe-64 {
     padding-right: 4rem !important;
@@ -16480,6 +16789,10 @@ fieldset:disabled .btn {
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;
   }
+  .py-xxl-awe-56 {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
   .py-xxl-awe-64 {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
@@ -16532,6 +16845,9 @@ fieldset:disabled .btn {
   .pt-xxl-awe-40 {
     padding-top: 2.5rem !important;
   }
+  .pt-xxl-awe-56 {
+    padding-top: 3.5rem !important;
+  }
   .pt-xxl-awe-64 {
     padding-top: 4rem !important;
   }
@@ -16573,6 +16889,9 @@ fieldset:disabled .btn {
   }
   .pe-xxl-awe-40 {
     padding-right: 2.5rem !important;
+  }
+  .pe-xxl-awe-56 {
+    padding-right: 3.5rem !important;
   }
   .pe-xxl-awe-64 {
     padding-right: 4rem !important;
@@ -16616,6 +16935,9 @@ fieldset:disabled .btn {
   .pb-xxl-awe-40 {
     padding-bottom: 2.5rem !important;
   }
+  .pb-xxl-awe-56 {
+    padding-bottom: 3.5rem !important;
+  }
   .pb-xxl-awe-64 {
     padding-bottom: 4rem !important;
   }
@@ -16657,6 +16979,9 @@ fieldset:disabled .btn {
   }
   .ps-xxl-awe-40 {
     padding-left: 2.5rem !important;
+  }
+  .ps-xxl-awe-56 {
+    padding-left: 3.5rem !important;
   }
   .ps-xxl-awe-64 {
     padding-left: 4rem !important;
@@ -16708,6 +17033,9 @@ fieldset:disabled .btn {
   }
   .fz-xxl-32 {
     font-size: 32px !important;
+  }
+  .fz-xxl-40 {
+    font-size: 40px !important;
   }
   .fz-xxl-72 {
     font-size: 72px !important;
@@ -16894,8 +17222,8 @@ input:checked + .card .title,
 .form-field select.icon {
   background-repeat: no-repeat;
   background-position: 14px center;
-  background-size: 24px 24px;
-  padding-left: calc(2 * 14px + 18px);
+  background-size: 24px;
+  padding-left: calc(2 * 14px + 24px);
 }
 
 .form-field input.icon.icon-email,
@@ -16958,6 +17286,26 @@ input:checked + .card .title,
 
 .form-field .input-feedback.show {
   display: block;
+}
+
+.form-field .button-post-input {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 12px;
+}
+
+.form-field .button-post-input img,
+.form-field .button-post-input svg {
+  width: 22px;
+  height: 22px;
+}
+
+.form-field .input-post-button {
+  padding-right: calc( ((12px * 2) + 22px)) !important;
 }
 
 .input-file {

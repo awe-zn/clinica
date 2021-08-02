@@ -74,6 +74,7 @@ $awe-spacers: (
   'awe-12': $spacer * 0.75,
   'awe-32': $spacer * 2,
   'awe-40': $spacer * 2.5,
+  'awe-56': $spacer * 3.5,
   'awe-64': $spacer * 4,
   'awe-80': $spacer * 5,
   'awe-96': $spacer * 6,
@@ -83,7 +84,7 @@ $enable-negative-margins: true;
 
 // font features variables definition
 $font-family-sans-serif: 'Mulish', 'Roboto', sans-serif;
-$font-sizes: (12: 12px, 14: 14px, 16: 16px, 18: 18px, 20: 20px, 24: 24px, 32: 32px, 72: 72px);
+$font-sizes: (12: 12px, 14: 14px, 16: 16px, 18: 18px, 20: 20px, 24: 24px, 32: 32px, 40: 40px, 72: 72px);
 $font-families: (mulish: 'Mulish', roboto: 'Roboto');
 
 $font-weight-thin:          100;
@@ -119,6 +120,8 @@ $form-input-size: 14px;
 $form-required-color: $red-first;
 $form-padding-x: 14px;
 $form-padding-y: 12px;
+$form-input-icon-size: 24px;
+$form-post-input-size: 22px;
 
 $form-check-input-checked-bg-color: $brand-second;
 $form-check-input-border: 2px solid rgba($gray-tenth, 0.25);

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica - Registrar atendimento</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="../../dist/image/favicon.ico" />
+
+    <link rel="stylesheet" href="../../dist/css/style.css" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <header class="d-flex justify-content-center p-4">
+        <div class="logo-area">
+          <img
+            src="../../dist/image/logo-blue.svg"
+            alt="Logo"
+            class="img-fluid img-logo"
+          />
+        </div>
+      </header>
+      <nav class="links">
+        <ul>
+          <li>
+            <a href="./"> <i data-feather="home" class="icon"></i>Dashboard </a>
+          </li>
+          <li>
+            <a href="#"> <i data-feather="grid" class="icon"></i>Planos </a>
+          </li>
+          <li>
+            <a href="./subscribers.html">
+              <i data-feather="edit-3" class="icon"></i>Assinaturas
+            </a>
+          </li>
+          <li>
+            <a href="./clients/">
+              <i data-feather="users" class="icon"></i>Clientes
+            </a>
+          </li>
+          <li class="divider">
+            <a href="./register-service.html" class="active">
+              <i data-feather="message-square" class="icon"></i>
+              Registrar atendimento
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i data-feather="users" class="icon"></i>Vendas </a>
+          </li>
+          <li>
+            <a href="#">
+              <i data-feather="file-plus" class="icon"></i>Pré-cadastro
+            </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <i data-feather="award" class="icon"></i>Ranking de vendas
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i data-feather="briefcase" class="icon"></i>Empresas
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i data-feather="star" class="icon"></i>Benefícios </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <i data-feather="file-text" class="icon"></i>Contratos
+            </a>
+          </li>
+          <li>
+            <a href="./profile.html">
+              <i data-feather="user" class="icon"></i>Meu perfil
+            </a>
+          </li>
+          <li class="divider">
+            <a href="#">
+              <i data-feather="users" class="icon"></i>Administradoes
+            </a>
+          </li>
+          <li>
+            <a href="./login/index.html" class="exit">
+              <i data-feather="log-out" class="icon"></i>Sair
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="page-content">
+      <header class="bg-brand-first">
+        <div class="container py-awe-32">
+          <div class="row">
+            <div class="col">
+              <div class="d-flex align-items-center h-100">
+                <button
+                  class="border-0 bg-transparent toggle-class hamburguer"
+                  data-toggle="hide"
+                  data-target=".sidebar"
+                >
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </button>
+              </div>
+            </div>
+            <div class="col-auto ml-auto">
+              <div class="d-flex justify-content-end align-items-center">
+                <a href="#" class="text-decoration-none">
+                  <img
+                    src="../../dist/image/avatar.png"
+                    alt="Avatar do usuário"
+                    class="img-fluid img-avatar me-2"
+                  />
+                  <span class="text-white ff-mulish fw-semi-bold name-user">
+                    Arthur Comiere
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="bg-brand-first">
+          <div class="container pt-3 pb-awe-96">
+            <div class="row">
+              <div class="col-12">
+                <div>
+                  <h1 class="fz-32 text-white fw-bold m-0">
+                    Registrar atendimento
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mt-n5">
+          <div class="container">
+            <div class="row row-cols-1 gapy-12">
+              <div class="col">
+                <div class="px-awe-32 py-awe-56 bg-white rounded shadow h-100">
+                  <div class="row gapy-3">
+                    <div class="col-lg-6 order-1 order-lg-0">
+                      <div
+                        class="
+                          d-flex
+                          flex-column
+                          justify-content-center
+                          h-100
+                          gapy-3
+                        "
+                      >
+                        <h2 class="fz-24 text-gray-tenth mt-auto mb-0">
+                          Busque pelo
+                          <span class="fz-40">número do cartão</span> do cliente
+                        </h2>
+                        <form action="#" class="mt-auto">
+                          <label for="search" class="form-field">
+                            <input
+                              id="search"
+                              name="search"
+                              type="text"
+                              placeholder="Buscar"
+                              class="input-post-button"
+                            />
+                            <button class="button-post-input">
+                              <i data-feather="search" stroke="#58c4cb"></i>
+                            </button>
+                            <span>Busque pelo número do cartão ou CPF</span>
+                          </label>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 ms-auto order-0">
+                      <div>
+                        <img
+                          src="../../dist/image/card-search.svg"
+                          alt="Cartao"
+                          class="img-fluid w-100"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="p-awe-32 bg-white rounded shadow">
+                  <h2 class="text-gray-fourth fz-24 mb-4">
+                    Selecione o beneficiário
+                  </h2>
+
+                  <div class="row row-cols-1 row-cols-lg-2 gapy-3">
+                    <div class="col">
+                      <div
+                        class="
+                          border border-gray-fifth
+                          p-4
+                          rounded
+                          d-flex
+                          flex-column
+                        "
+                      >
+                        <span class="text-brand-second fz-20 fw-bold mb-awe-32">
+                          Maria Josefina Gomes Maia
+                        </span>
+
+                        <div class="row row-cols-1 row-cols-lg-2 gapy-4">
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">CPF</span>
+                              <span class="text-gray-eleventh">
+                                834.872.914-97
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">E-mail</span>
+                              <span class="text-gray-eleventh">
+                                ricardo@gmail.com
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">
+                                Data de nascimento
+                              </span>
+                              <span class="text-gray-eleventh">12/12/2001</span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">
+                                Telefone
+                              </span>
+                              <span class="text-gray-eleventh">
+                                9 9999-9999
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div
+                        class="
+                          border border-gray-fifth
+                          p-4
+                          rounded
+                          d-flex
+                          flex-column
+                          align-items-start
+                        "
+                      >
+                        <span class="text-brand-second fz-20 fw-bold">
+                          Andréa Carvalho de Menezes
+                        </span>
+                        <span
+                          class="
+                            badge
+                            rounded-pill
+                            text-green-first
+                            bg-green-first-opac
+                            mb-awe-32
+                          "
+                        >
+                          Dependente
+                        </span>
+
+                        <div class="row row-cols-1 row-cols-lg-2 gapy-4">
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">CPF</span>
+                              <span class="text-gray-eleventh">
+                                834.872.914-97
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">E-mail</span>
+                              <span class="text-gray-eleventh">
+                                ricardo@gmail.com
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">
+                                Data de nascimento
+                              </span>
+                              <span class="text-gray-eleventh">12/12/2001</span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">
+                                Telefone
+                              </span>
+                              <span class="text-gray-eleventh">
+                                9 9999-9999
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="d-flex flex-column">
+                              <span class="fz-14 text-gray-sixth">
+                                Parentesco
+                              </span>
+                              <span class="text-gray-eleventh">Filho</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div
+                  class="
+                    p-awe-32
+                    rounded
+                    shadow
+                    bg-white
+                    d-flex
+                    flex-column
+                    gapy-6
+                  "
+                >
+                  <h2 class="text-gray-fourth fz-24">
+                    Selecione o beneficiário
+                  </h2>
+
+                  <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-8">
+                      <form action="#" class="mt-auto">
+                        <label for="search" class="form-field">
+                          <input
+                            id="search"
+                            name="search"
+                            type="text"
+                            placeholder="Buscar"
+                            class="input-post-button"
+                          />
+                          <button class="button-post-input">
+                            <i data-feather="search" stroke="#58c4cb"></i>
+                          </button>
+                          <span>Busque pelo benefício</span>
+                        </label>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xl-8 col-lg-10">
+                      <div class="row row-cols-1 row-cols-sm-2 gapy-2">
+                        <div class="col">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="option1"
+                            />
+                            <label
+                              class="form-check-label ff-mulish text-gray-tenth"
+                              for="option1"
+                            >
+                              Consulta Clínica Geral
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="option2"
+                            />
+                            <label
+                              class="form-check-label ff-mulish text-gray-tenth"
+                              for="option2"
+                            >
+                              Consulta Dermatológica
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="option3"
+                            />
+                            <label
+                              class="form-check-label ff-mulish text-gray-tenth"
+                              for="option3"
+                            >
+                              Consulta Infectológica
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="option4"
+                            />
+                            <label
+                              class="form-check-label ff-mulish text-gray-tenth"
+                              for="option4"
+                            >
+                              Consulta
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div
+                  class="
+                    d-flex
+                    flex-row
+                    justify-content-end
+                    flex-wrap
+                    justify-content-end
+                    gapy-1
+                    gapx-3
+                  "
+                >
+                  <a
+                    href="./clients/"
+                    class="btn btn-outline-gray-fourth fw-semi-bold"
+                  >
+                    CANCELAR
+                  </a>
+                  <button
+                    class="btn btn-green-first text-white fw-semi-bold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-end-register"
+                  >
+                    REGISTRAR ATENDIMENTO
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="bg-brand-first">
+      <div class="container py-awe-12">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="
+                d-flex
+                justify-content-between
+                fz-14
+                ff-mulish
+                text-white-first
+              "
+            >
+              <div><span>Versão 1.7.0</span></div>
+              <div>
+                <span>
+                  Desenvolvido por
+                  <a
+                    href="https://technine.com.br"
+                    class="text-decoration-none text-reset"
+                  >
+                    Technine
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="modal-end-register">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body p-awe-32">
+            <div class="d-flex flex-column gapy-4">
+              <div class="d-flex flex-row align-items-center">
+                <button
+                  class="ms-auto border-0 bg-transparent p-3 pe-0 pt-0"
+                  data-bs-dismiss="modal"
+                >
+                  <i data-feather="x"></i>
+                </button>
+              </div>
+              <div class="d-flex flex-column align-items-center gapy-5">
+                <div>
+                  <i
+                    data-feather="check"
+                    height="96"
+                    width="96"
+                    stroke="#3b6472"
+                  ></i>
+                </div>
+                <span class="fz-24 text-center text-gray-fourth">
+                  Registro de atendimento realizado com sucesso!
+                </span>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button
+                  class="
+                    btn btn-outline-brand-second
+                    text-white-hover
+                    px-awe-56
+                    fw-bold
+                  "
+                  data-bs-dismiss="modal"
+                >
+                  OK
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/113c46960f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../dist/js/index.js"></script>
+  </body>
+</html>
