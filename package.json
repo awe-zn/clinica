@@ -21,6 +21,7 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^29.1.0",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "5.0.2",
     "feather-icons": "^4.28.0",

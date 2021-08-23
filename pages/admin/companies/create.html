@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clínica - Vendas - Editar</title>
+    <title>Clínica - Empresa - Cadastrar nova</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -58,7 +58,7 @@
             </a>
           </li>
           <li>
-            <a href="../sales/" class="active">
+            <a href="../sales/">
               <i data-feather="users" class="icon"></i> Vendas
             </a>
           </li>
@@ -73,7 +73,7 @@
             </a>
           </li>
           <li>
-            <a href="../companies/">
+            <a href="../companies/" class="active">
               <i data-feather="briefcase" class="icon"></i>Empresas
             </a>
           </li>
@@ -144,13 +144,15 @@
             <div class="row">
               <div class="col-12">
                 <div>
-                  <h1 class="fz-32 text-white fw-bold mb-awe-12">Editar</h1>
+                  <h1 class="fz-32 text-white fw-bold mb-awe-12">
+                    Adicionar empresa
+                  </h1>
                   <nav>
                     <ol class="breadcrumb m-0">
                       <li class="breadcrumb-item">
-                        <a href="#">Vendas</a>
+                        <a href="./">Empresas</a>
                       </li>
-                      <li class="breadcrumb-item active">Editar</li>
+                      <li class="breadcrumb-item active">Adicionar empresa</li>
                     </ol>
                   </nav>
                 </div>
@@ -165,34 +167,61 @@
                 <div
                   class="rounded bg-white shadow p-awe-32 d-flex flex-column"
                 >
-                  <h2 class="fz-24 text-gray-fourth mb-4">Dados de acesso</h2>
                   <form
                     action="./index.html"
-                    class="d-flex flex-column gapy-4"
                     novalidate
+                    class="d-flex flex-column gapy-4"
                   >
+                    <h2 class="fz-24 text-gray-fourth mb-2">Dados de acesso</h2>
                     <label for="name" class="form-field">
                       <input
                         id="name"
                         name="name"
                         type="text"
-                        placeholder="Nome completo"
+                        placeholder="Nome fantasia"
                         class="validate-required"
                         required
                       />
-                      <span>Nome completo</span>
+                      <span>Nome fantasia</span>
                     </label>
                     <label for="email" class="form-field">
                       <input
                         id="email"
                         name="email"
                         type="email"
-                        placeholder="Ex: paulo@email.com"
+                        placeholder="Razão social"
                         class="validate-required"
                         required
                       />
-                      <span>E-mail</span>
+                      <span>Razão social</span>
                     </label>
+                    <div class="row row-cols-1 row-cols-md-2 gapy-4">
+                      <div class="col">
+                        <label for="legal-number" class="form-field">
+                          <input
+                            id="legal-number"
+                            name="text"
+                            type="legal-number"
+                            placeholder="Ex: 000.000.000/0000-00"
+                            class="validate-required"
+                            required
+                          />
+                          <span>CNPJ</span>
+                        </label>
+                      </div>
+                      <div class="col">
+                        <label for="ibge-number" class="form-field">
+                          <input
+                            id="ibge-number"
+                            name="text"
+                            type="ibge-number"
+                            placeholder="Ex: 0000000"
+                            required
+                          />
+                          <span>Código IBGE</span>
+                        </label>
+                      </div>
+                    </div>
                     <label for="password" class="form-field">
                       <input
                         id="password"
@@ -204,9 +233,9 @@
                       />
                       <span>Senha</span>
                     </label>
-                    <label for="password" class="form-field">
+                    <label for="confirm-password" class="form-field">
                       <input
-                        id="password"
+                        id="confirm-password"
                         name="password"
                         type="password"
                         placeholder="Digite a senha novamente"
@@ -215,30 +244,157 @@
                       />
                       <span>Confirmar senha</span>
                     </label>
-                    <div
-                      class="
-                        mt-awe-12
-                        d-flex
-                        flex-row
-                        justify-content-end
-                        flex-wrap
-                        gap-2
-                      "
-                    >
+                    <h2 class="fz-24 text-gray-fourth mt-awe-32 mb-2">
+                      Endereço
+                    </h2>
+                    <div class="row row-cols-1 row-cols-md-2 gapy-4">
+                      <div class="col">
+                        <label for="zip-code" class="form-field">
+                          <input
+                            id="zip-code"
+                            name="text"
+                            type="zip-code"
+                            placeholder="Ex: 00000-000"
+                            class="validate-required"
+                            required
+                          />
+                          <span>CEP</span>
+                        </label>
+                      </div>
+                      <div class="col">
+                        <label for="addres" class="form-field">
+                          <input
+                            id="addres"
+                            name="text"
+                            type="addres"
+                            placeholder="Rua, avenida, travessa"
+                            required
+                          />
+                          <span>Logradouro</span>
+                        </label>
+                      </div>
+                    </div>
+                    <label for="complement" class="form-field">
+                      <input
+                        id="complement"
+                        name="text"
+                        type="complement"
+                        placeholder="Complemento"
+                        required
+                      />
+                      <span>Complemento</span>
+                    </label>
+                    <div class="row row-cols-1 row-cols-md-2 gapy-4">
+                      <div class="col">
+                        <label for="district" class="form-field">
+                          <input
+                            id="district"
+                            name="text"
+                            type="district"
+                            placeholder="Bairro"
+                            class="validate-required"
+                            required
+                          />
+                          <span>Bairro</span>
+                        </label>
+                      </div>
+                      <div class="col">
+                        <div class="row row-cols-1 row-cols-sm-2 gapy-4">
+                          <div class="col">
+                            <label for="addres" class="form-field">
+                              <select
+                                id="addres"
+                                class="validate-required"
+                                required
+                              >
+                                <option disabled hidden selected>
+                                  Selecione
+                                </option>
+                                <option value="">RN</option>
+                                <option value="">SP</option>
+                                <option value="">RJ</option>
+                              </select>
+                              <span>Estado</span>
+                            </label>
+                          </div>
+                          <div class="col">
+                            <label for="city" class="form-field">
+                              <select
+                                id="city"
+                                class="validate-required"
+                                required
+                              >
+                                <option disabled hidden selected>
+                                  Selecione
+                                </option>
+                                <option value="">Natal</option>
+                                <option value="">Mossoro</option>
+                              </select>
+                              <span>Cidade</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 class="fz-24 text-gray-fourth mt-awe-32 mb-2">
+                      Planos ofertados
+                    </h2>
+                    <div class="row row-cols-1 gapy-1">
+                      <div class="col">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="family-plan"
+                          />
+                          <label
+                            class="form-check-label ff-mulish text-gray-fourth"
+                            for="family-plan"
+                          >
+                            Plano família
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="family-plan-checkup"
+                          />
+                          <label
+                            class="form-check-label ff-mulish text-gray-fourth"
+                            for="family-plan-checkup"
+                          >
+                            Plano família + Checkup
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-awe-12 d-flex flex-row flex-wrap gap-4">
                       <a
-                        href="./index.html"
-                        class="btn btn-outline-gray-fourth"
+                        href="./"
+                        class="
+                          text-brand-second text-decoration-none
+                          fw-bold
+                          d-flex
+                          flex-row
+                          align-items-center
+                          gapx-2
+                        "
                       >
-                        CANCELAR
+                        <i data-feather="arrow-left"></i> Voltar
                       </a>
 
                       <button
-                        class="btn btn-green-first text-white"
+                        class="btn btn-brand-second text-white ms-auto"
                         type="button"
                         data-bs-toggle="modal"
                         data-bs-target="#modal-end-register"
                       >
-                        SALVAR ALTERAÇÕES
+                        ADICIONAR EMPRESA
                       </button>
                     </div>
                   </form>
@@ -304,7 +460,7 @@
                   ></i>
                 </div>
                 <span class="fz-24 text-center text-gray-fourth">
-                  Alterações salvas com sucesso!
+                  Empresa adicionada com sucesso!
                 </span>
               </div>
               <div class="d-flex justify-content-center">

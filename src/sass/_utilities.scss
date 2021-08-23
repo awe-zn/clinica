@@ -44,6 +44,11 @@ $utilities: (
     values: $font-families,
     class: 'ff',
   ),
+  'cursor': (
+    property: cursor,
+    values: pointer,
+    class: 'cursor',
+  ),
 );
 
 $utilities: map-merge(

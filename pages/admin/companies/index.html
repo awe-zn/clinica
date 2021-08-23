@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clínica - Vendas</title>
+    <title>Clínica - Empresas</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -58,7 +58,7 @@
             </a>
           </li>
           <li>
-            <a href="../sales/" class="active">
+            <a href="../sales/">
               <i data-feather="users" class="icon"></i> Vendas
             </a>
           </li>
@@ -73,7 +73,7 @@
             </a>
           </li>
           <li>
-            <a href="../companies/">
+            <a href="#" class="active">
               <i data-feather="briefcase" class="icon"></i>Empresas
             </a>
           </li>
@@ -144,7 +144,7 @@
             <div class="row">
               <div class="col-12">
                 <div>
-                  <h1 class="fz-32 text-white fw-bold m-0">Vendas</h1>
+                  <h1 class="fz-32 text-white fw-bold m-0">Empresas</h1>
                 </div>
               </div>
             </div>
@@ -265,7 +265,7 @@
                           type="text"
                           placeholder="Buscar"
                         />
-                        <span>Busque por nome/e-mail</span>
+                        <span>Busque pelo nome ou CNPJ</span>
                       </label>
                     </div>
                     <div class="col-xl-3 col-sm-6">
@@ -292,7 +292,7 @@
                           "
                           href="./create.html"
                         >
-                          <i data-feather="plus"></i> CADASTRAR NOVO
+                          <i data-feather="plus"></i> CADASTRAR EMPRESA
                         </a>
                       </div>
                     </div>
@@ -303,9 +303,10 @@
                       <thead>
                         <tr class="fz-14">
                           <th>Status</th>
-                          <th>Nome</th>
-                          <th>E-mail</th>
-                          <th>Link de venda</th>
+                          <th>Nº de benefícios</th>
+                          <th>Nome fantasia</th>
+                          <th>Razão social</th>
+                          <th>CNPJ</th>
                           <th>Ações</th>
                         </tr>
                       </thead>
@@ -323,22 +324,28 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
-                          </td>
+                          <td data-title="Nº de benefícios">000</td>
+                          <td data-title="Nome fantasia">Nome da empresa</td>
+                          <td data-title="Razão social">Razão social</td>
+                          <td data-title="CNPJ">000.000.000/0000-00</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./representant/"
+                              >
                                 <i
                                   data-feather="eye"
                                   width="16"
                                   height="16"
                                 ></i>
-                              </button>
+                              </a>
                               <a
                                 class="
                                   border-0
@@ -355,6 +362,13 @@
                                   height="16"
                                 ></i>
                               </a>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="user-plus"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
                             </div>
                           </td>
                         </tr>
@@ -371,22 +385,28 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
-                          </td>
+                          <td data-title="Nº de benefícios">000</td>
+                          <td data-title="Nome fantasia">Nome da empresa</td>
+                          <td data-title="Razão social">Razão social</td>
+                          <td data-title="CNPJ">000.000.000/0000-00</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./representant/"
+                              >
                                 <i
                                   data-feather="eye"
                                   width="16"
                                   height="16"
                                 ></i>
-                              </button>
+                              </a>
                               <a
                                 class="
                                   border-0
@@ -403,6 +423,13 @@
                                   height="16"
                                 ></i>
                               </a>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="user-plus"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
                             </div>
                           </td>
                         </tr>
@@ -419,22 +446,28 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
-                          </td>
+                          <td data-title="Nº de benefícios">000</td>
+                          <td data-title="Nome fantasia">Nome da empresa</td>
+                          <td data-title="Razão social">Razão social</td>
+                          <td data-title="CNPJ">000.000.000/0000-00</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./representant/"
+                              >
                                 <i
                                   data-feather="eye"
                                   width="16"
                                   height="16"
                                 ></i>
-                              </button>
+                              </a>
                               <a
                                 class="
                                   border-0
@@ -451,6 +484,13 @@
                                   height="16"
                                 ></i>
                               </a>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="user-plus"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
                             </div>
                           </td>
                         </tr>
@@ -467,22 +507,28 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
-                          </td>
+                          <td data-title="Nº de benefícios">000</td>
+                          <td data-title="Nome fantasia">Nome da empresa</td>
+                          <td data-title="Razão social">Razão social</td>
+                          <td data-title="CNPJ">000.000.000/0000-00</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./representant/"
+                              >
                                 <i
                                   data-feather="eye"
                                   width="16"
                                   height="16"
                                 ></i>
-                              </button>
+                              </a>
                               <a
                                 class="
                                   border-0
@@ -499,6 +545,13 @@
                                   height="16"
                                 ></i>
                               </a>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="user-plus"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
                             </div>
                           </td>
                         </tr>
@@ -515,22 +568,28 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
-                          </td>
+                          <td data-title="Nº de benefícios">000</td>
+                          <td data-title="Nome fantasia">Nome da empresa</td>
+                          <td data-title="Razão social">Razão social</td>
+                          <td data-title="CNPJ">000.000.000/0000-00</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./representant/"
+                              >
                                 <i
                                   data-feather="eye"
                                   width="16"
                                   height="16"
                                 ></i>
-                              </button>
+                              </a>
                               <a
                                 class="
                                   border-0
@@ -547,6 +606,13 @@
                                   height="16"
                                 ></i>
                               </a>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="user-plus"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
                             </div>
                           </td>
                         </tr>
@@ -563,22 +629,28 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
-                          </td>
+                          <td data-title="Nº de benefícios">000</td>
+                          <td data-title="Nome fantasia">Nome da empresa</td>
+                          <td data-title="Razão social">Razão social</td>
+                          <td data-title="CNPJ">000.000.000/0000-00</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./representant/"
+                              >
                                 <i
                                   data-feather="eye"
                                   width="16"
                                   height="16"
                                 ></i>
-                              </button>
+                              </a>
                               <a
                                 class="
                                   border-0
@@ -595,6 +667,196 @@
                                   height="16"
                                 ></i>
                               </a>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="user-plus"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Status">
+                            <span
+                              class="
+                                badge
+                                rounded-pill
+                                text-green-first
+                                bg-green-first-opac
+                              "
+                            >
+                              Ativo
+                            </span>
+                          </td>
+                          <td data-title="Nº de benefícios">000</td>
+                          <td data-title="Nome fantasia">Nome da empresa</td>
+                          <td data-title="Razão social">Razão social</td>
+                          <td data-title="CNPJ">000.000.000/0000-00</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./representant/"
+                              >
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </a>
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./edit.html"
+                              >
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </a>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="user-plus"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Status">
+                            <span
+                              class="
+                                badge
+                                rounded-pill
+                                text-green-first
+                                bg-green-first-opac
+                              "
+                            >
+                              Ativo
+                            </span>
+                          </td>
+                          <td data-title="Nº de benefícios">000</td>
+                          <td data-title="Nome fantasia">Nome da empresa</td>
+                          <td data-title="Razão social">Razão social</td>
+                          <td data-title="CNPJ">000.000.000/0000-00</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./representant/"
+                              >
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </a>
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./edit.html"
+                              >
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </a>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="user-plus"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Status">
+                            <span
+                              class="
+                                badge
+                                rounded-pill
+                                text-green-first
+                                bg-green-first-opac
+                              "
+                            >
+                              Ativo
+                            </span>
+                          </td>
+                          <td data-title="Nº de benefícios">000</td>
+                          <td data-title="Nome fantasia">Nome da empresa</td>
+                          <td data-title="Razão social">Razão social</td>
+                          <td data-title="CNPJ">000.000.000/0000-00</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./representant/"
+                              >
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </a>
+                              <a
+                                class="
+                                  border-0
+                                  bg-transparent
+                                  px-awe-6
+                                  text-gray-tenth
+                                  texty-decoration-none
+                                "
+                                href="./edit.html"
+                              >
+                                <i
+                                  data-feather="edit-3"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </a>
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="user-plus"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
                             </div>
                           </td>
                         </tr>

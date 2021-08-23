@@ -156,3 +156,14 @@ a.root {
   object-fit: cover;
   object-position: center;
 }
+
+.ck-editor__editable_inline {
+  height: 200px;
+}
+
+@media (min-width: 576px) {
+  .border-sm-end {
+    border-right-width: 1px !important;
+    border-right-style: solid !important;
+  }
+}

@@ -10849,6 +10849,10 @@ fieldset:disabled .btn {
   font-family: "Roboto" !important;
 }
 
+.fz-10 {
+  font-size: 10px !important;
+}
+
 .fz-12 {
   font-size: 12px !important;
 }
@@ -11514,6 +11518,10 @@ fieldset:disabled .btn {
 
 .invisible {
   visibility: hidden !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
 }
 
 @media (min-width: 576px) {
@@ -12584,6 +12592,9 @@ fieldset:disabled .btn {
   }
   .ps-sm-5 {
     padding-left: 3rem !important;
+  }
+  .fz-sm-10 {
+    font-size: 10px !important;
   }
   .fz-sm-12 {
     font-size: 12px !important;
@@ -13692,6 +13703,9 @@ fieldset:disabled .btn {
   .ps-md-5 {
     padding-left: 3rem !important;
   }
+  .fz-md-10 {
+    font-size: 10px !important;
+  }
   .fz-md-12 {
     font-size: 12px !important;
   }
@@ -14798,6 +14812,9 @@ fieldset:disabled .btn {
   }
   .ps-lg-5 {
     padding-left: 3rem !important;
+  }
+  .fz-lg-10 {
+    font-size: 10px !important;
   }
   .fz-lg-12 {
     font-size: 12px !important;
@@ -15906,6 +15923,9 @@ fieldset:disabled .btn {
   .ps-xl-5 {
     padding-left: 3rem !important;
   }
+  .fz-xl-10 {
+    font-size: 10px !important;
+  }
   .fz-xl-12 {
     font-size: 12px !important;
   }
@@ -17012,6 +17032,9 @@ fieldset:disabled .btn {
   }
   .ps-xxl-5 {
     padding-left: 3rem !important;
+  }
+  .fz-xxl-10 {
+    font-size: 10px !important;
   }
   .fz-xxl-12 {
     font-size: 12px !important;
@@ -18914,6 +18937,17 @@ a.root:hover {
   height: 96px;
   object-fit: cover;
   object-position: center;
+}
+
+.ck-editor__editable_inline {
+  height: 200px;
+}
+
+@media (min-width: 576px) {
+  .border-sm-end {
+    border-right-width: 1px !important;
+    border-right-style: solid !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

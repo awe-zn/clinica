@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clínica - Vendas - Editar</title>
+    <title>Clínica - Planos - Cadastrar novo</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../../../dist/css/style.css" />
   </head>
 
-  <body>
+  <body data-page="plan-create">
     <div class="sidebar">
       <header class="d-flex justify-content-center p-4">
         <div class="logo-area">
@@ -37,7 +37,7 @@
             </a>
           </li>
           <li>
-            <a href="../plans/">
+            <a href="../plans/" class="active">
               <i data-feather="grid" class="icon"></i>Planos
             </a>
           </li>
@@ -58,7 +58,7 @@
             </a>
           </li>
           <li>
-            <a href="../sales/" class="active">
+            <a href="../sales/">
               <i data-feather="users" class="icon"></i> Vendas
             </a>
           </li>
@@ -144,13 +144,15 @@
             <div class="row">
               <div class="col-12">
                 <div>
-                  <h1 class="fz-32 text-white fw-bold mb-awe-12">Editar</h1>
+                  <h1 class="fz-32 text-white fw-bold mb-awe-12">
+                    Adicionar plano
+                  </h1>
                   <nav>
                     <ol class="breadcrumb m-0">
                       <li class="breadcrumb-item">
-                        <a href="#">Vendas</a>
+                        <a href="#">Planos</a>
                       </li>
-                      <li class="breadcrumb-item active">Editar</li>
+                      <li class="breadcrumb-item active">Adicionar plano</li>
                     </ol>
                   </nav>
                 </div>
@@ -165,80 +167,178 @@
                 <div
                   class="rounded bg-white shadow p-awe-32 d-flex flex-column"
                 >
-                  <h2 class="fz-24 text-gray-fourth mb-4">Dados de acesso</h2>
                   <form
                     action="./index.html"
-                    class="d-flex flex-column gapy-4"
                     novalidate
+                    class="d-flex flex-column gapy-4"
                   >
+                    <h2 class="fz-24 text-gray-fourth mb-2">
+                      Informações gerais
+                    </h2>
                     <label for="name" class="form-field">
                       <input
                         id="name"
                         name="name"
                         type="text"
-                        placeholder="Nome completo"
+                        placeholder="Nome do plano"
                         class="validate-required"
                         required
                       />
-                      <span>Nome completo</span>
+                      <span>Nome do plano</span>
                     </label>
-                    <label for="email" class="form-field">
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="Ex: paulo@email.com"
-                        class="validate-required"
-                        required
-                      />
-                      <span>E-mail</span>
-                    </label>
-                    <label for="password" class="form-field">
-                      <input
-                        id="password"
-                        name="password"
-                        type="password"
-                        placeholder="Crie a senha"
-                        class="validate-required"
-                        required
-                      />
-                      <span>Senha</span>
-                    </label>
-                    <label for="password" class="form-field">
-                      <input
-                        id="password"
-                        name="password"
-                        type="password"
-                        placeholder="Digite a senha novamente"
-                        class="validate-required"
-                        required
-                      />
-                      <span>Confirmar senha</span>
-                    </label>
-                    <div
-                      class="
-                        mt-awe-12
-                        d-flex
-                        flex-row
-                        justify-content-end
-                        flex-wrap
-                        gap-2
-                      "
-                    >
+                    <div class="fz-12 d-flex flex-column">
+                      <span class="mb-2 text-gray-eighth cursor-pointer">
+                        Descrição
+                      </span>
+                      <textarea id="editor"></textarea>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-3 gapy-4">
+                      <div class="col">
+                        <label for="code" class="form-field">
+                          <input
+                            id="code"
+                            name="name"
+                            type="text"
+                            placeholder="Ex: 000"
+                            class="validate-required"
+                            required
+                          />
+                          <span>Código</span>
+                        </label>
+                      </div>
+                      <div class="col">
+                        <label for="status" class="form-field">
+                          <select id="status" name="status">
+                            <option hidden disabled selected value="">
+                              Selecione um status
+                            </option>
+                            <option>Ativo</option>
+                            <option>Inativo</option>
+                          </select>
+                          <span>Status</span>
+                        </label>
+                      </div>
+                      <div class="col">
+                        <label for="code" class="form-field">
+                          <input
+                            id="code"
+                            name="name"
+                            type="text"
+                            placeholder="Ex: 10"
+                            class="validate-required"
+                            required
+                          />
+                          <span>Nº máx. de dependentes</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row gapy-4">
+                      <div class="col-12">
+                        <h2 class="fz-24 text-gray-fourth mb-2 mt-awe-32">
+                          Valores
+                        </h2>
+                      </div>
+                      <div class="col-md-10 col-lg-9 col-xl-8">
+                        <div class="d-flex flex-column flex-sm-row gapy-4">
+                          <div
+                            class="
+                              pe-sm-3
+                              border-sm-end border-gray-eighth
+                              me-sm-3
+                            "
+                          >
+                            <h3 class="text-gray-fourth fz-16 mb-3">
+                              Plano mensal
+                            </h3>
+                            <div class="d-flex flex-column gapy-4">
+                              <label
+                                for="holder-name-monthly"
+                                class="form-field"
+                              >
+                                <input
+                                  id="holder-name-monthly"
+                                  name="name"
+                                  type="text"
+                                  placeholder="0,00"
+                                  class="validate-required"
+                                  required
+                                />
+                                <span>Titular</span>
+                              </label>
+                              <label
+                                for="dependent-name-monthly"
+                                class="form-field"
+                              >
+                                <input
+                                  id="dependent-name-monthly"
+                                  name="name"
+                                  type="text"
+                                  placeholder="0,00"
+                                  required
+                                />
+                                <span>Dependente</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div>
+                            <h3 class="text-gray-fourth fz-16 mb-3">
+                              Plano anual
+                            </h3>
+                            <div class="d-flex flex-column gapy-4">
+                              <label
+                                for="holder-name-yearly"
+                                class="form-field"
+                              >
+                                <input
+                                  id="holder-name-yearly"
+                                  name="name"
+                                  type="text"
+                                  placeholder="0,00"
+                                  class="validate-required"
+                                  required
+                                />
+                                <span>Titular</span>
+                              </label>
+                              <label
+                                for="dependent-name-yearly"
+                                class="form-field"
+                              >
+                                <input
+                                  id="dependent-name-yearly"
+                                  name="name"
+                                  type="text"
+                                  placeholder="0,00"
+                                  required
+                                />
+                                <span>Dependente</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-awe-12 d-flex flex-row flex-wrap gap-4">
                       <a
                         href="./index.html"
-                        class="btn btn-outline-gray-fourth"
+                        class="
+                          text-brand-second text-decoration-none
+                          fw-bold
+                          d-flex
+                          flex-row
+                          align-items-center
+                          gapx-2
+                        "
                       >
-                        CANCELAR
+                        <i data-feather="arrow-left"></i> Voltar
                       </a>
 
                       <button
-                        class="btn btn-green-first text-white"
+                        class="btn btn-brand-second text-white ms-auto"
                         type="button"
                         data-bs-toggle="modal"
                         data-bs-target="#modal-end-register"
                       >
-                        SALVAR ALTERAÇÕES
+                        ADICIONAR PLANO
                       </button>
                     </div>
                   </form>
@@ -304,7 +404,7 @@
                   ></i>
                 </div>
                 <span class="fz-24 text-center text-gray-fourth">
-                  Alterações salvas com sucesso!
+                  Novo plano adicionado com sucesso!
                 </span>
               </div>
               <div class="d-flex justify-content-center">

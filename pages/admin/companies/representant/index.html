@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clínica - Vendas</title>
+    <title>Clínica - Empresa - Nome da empresa</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -13,9 +13,9 @@
       rel="stylesheet"
     />
 
-    <link rel="icon" href="../../../dist/image/favicon.ico" />
+    <link rel="icon" href="../../../../../dist/image/favicon.ico" />
 
-    <link rel="stylesheet" href="../../../dist/css/style.css" />
+    <link rel="stylesheet" href="../../../../../dist/css/style.css" />
   </head>
 
   <body>
@@ -23,7 +23,7 @@
       <header class="d-flex justify-content-center p-4">
         <div class="logo-area">
           <img
-            src="../../../dist/image/logo-blue.svg"
+            src="../../../../dist/image/logo-blue.svg"
             alt="Logo"
             class="img-fluid img-logo"
           />
@@ -32,34 +32,32 @@
       <nav class="links">
         <ul>
           <li>
-            <a href="../">
+            <a href="../../">
               <i data-feather="home" class="icon"></i>Dashboard
             </a>
           </li>
           <li>
-            <a href="../plans/">
-              <i data-feather="grid" class="icon"></i>Planos
-            </a>
+            <a href="#"> <i data-feather="grid" class="icon"></i>Planos </a>
           </li>
           <li>
-            <a href="../subscribers.html">
+            <a href="../../subscribers.html">
               <i data-feather="edit-3" class="icon"></i>Assinaturas
             </a>
           </li>
           <li>
-            <a href="../clients/">
+            <a href="../../clients/">
               <i data-feather="users" class="icon"></i>Clientes
             </a>
           </li>
           <li class="divider">
-            <a href="../register-service.html">
+            <a href="../../register-service.html">
               <i data-feather="message-square" class="icon"></i>
               Registrar atendimento
             </a>
           </li>
           <li>
-            <a href="../sales/" class="active">
-              <i data-feather="users" class="icon"></i> Vendas
+            <a href="../../sales/">
+              <i data-feather="users" class="icon"></i>Vendas
             </a>
           </li>
           <li>
@@ -73,7 +71,7 @@
             </a>
           </li>
           <li>
-            <a href="../companies/">
+            <a href="../../companies/" class="active">
               <i data-feather="briefcase" class="icon"></i>Empresas
             </a>
           </li>
@@ -86,17 +84,17 @@
             </a>
           </li>
           <li>
-            <a href="../contracts/">
+            <a href="../../profile.html">
               <i data-feather="user" class="icon"></i>Meu perfil
             </a>
           </li>
           <li class="divider">
-            <a href="../admins/">
+            <a href="#">
               <i data-feather="users" class="icon"></i>Administradoes
             </a>
           </li>
           <li>
-            <a href="../login/index.html" class="exit">
+            <a href="../../login/index.html" class="exit">
               <i data-feather="log-out" class="icon"></i>Sair
             </a>
           </li>
@@ -125,7 +123,7 @@
               <div class="d-flex justify-content-end align-items-center">
                 <a href="#" class="text-decoration-none">
                   <img
-                    src="../../../dist/image/avatar.png"
+                    src="../../../../dist/image/avatar.png"
                     alt="Avatar do usuário"
                     class="img-fluid img-avatar me-2"
                   />
@@ -140,11 +138,22 @@
       </header>
       <main>
         <section class="bg-brand-first">
-          <div class="container pt-3 pb-awe-96">
+          <div class="container pt-3 pb-awe-64">
             <div class="row">
               <div class="col-12">
                 <div>
-                  <h1 class="fz-32 text-white fw-bold m-0">Vendas</h1>
+                  <h1 class="fz-32 text-white fw-bold mb-awe-12">
+                    Empresa: Nome da Empresa
+                  </h1>
+                  <nav>
+                    <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                        <a href="./">Empresas</a>
+                      </li>
+                      <li class="breadcrumb-item">Empresa: Nome da Empresa</li>
+                      <li class="breadcrumb-item active">Representantes</li>
+                    </ol>
+                  </nav>
                 </div>
               </div>
             </div>
@@ -292,7 +301,7 @@
                           "
                           href="./create.html"
                         >
-                          <i data-feather="plus"></i> CADASTRAR NOVO
+                          <i data-feather="plus"></i> CADASTRAR REPRESENTANTE
                         </a>
                       </div>
                     </div>
@@ -303,9 +312,8 @@
                       <thead>
                         <tr class="fz-14">
                           <th>Status</th>
-                          <th>Nome</th>
+                          <th>Nome do representante</th>
                           <th>E-mail</th>
-                          <th>Link de venda</th>
                           <th>Ações</th>
                         </tr>
                       </thead>
@@ -323,13 +331,10 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
+                          <td data-title="Nome do representante">
+                            Nome do representante
                           </td>
+                          <td data-title="E-mail">representante@email.com</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <button class="border-0 bg-transparent">
@@ -339,22 +344,6 @@
                                   height="16"
                                 ></i>
                               </button>
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./edit.html"
-                              >
-                                <i
-                                  data-feather="edit-3"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </a>
                             </div>
                           </td>
                         </tr>
@@ -371,13 +360,10 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
+                          <td data-title="Nome do representante">
+                            Nome do representante
                           </td>
+                          <td data-title="E-mail">representante@email.com</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <button class="border-0 bg-transparent">
@@ -387,22 +373,6 @@
                                   height="16"
                                 ></i>
                               </button>
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./edit.html"
-                              >
-                                <i
-                                  data-feather="edit-3"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </a>
                             </div>
                           </td>
                         </tr>
@@ -419,13 +389,10 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
+                          <td data-title="Nome do representante">
+                            Nome do representante
                           </td>
+                          <td data-title="E-mail">representante@email.com</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <button class="border-0 bg-transparent">
@@ -435,22 +402,6 @@
                                   height="16"
                                 ></i>
                               </button>
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./edit.html"
-                              >
-                                <i
-                                  data-feather="edit-3"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </a>
                             </div>
                           </td>
                         </tr>
@@ -467,13 +418,10 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
+                          <td data-title="Nome do representante">
+                            Nome do representante
                           </td>
+                          <td data-title="E-mail">representante@email.com</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <button class="border-0 bg-transparent">
@@ -483,22 +431,6 @@
                                   height="16"
                                 ></i>
                               </button>
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./edit.html"
-                              >
-                                <i
-                                  data-feather="edit-3"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </a>
                             </div>
                           </td>
                         </tr>
@@ -515,13 +447,10 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
+                          <td data-title="Nome do representante">
+                            Nome do representante
                           </td>
+                          <td data-title="E-mail">representante@email.com</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <button class="border-0 bg-transparent">
@@ -531,22 +460,6 @@
                                   height="16"
                                 ></i>
                               </button>
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./edit.html"
-                              >
-                                <i
-                                  data-feather="edit-3"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </a>
                             </div>
                           </td>
                         </tr>
@@ -563,13 +476,10 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nome ">Nome</td>
-                          <td data-title="E-mail">email@gmail.com</td>
-                          <td data-title="Link de venda">
-                            <a href="#" class="text-brand-second"
-                              >https://link-de-venda.com.br</a
-                            >
+                          <td data-title="Nome do representante">
+                            Nome do representante
                           </td>
+                          <td data-title="E-mail">representante@email.com</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <button class="border-0 bg-transparent">
@@ -579,22 +489,122 @@
                                   height="16"
                                 ></i>
                               </button>
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./edit.html"
-                              >
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Status">
+                            <span
+                              class="
+                                badge
+                                rounded-pill
+                                text-green-first
+                                bg-green-first-opac
+                              "
+                            >
+                              Ativo
+                            </span>
+                          </td>
+                          <td data-title="Nome do representante">
+                            Nome do representante
+                          </td>
+                          <td data-title="E-mail">representante@email.com</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
                                 <i
-                                  data-feather="edit-3"
+                                  data-feather="eye"
                                   width="16"
                                   height="16"
                                 ></i>
-                              </a>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Status">
+                            <span
+                              class="
+                                badge
+                                rounded-pill
+                                text-green-first
+                                bg-green-first-opac
+                              "
+                            >
+                              Ativo
+                            </span>
+                          </td>
+                          <td data-title="Nome do representante">
+                            Nome do representante
+                          </td>
+                          <td data-title="E-mail">representante@email.com</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Status">
+                            <span
+                              class="
+                                badge
+                                rounded-pill
+                                text-green-first
+                                bg-green-first-opac
+                              "
+                            >
+                              Ativo
+                            </span>
+                          </td>
+                          <td data-title="Nome do representante">
+                            Nome do representante
+                          </td>
+                          <td data-title="E-mail">representante@email.com</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Status">
+                            <span
+                              class="
+                                badge
+                                rounded-pill
+                                text-green-first
+                                bg-green-first-opac
+                              "
+                            >
+                              Ativo
+                            </span>
+                          </td>
+                          <td data-title="Nome do representante">
+                            Nome do representante
+                          </td>
+                          <td data-title="E-mail">representante@email.com</td>
+                          <td data-title="Ações">
+                            <div class="d-flex flex-row">
+                              <button class="border-0 bg-transparent">
+                                <i
+                                  data-feather="eye"
+                                  width="16"
+                                  height="16"
+                                ></i>
+                              </button>
                             </div>
                           </td>
                         </tr>
@@ -678,60 +688,10 @@
       </div>
     </footer>
 
-    <div class="modal fade" id="modal-update-password">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body p-awe-32">
-            <div class="d-flex flex-row align-items-center mb-awe-32">
-              <span class="text-gray-fourth fw-regular fz-24">
-                Dados pessoais
-              </span>
-              <button
-                class="ms-auto border-0 bg-transparent p-3 pe-0"
-                data-bs-dismiss="modal"
-              >
-                <i data-feather="x"></i>
-              </button>
-            </div>
-            <div class="d-flex flex-column gapy-4 mb-5">
-              <label for="new-password" class="form-field">
-                <input
-                  id="new-password"
-                  name="new-password"
-                  type="text"
-                  placeholder="Nova senha"
-                  required
-                />
-                <span>Nova senha</span>
-              </label>
-              <label for="new-password-confirm" class="form-field">
-                <input
-                  id="new-password-confirm"
-                  name="new-password-confirm"
-                  type="text"
-                  placeholder="Repita a nova senha"
-                  required
-                />
-                <span>Confirmar nova senha</span>
-              </label>
-            </div>
-            <div class="d-flex flex-row justify-content-end flex-wrap gap-3">
-              <button class="btn btn-outline-gray-fourth border-2">
-                CANCELAR
-              </button>
-              <button class="btn btn-brand-second text-white border-2">
-                ATUALIZAR SENHA
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script
       src="https://kit.fontawesome.com/113c46960f.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../../../dist/js/index.js"></script>
+    <script src="../../../../dist/js/index.js"></script>
   </body>
 </html>
