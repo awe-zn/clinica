@@ -77,16 +77,37 @@
             </div>
             <div class="col-auto ml-auto">
               <div class="d-flex justify-content-end align-items-center">
-                <a href="#" class="text-decoration-none">
-                  <img
-                    src="../../dist/image/avatar.png"
-                    alt="Avatar do usuário"
-                    class="img-fluid img-avatar me-2"
-                  />
-                  <span class="text-white ff-mulish fw-semi-bold name-user">
-                    Arthur Comiere
-                  </span>
-                </a>
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    data-bs-toggle="dropdown"
+                  >
+                    <img
+                      src="../../dist/image/avatar.png"
+                      alt="Avatar do usuário"
+                      class="img-fluid img-avatar me-2"
+                    />
+                    <span class="text-white ff-mulish fw-semi-bold name-user">
+                      Arthur Comiere
+                    </span>
+                  </a>
+
+                  <ul class="dropdown-menu mt-3">
+                    <li>
+                      <a class="dropdown-item" href="./profile.html">
+                        <i data-feather="user" width="20" height="20"></i>
+                        Meu perfil
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./login/">
+                        <i data-feather="log-out" width="20" height="20"></i>
+                        Sair
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

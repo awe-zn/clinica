@@ -5,6 +5,13 @@
 @import 'components';
 @import 'grid';
 
+.bg-login {
+  background-image: url('../image/bg-login.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .table-responsive {
   .table {
     min-width: max-content !important;
@@ -212,4 +219,11 @@ a.root {
   @media (min-width: 1200px) {
     padding-bottom: calc(64px + 324px);
   }
+}
+
+.dropdown-item {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
 }

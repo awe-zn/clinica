@@ -123,16 +123,37 @@
             </div>
             <div class="col-auto ml-auto">
               <div class="d-flex justify-content-end align-items-center">
-                <a href="#" class="text-decoration-none">
-                  <img
-                    src="../../../dist/image/avatar.png"
-                    alt="Avatar do usuário"
-                    class="img-fluid img-avatar me-2"
-                  />
-                  <span class="text-white ff-mulish fw-semi-bold name-user">
-                    Arthur Comiere
-                  </span>
-                </a>
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    data-bs-toggle="dropdown"
+                  >
+                    <img
+                      src="../../../dist/image/avatar.png"
+                      alt="Avatar do usuário"
+                      class="img-fluid img-avatar me-2"
+                    />
+                    <span class="text-white ff-mulish fw-semi-bold name-user">
+                      Arthur Comiere
+                    </span>
+                  </a>
+
+                  <ul class="dropdown-menu mt-3">
+                    <li>
+                      <a class="dropdown-item" href="../profile.html">
+                        <i data-feather="user" width="20" height="20"></i>
+                        Meu perfil
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../login/">
+                        <i data-feather="log-out" width="20" height="20"></i>
+                        Sair
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -152,106 +173,7 @@
         </section>
         <section class="mt-n5">
           <div class="container">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gapy-3">
-              <div class="col">
-                <div class="rounded bg-white shadow p-3 d-flex flex-column">
-                  <h2 class="text-gray-fourth fz-14 m-0">Outra informação</h2>
-                  <span class="text-gray-fourth fz-24 mb-2">13</span>
-                  <div
-                    class="
-                      d-flex
-                      flex-row
-                      gapx-2
-                      justify-content-between
-                      align-items-end
-                    "
-                  >
-                    <div class="p-2 bg-brand-first rounded-circle ms-auto">
-                      <i
-                        data-feather="heart"
-                        width="24"
-                        height="24"
-                        stroke="white"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="rounded bg-white shadow p-3 d-flex flex-column">
-                  <h2 class="text-gray-fourth fz-14 m-0">Outra informação</h2>
-                  <span class="text-gray-fourth fz-24 mb-2">13</span>
-                  <div
-                    class="
-                      d-flex
-                      flex-row
-                      gapx-2
-                      justify-content-between
-                      align-items-end
-                    "
-                  >
-                    <div class="p-2 bg-brand-first rounded-circle ms-auto">
-                      <i
-                        data-feather="heart"
-                        width="24"
-                        height="24"
-                        stroke="white"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="rounded bg-white shadow p-3 d-flex flex-column">
-                  <h2 class="text-gray-fourth fz-14 m-0">Outra informação</h2>
-                  <span class="text-gray-fourth fz-24 mb-2">13</span>
-                  <div
-                    class="
-                      d-flex
-                      flex-row
-                      gapx-2
-                      justify-content-between
-                      align-items-end
-                    "
-                  >
-                    <div class="p-2 bg-brand-first rounded-circle ms-auto">
-                      <i
-                        data-feather="heart"
-                        width="24"
-                        height="24"
-                        stroke="white"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="rounded bg-white shadow p-3 d-flex flex-column">
-                  <h2 class="text-gray-fourth fz-14 m-0">Outra informação</h2>
-                  <span class="text-gray-fourth fz-24 mb-2">13</span>
-                  <div
-                    class="
-                      d-flex
-                      flex-row
-                      gapx-2
-                      justify-content-between
-                      align-items-end
-                    "
-                  >
-                    <div class="p-2 bg-brand-first rounded-circle ms-auto">
-                      <i
-                        data-feather="heart"
-                        width="24"
-                        height="24"
-                        stroke="white"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mt-5">
+            <div class="row">
               <div class="col">
                 <div
                   class="rounded bg-white shadow p-awe-32 d-flex flex-column"
@@ -328,13 +250,6 @@
                           <td data-title="Contrato">Nome do contrato</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                               <a
                                 class="
                                   border-0
@@ -370,13 +285,6 @@
                           <td data-title="Contrato">Nome do contrato</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                               <a
                                 class="
                                   border-0
@@ -412,13 +320,6 @@
                           <td data-title="Contrato">Nome do contrato</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                               <a
                                 class="
                                   border-0
@@ -454,13 +355,6 @@
                           <td data-title="Contrato">Nome do contrato</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                               <a
                                 class="
                                   border-0
@@ -496,13 +390,6 @@
                           <td data-title="Contrato">Nome do contrato</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                               <a
                                 class="
                                   border-0
@@ -538,13 +425,6 @@
                           <td data-title="Contrato">Nome do contrato</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                               <a
                                 class="
                                   border-0
@@ -580,13 +460,6 @@
                           <td data-title="Contrato">Nome do contrato</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                               <a
                                 class="
                                   border-0
@@ -622,13 +495,6 @@
                           <td data-title="Contrato">Nome do contrato</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                               <a
                                 class="
                                   border-0
@@ -664,13 +530,6 @@
                           <td data-title="Contrato">Nome do contrato</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                               <a
                                 class="
                                   border-0
@@ -706,181 +565,6 @@
                           <td data-title="Contrato">Nome do contrato</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./edit.html"
-                              >
-                                <i
-                                  data-feather="edit-3"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td data-title="Status">
-                            <span
-                              class="
-                                badge
-                                rounded-pill
-                                text-green-first
-                                bg-green-first-opac
-                              "
-                            >
-                              Ativo
-                            </span>
-                          </td>
-                          <td data-title="Contrato">Nome do contrato</td>
-                          <td data-title="Ações">
-                            <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./edit.html"
-                              >
-                                <i
-                                  data-feather="edit-3"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td data-title="Status">
-                            <span
-                              class="
-                                badge
-                                rounded-pill
-                                text-green-first
-                                bg-green-first-opac
-                              "
-                            >
-                              Ativo
-                            </span>
-                          </td>
-                          <td data-title="Contrato">Nome do contrato</td>
-                          <td data-title="Ações">
-                            <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./edit.html"
-                              >
-                                <i
-                                  data-feather="edit-3"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td data-title="Status">
-                            <span
-                              class="
-                                badge
-                                rounded-pill
-                                text-green-first
-                                bg-green-first-opac
-                              "
-                            >
-                              Ativo
-                            </span>
-                          </td>
-                          <td data-title="Contrato">Nome do contrato</td>
-                          <td data-title="Ações">
-                            <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./edit.html"
-                              >
-                                <i
-                                  data-feather="edit-3"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td data-title="Status">
-                            <span
-                              class="
-                                badge
-                                rounded-pill
-                                text-green-first
-                                bg-green-first-opac
-                              "
-                            >
-                              Ativo
-                            </span>
-                          </td>
-                          <td data-title="Contrato">Nome do contrato</td>
-                          <td data-title="Ações">
-                            <div class="d-flex flex-row">
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                               <a
                                 class="
                                   border-0
