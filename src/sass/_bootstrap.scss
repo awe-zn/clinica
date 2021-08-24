@@ -11,6 +11,7 @@
 // init - Merge maps
 
 $spacers: map-merge($awe-spacers, $spacers);
+$position-values: map-merge($awe-position-values, $position-values);
 
 // end - Merge maps
 

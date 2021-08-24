@@ -25,6 +25,7 @@
     "@popperjs/core": "^2.9.2",
     "bootstrap": "5.0.2",
     "feather-icons": "^4.28.0",
-    "imask": "^6.0.7"
+    "imask": "^6.0.7",
+    "nouislider": "^15.4.0"
   }
 }

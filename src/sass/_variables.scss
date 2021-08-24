@@ -79,8 +79,13 @@ $awe-spacers: (
   'awe-80': $spacer * 5,
   'awe-96': $spacer * 6,
   'awe-108': $spacer * 8,
+  'awe-324': $spacer * 24,
 ) !default;
 $enable-negative-margins: true;
+
+$awe-position-values: (
+  16: 16px,
+);
 
 // font features variables definition
 $font-family-sans-serif: 'Mulish', 'Roboto', sans-serif;

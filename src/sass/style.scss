@@ -1,4 +1,5 @@
 @import 'bootstrap';
+@import '../../node_modules/nouislider/dist/nouislider';
 
 @import 'reboot';
 @import 'components';
@@ -109,6 +110,14 @@ a.root {
 .img-avatar {
   width: 32px;
   height: 32px;
+  border-radius: 50%;
+}
+
+.img-profile-ranking {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .text-hover-white:hover {
@@ -165,5 +174,42 @@ a.root {
   .border-sm-end {
     border-right-width: 1px !important;
     border-right-style: solid !important;
+  }
+}
+
+.ranking {
+  @media (min-width: 992px) {
+    position: relative;
+
+    padding-bottom: calc(64px + 216px);
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      top: 0;
+      bottom: 0;
+
+      background-image: url('../image/ranking.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+
+      opacity: calc((1 / 3) * 2);
+    }
+
+    .col {
+      &:nth-child(2) {
+        transform: translateY(32px);
+      }
+      &:nth-child(3) {
+        transform: translateY(64px);
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: calc(64px + 324px);
   }
 }

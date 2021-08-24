@@ -80,7 +80,7 @@
       display: block;
     }
   }
-  .button-post-input {
+  .button-post-button {
     background: none;
 
     border: none;
@@ -97,7 +97,7 @@
       height: $form-post-input-size;
     }
   }
-  .input-post-button {
+  .input-post-input {
     padding-right: calc(
       ((#{$form-padding-y} * 2) + #{$form-post-input-size})
     ) !important;

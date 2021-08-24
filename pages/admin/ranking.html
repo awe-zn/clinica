@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica - Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="../../dist/image/favicon.ico" />
+
+    <link rel="stylesheet" href="../../dist/css/style.css" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <header class="d-flex justify-content-center p-4">
+        <div class="logo-area">
+          <img
+            src="../../dist/image/logo-blue.svg"
+            alt="Logo"
+            class="img-fluid img-logo"
+          />
+        </div>
+      </header>
+      <nav class="links">
+        <ul>
+          <li>
+            <a href="./"> <i data-feather="home" class="icon"></i>Dashboard </a>
+          </li>
+          <li>
+            <a href="./plans">
+              <i data-feather="grid" class="icon"></i>Planos
+            </a>
+          </li>
+          <li>
+            <a href="./subscribers.html">
+              <i data-feather="edit-3" class="icon"></i>Assinaturas
+            </a>
+          </li>
+          <li>
+            <a href="./clients/">
+              <i data-feather="users" class="icon"></i>Clientes
+            </a>
+          </li>
+          <li class="divider">
+            <a href="./register-service.html">
+              <i data-feather="message-square" class="icon"></i>
+              Registrar atendimento
+            </a>
+          </li>
+          <li>
+            <a href="./sales/">
+              <i data-feather="users" class="icon"></i>Vendas
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i data-feather="file-plus" class="icon"></i>Pré-cadastro
+            </a>
+          </li>
+          <li class="divider">
+            <a href="./ranking.html" class="active">
+              <i data-feather="award" class="icon"></i>Ranking de vendas
+            </a>
+          </li>
+          <li>
+            <a href="./companies/">
+              <i data-feather="briefcase" class="icon"></i>Empresas
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i data-feather="star" class="icon"></i>Benefícios </a>
+          </li>
+          <li class="divider">
+            <a href="./contracts/">
+              <i data-feather="file-text" class="icon"></i>Contratos
+            </a>
+          </li>
+          <li>
+            <a href="./profile.html">
+              <i data-feather="user" class="icon"></i>Meu perfil
+            </a>
+          </li>
+          <li class="divider">
+            <a href="./admins/">
+              <i data-feather="users" class="icon"></i>Administradoes
+            </a>
+          </li>
+          <li>
+            <a href="./login/index.html" class="exit">
+              <i data-feather="log-out" class="icon"></i>Sair
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="page-content">
+      <header class="bg-brand-first">
+        <div class="container py-awe-32">
+          <div class="row">
+            <div class="col">
+              <div class="d-flex align-items-center h-100">
+                <button
+                  class="border-0 bg-transparent toggle-class hamburguer"
+                  data-toggle="hide"
+                  data-target=".sidebar"
+                >
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </button>
+              </div>
+            </div>
+            <div class="col-auto ml-auto"></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="bg-brand-first">
+          <div class="container pt-3 pb-awe-96">
+            <div class="row">
+              <div class="col-12">
+                <div>
+                  <h1 class="fz-32 text-white fw-bold m-0">
+                    Ranking de vendas
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mt-n5">
+          <div class="container ranking">
+            <div class="row row-cols-1 row-cols-lg-3 gapy-3">
+              <div class="col order-3 order-lg-2">
+                <div
+                  class="
+                    py-awe-80
+                    bg-white
+                    rounded
+                    shadow
+                    d-flex
+                    flex-column
+                    align-items-center
+                    justify-content-center
+                    position-relative
+                    content
+                  "
+                >
+                  <img
+                    src="../../dist/image/avatar.png"
+                    alt="Usuario"
+                    class="img-fluid rounded-circle img-profile-ranking"
+                  />
+                  <span class="fz-24 text-gray-fourth mt-awe-40">
+                    Daniel Mernes
+                  </span>
+                  <span class="text-gray-eighth">8 vendas</span>
+                  <img
+                    src="../../dist/image/badges/first-place.svg"
+                    alt="Ilustração - Primeiro lugar"
+                    class="img-fluid position-absolute top-16 start-16"
+                  />
+                </div>
+              </div>
+              <div class="col order-3 order-lg-1">
+                <div
+                  class="
+                    py-awe-80
+                    bg-white
+                    rounded
+                    shadow
+                    d-flex
+                    flex-column
+                    align-items-center
+                    justify-content-center
+                    position-relative
+                    content
+                  "
+                >
+                  <img
+                    src="../../dist/image/avatar.png"
+                    alt="Usuario"
+                    class="img-fluid rounded-circle img-profile-ranking"
+                  />
+                  <span class="fz-24 text-gray-fourth mt-awe-40">
+                    Daniel Mernes
+                  </span>
+                  <span class="text-gray-eighth">8 vendas</span>
+                  <img
+                    src="../../dist/image/badges/second-place.svg"
+                    alt="Ilustração - Segundo lugar"
+                    class="img-fluid position-absolute top-16 start-16"
+                  />
+                </div>
+              </div>
+              <div class="col order-3 order-lg-3">
+                <div
+                  class="
+                    py-awe-80
+                    bg-white
+                    rounded
+                    shadow
+                    d-flex
+                    flex-column
+                    align-items-center
+                    justify-content-center
+                    position-relative
+                    content
+                  "
+                >
+                  <img
+                    src="../../dist/image/avatar.png"
+                    alt="Usuario"
+                    class="img-fluid rounded-circle img-profile-ranking"
+                  />
+                  <span class="fz-24 text-gray-fourth mt-awe-40">
+                    Daniel Mernes
+                  </span>
+                  <span class="text-gray-eighth">8 vendas</span>
+                  <img
+                    src="../../dist/image/badges/third-place.svg"
+                    alt="Ilustração - Terceiro lugar"
+                    class="img-fluid position-absolute top-16 start-16"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mt-5">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gapy-3">
+              <div class="col">
+                <div class="rounded bg-white shadow p-3 d-flex flex-column">
+                  <h2 class="text-gray-fourth fz-14 m-0">Outra informação</h2>
+                  <span class="text-gray-fourth fz-24 mb-2">13</span>
+                  <div
+                    class="
+                      d-flex
+                      flex-row
+                      gapx-2
+                      justify-content-between
+                      align-items-end
+                    "
+                  >
+                    <div class="p-2 bg-brand-first rounded-circle ms-auto">
+                      <i
+                        data-feather="heart"
+                        width="24"
+                        height="24"
+                        stroke="white"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="rounded bg-white shadow p-3 d-flex flex-column">
+                  <h2 class="text-gray-fourth fz-14 m-0">Outra informação</h2>
+                  <span class="text-gray-fourth fz-24 mb-2">13</span>
+                  <div
+                    class="
+                      d-flex
+                      flex-row
+                      gapx-2
+                      justify-content-between
+                      align-items-end
+                    "
+                  >
+                    <div class="p-2 bg-brand-first rounded-circle ms-auto">
+                      <i
+                        data-feather="heart"
+                        width="24"
+                        height="24"
+                        stroke="white"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="rounded bg-white shadow p-3 d-flex flex-column">
+                  <h2 class="text-gray-fourth fz-14 m-0">Outra informação</h2>
+                  <span class="text-gray-fourth fz-24 mb-2">13</span>
+                  <div
+                    class="
+                      d-flex
+                      flex-row
+                      gapx-2
+                      justify-content-between
+                      align-items-end
+                    "
+                  >
+                    <div class="p-2 bg-brand-first rounded-circle ms-auto">
+                      <i
+                        data-feather="heart"
+                        width="24"
+                        height="24"
+                        stroke="white"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="rounded bg-white shadow p-3 d-flex flex-column">
+                  <h2 class="text-gray-fourth fz-14 m-0">Outra informação</h2>
+                  <span class="text-gray-fourth fz-24 mb-2">13</span>
+                  <div
+                    class="
+                      d-flex
+                      flex-row
+                      gapx-2
+                      justify-content-between
+                      align-items-end
+                    "
+                  >
+                    <div class="p-2 bg-brand-first rounded-circle ms-auto">
+                      <i
+                        data-feather="heart"
+                        width="24"
+                        height="24"
+                        stroke="white"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mt-5">
+          <div class="container">
+            <div class="row row-cols-1 gapy-12">
+              <div class="col">
+                <div
+                  class="rounded bg-white shadow p-awe-32 d-flex flex-column"
+                >
+                  <h2 class="text-gray-fourth fz-24 mb-awe-32">
+                    Cadastros a serem finalizados
+                  </h2>
+
+                  <div class="row gapy-3 mb-4">
+                    <div class="col-xl-4 col-lg-5 col-sm-6">
+                      <label for="search" class="form-field">
+                        <input
+                          id="search"
+                          name="search"
+                          type="text"
+                          placeholder="Buscar"
+                          class="input-post-input"
+                        />
+                        <button class="button-post-button">
+                          <i data-feather="search" stroke="#58c4cb"></i>
+                        </button>
+                        <span>Busque por nome/e-mail</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="no-more-tables">
+                    <table class="table table-striped text-gray-fourth fz-12">
+                      <thead>
+                        <tr class="fz-14">
+                          <th>Posição</th>
+                          <th>Nome</th>
+                          <th>Total de vendas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-title="Posição">1º</td>
+                          <td data-title="Nome">Nome</td>
+                          <td data-title="Total de vendas">12</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Posição">2º</td>
+                          <td data-title="Nome">Nome</td>
+                          <td data-title="Total de vendas">12</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Posição">3º</td>
+                          <td data-title="Nome">Nome</td>
+                          <td data-title="Total de vendas">12</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Posição">4º</td>
+                          <td data-title="Nome">Nome</td>
+                          <td data-title="Total de vendas">12</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Posição">5º</td>
+                          <td data-title="Nome">Nome</td>
+                          <td data-title="Total de vendas">12</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Posição">6º</td>
+                          <td data-title="Nome">Nome</td>
+                          <td data-title="Total de vendas">12</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Posição">7º</td>
+                          <td data-title="Nome">Nome</td>
+                          <td data-title="Total de vendas">12</td>
+                        </tr>
+                        <tr>
+                          <td data-title="Posição">8º</td>
+                          <td data-title="Nome">Nome</td>
+                          <td data-title="Total de vendas">12</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div
+                    class="d-flex flex-row align-items-center flex-wrap gapy-3"
+                  >
+                    <nav>
+                      <ul class="pagination">
+                        <li class="page-item disabled">
+                          <a
+                            class="
+                              page-link
+                              h-100
+                              d-flex
+                              align-items-center
+                              px-1
+                            "
+                            href="#"
+                          >
+                            <i
+                              data-feather="chevron-left"
+                              width="16"
+                              height="16"
+                            ></i>
+                          </a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a
+                            class="
+                              page-link
+                              h-100
+                              d-flex
+                              align-items-center
+                              px-1
+                            "
+                            href="#"
+                          >
+                            <i
+                              data-feather="chevron-right"
+                              width="16"
+                              height="16"
+                            ></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="bg-brand-first">
+      <div class="container-fluid py-awe-12">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="
+                d-flex
+                flex-row
+                gap-4
+                justify-content-between
+                flex-wrap
+                fz-14
+                ff-mulish
+                text-white-first
+              "
+            >
+              <span>Versão 1.7.0</span>
+              <span>
+                Desenvolvido por
+                <a
+                  href="https://technine.com.br"
+                  class="text-decoration-none text-reset"
+                >
+                  Technine
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/113c46960f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../dist/js/index.js"></script>
+  </body>
+</html>
