@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clínica - Vendas - Cadastrar novo</title>
+    <title>Clínica - Benefício - Editar</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../../../dist/css/style.css" />
   </head>
 
-  <body>
+  <body data-page="benefit-create">
     <div class="sidebar">
       <header class="d-flex justify-content-center p-4">
         <div class="logo-area">
@@ -58,7 +58,7 @@
             </a>
           </li>
           <li>
-            <a href="../sales/" class="active">
+            <a href="../sales/">
               <i data-feather="users" class="icon"></i> Vendas
             </a>
           </li>
@@ -68,7 +68,7 @@
             </a>
           </li>
           <li class="divider">
-            <a href="../ranking.html">
+            <a href="#">
               <i data-feather="award" class="icon"></i>Ranking de vendas
             </a>
           </li>
@@ -78,7 +78,7 @@
             </a>
           </li>
           <li>
-            <a href="../benefits/">
+            <a href="../benefits/" class="active">
               <i data-feather="star" class="icon"></i>Benefícios
             </a>
           </li>
@@ -168,14 +168,14 @@
               <div class="col-12">
                 <div>
                   <h1 class="fz-32 text-white fw-bold mb-awe-12">
-                    Cadastrar novo
+                    Editar benefício
                   </h1>
                   <nav>
                     <ol class="breadcrumb m-0">
                       <li class="breadcrumb-item">
-                        <a href="#">Vendas</a>
+                        <a href="./">Benefícios</a>
                       </li>
-                      <li class="breadcrumb-item active">Cadastrar novo</li>
+                      <li class="breadcrumb-item active">Editar benefício</li>
                     </ol>
                   </nav>
                 </div>
@@ -190,59 +190,104 @@
                 <div
                   class="rounded bg-white shadow p-awe-32 d-flex flex-column"
                 >
-                  <h2 class="fz-24 text-gray-fourth mb-4">Dados de acesso</h2>
                   <form
                     action="./index.html"
                     novalidate
                     class="d-flex flex-column gapy-4"
                   >
-                    <label for="name" class="form-field">
+                    <h2 class="fz-24 text-gray-fourth mb-2">Dados de acesso</h2>
+                    <label for="company-name" class="form-field">
                       <input
-                        id="name"
-                        name="name"
+                        id="company-name"
+                        name="company-name"
                         type="text"
-                        placeholder="Nome completo"
+                        placeholder="Nome da empresa"
                         class="validate-required"
                         required
                       />
-                      <span>Nome completo</span>
+                      <span>Nome da empresa ofertante</span>
                     </label>
-                    <label for="email" class="form-field">
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="Ex: paulo@email.com"
-                        class="validate-required"
-                        required
-                      />
-                      <span>E-mail</span>
-                    </label>
-                    <label for="password" class="form-field">
-                      <input
-                        id="password"
-                        name="password"
-                        type="password"
-                        placeholder="Crie a senha"
-                        class="validate-required"
-                        required
-                      />
-                      <span>Senha</span>
-                    </label>
-                    <label for="password" class="form-field">
-                      <input
-                        id="password"
-                        name="password"
-                        type="password"
-                        placeholder="Digite a senha novamente"
-                        class="validate-required"
-                        required
-                      />
-                      <span>Confirmar senha</span>
-                    </label>
+                    <div class="row gapy-4">
+                      <div class="col-md-8 col-lg-9">
+                        <label for="name" class="form-field">
+                          <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            placeholder="Nome do benefício"
+                            class="validate-required"
+                            required
+                          />
+                          <span>Nome do benefício</span>
+                        </label>
+                      </div>
+                      <div class="col-md-4 col-lg-3">
+                        <label for="status" class="form-field">
+                          <select id="status">
+                            <option disabled hidden selected>Selecione</option>
+                            <option>Opção #1</option>
+                          </select>
+                          <span>Status</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="fz-12 d-flex flex-column">
+                      <span class="mb-2 text-gray-eighth cursor-pointer">
+                        Descrição
+                      </span>
+                      <textarea id="editor"></textarea>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 col-xl-3">
+                        <label for="company-name" class="form-field">
+                          <input
+                            id="company-name"
+                            name="company-name"
+                            type="text"
+                            placeholder="0,00"
+                            class="validate-required"
+                            required
+                          />
+                          <span>Valor</span>
+                        </label>
+                      </div>
+                    </div>
+                    <h2 class="fz-24 text-gray-fourth mt-awe-64 mb-2">
+                      Planos
+                    </h2>
+                    <div class="text-gray-fourth">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="plans[]"
+                          id="plan-family"
+                          value="plan-family"
+                          checked
+                        />
+                        <label class="form-check-label" for="plan-family">
+                          Plano família
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="plans[]"
+                          id="plan-family-checkup"
+                          value="plan-family-checkup"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="plan-family-checkup"
+                        >
+                          Plano família + Checkup
+                        </label>
+                      </div>
+                    </div>
                     <div class="mt-awe-12 d-flex flex-row flex-wrap gap-4">
                       <a
-                        href="./index.html"
+                        href="./"
                         class="
                           text-brand-second text-decoration-none
                           fw-bold
@@ -256,12 +301,12 @@
                       </a>
 
                       <button
-                        class="btn btn-brand-second text-white ms-auto"
+                        class="btn btn-green-first text-white ms-auto"
                         type="button"
                         data-bs-toggle="modal"
                         data-bs-target="#modal-end-register"
                       >
-                        CADASTRAR NOVO
+                        SALVAR ALTERAÇÕES
                       </button>
                     </div>
                   </form>
@@ -328,7 +373,7 @@
                   ></i>
                 </div>
                 <span class="fz-24 text-center text-gray-fourth">
-                  Usuário cadastrado com sucesso!
+                  Alterações salvas com sucesso!
                 </span>
               </div>
               <div class="d-flex justify-content-center">

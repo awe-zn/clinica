@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clínica - Empresas</title>
+    <title>Clínica - Benefícios</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -73,12 +73,12 @@
             </a>
           </li>
           <li>
-            <a href="../companies/" class="active">
+            <a href="../companies/">
               <i data-feather="briefcase" class="icon"></i>Empresas
             </a>
           </li>
           <li>
-            <a href="../benefits/">
+            <a href="../benefits/" class="active">
               <i data-feather="star" class="icon"></i>Benefícios
             </a>
           </li>
@@ -167,7 +167,7 @@
             <div class="row">
               <div class="col-12">
                 <div>
-                  <h1 class="fz-32 text-white fw-bold m-0">Empresas</h1>
+                  <h1 class="fz-32 text-white fw-bold m-0">Benefícios</h1>
                 </div>
               </div>
             </div>
@@ -280,32 +280,68 @@
                   class="rounded bg-white shadow p-awe-32 d-flex flex-column"
                 >
                   <div class="row gapy-3 mb-3">
-                    <div class="col-xl-4 col-sm-6">
-                      <label for="search" class="form-field">
-                        <input
-                          id="search"
-                          name="search"
-                          type="text"
-                          placeholder="Buscar"
-                          class="input-post-input"
-                        />
-                        <button class="button-post-button">
-                          <i data-feather="search" stroke="#58c4cb"></i>
-                        </button>
-                        <span>Busque pelo nome ou CNPJ</span>
-                      </label>
-                    </div>
-                    <div class="col-xl-3 col-sm-6">
-                      <label for="status" class="form-field">
-                        <select id="status" name="status">
-                          <option hidden disabled selected value="">
-                            Selecione um status
-                          </option>
-                          <option>Ativo</option>
-                          <option>Inativo</option>
-                        </select>
-                        <span>Status</span>
-                      </label>
+                    <div class="col-xl-7 col-12">
+                      <div class="row gapy-3">
+                        <div class="col-xl-7 col-sm-6">
+                          <label for="search" class="form-field">
+                            <input
+                              id="search"
+                              name="search"
+                              type="text"
+                              placeholder="Buscar"
+                              class="input-post-input"
+                            />
+                            <button class="button-post-button">
+                              <i data-feather="search" stroke="#58c4cb"></i>
+                            </button>
+                            <span>Busque pelo nome ou CNPJ</span>
+                          </label>
+                        </div>
+                        <div class="col-xl-5 col-sm-6">
+                          <label for="status" class="form-field">
+                            <select id="status" name="status">
+                              <option hidden disabled selected value="">
+                                Selecione um status
+                              </option>
+                              <option>Ativo</option>
+                              <option>Inativo</option>
+                            </select>
+                            <span>Status</span>
+                          </label>
+                        </div>
+                        <div class="col-xl-4 col-sm-6">
+                          <label for="plan" class="form-field">
+                            <select id="plan" name="plan">
+                              <option hidden disabled selected value="">
+                                Selecione um status
+                              </option>
+                              <option>Todos</option>
+                            </select>
+                            <span>Plano</span>
+                          </label>
+                        </div>
+                        <div class="col-xl-6 col-sm-6">
+                          <div class="d-flex flex-row gap-3 align-items-end">
+                            <label for="min-value" class="form-field">
+                              <input
+                                id="min-value"
+                                name="min-value"
+                                type="text"
+                                placeholder="Mínimo"
+                              />
+                              <span>Valor</span>
+                            </label>
+                            <label for="max-value" class="form-field">
+                              <input
+                                id="max-value"
+                                name="max-value"
+                                type="text"
+                                placeholder="Máximo"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="col-auto ms-auto">
                       <div class="h-100 d-flex align-items-center">
@@ -319,7 +355,7 @@
                           "
                           href="./create.html"
                         >
-                          <i data-feather="plus"></i> CADASTRAR EMPRESA
+                          <i data-feather="plus"></i> CADASTRAR BENEFÍCIO
                         </a>
                       </div>
                     </div>
@@ -330,10 +366,11 @@
                       <thead>
                         <tr class="fz-14">
                           <th>Status</th>
-                          <th>Nº de benefícios</th>
-                          <th>Nome fantasia</th>
-                          <th>Razão social</th>
-                          <th>CNPJ</th>
+                          <th>Benefício</th>
+                          <th>Desconto</th>
+                          <th>Valor</th>
+                          <th>Empresa</th>
+                          <th>Plano</th>
                           <th>Ações</th>
                         </tr>
                       </thead>
@@ -351,10 +388,11 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nº de benefícios">000</td>
-                          <td data-title="Nome fantasia">Nome da empresa</td>
-                          <td data-title="Razão social">Razão social</td>
-                          <td data-title="CNPJ">000.000.000/0000-00</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Desconto">50%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da empresa</td>
+                          <td data-title="Plano">Nome do plano</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <a
@@ -365,7 +403,7 @@
                                   text-gray-tenth
                                   texty-decoration-none
                                 "
-                                href="./representant/"
+                                href="#"
                               >
                                 <i
                                   data-feather="eye"
@@ -389,13 +427,6 @@
                                   height="16"
                                 ></i>
                               </a>
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="user-plus"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                             </div>
                           </td>
                         </tr>
@@ -412,10 +443,11 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nº de benefícios">000</td>
-                          <td data-title="Nome fantasia">Nome da empresa</td>
-                          <td data-title="Razão social">Razão social</td>
-                          <td data-title="CNPJ">000.000.000/0000-00</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Desconto">50%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da empresa</td>
+                          <td data-title="Plano">Nome do plano</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <a
@@ -426,7 +458,7 @@
                                   text-gray-tenth
                                   texty-decoration-none
                                 "
-                                href="./representant/"
+                                href="#"
                               >
                                 <i
                                   data-feather="eye"
@@ -450,13 +482,6 @@
                                   height="16"
                                 ></i>
                               </a>
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="user-plus"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                             </div>
                           </td>
                         </tr>
@@ -473,10 +498,11 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nº de benefícios">000</td>
-                          <td data-title="Nome fantasia">Nome da empresa</td>
-                          <td data-title="Razão social">Razão social</td>
-                          <td data-title="CNPJ">000.000.000/0000-00</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Desconto">50%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da empresa</td>
+                          <td data-title="Plano">Nome do plano</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <a
@@ -487,7 +513,7 @@
                                   text-gray-tenth
                                   texty-decoration-none
                                 "
-                                href="./representant/"
+                                href="#"
                               >
                                 <i
                                   data-feather="eye"
@@ -511,13 +537,6 @@
                                   height="16"
                                 ></i>
                               </a>
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="user-plus"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                             </div>
                           </td>
                         </tr>
@@ -534,10 +553,11 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nº de benefícios">000</td>
-                          <td data-title="Nome fantasia">Nome da empresa</td>
-                          <td data-title="Razão social">Razão social</td>
-                          <td data-title="CNPJ">000.000.000/0000-00</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Desconto">50%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da empresa</td>
+                          <td data-title="Plano">Nome do plano</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <a
@@ -548,7 +568,7 @@
                                   text-gray-tenth
                                   texty-decoration-none
                                 "
-                                href="./representant/"
+                                href="#"
                               >
                                 <i
                                   data-feather="eye"
@@ -572,13 +592,6 @@
                                   height="16"
                                 ></i>
                               </a>
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="user-plus"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                             </div>
                           </td>
                         </tr>
@@ -595,10 +608,11 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nº de benefícios">000</td>
-                          <td data-title="Nome fantasia">Nome da empresa</td>
-                          <td data-title="Razão social">Razão social</td>
-                          <td data-title="CNPJ">000.000.000/0000-00</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Desconto">50%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da empresa</td>
+                          <td data-title="Plano">Nome do plano</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <a
@@ -609,7 +623,7 @@
                                   text-gray-tenth
                                   texty-decoration-none
                                 "
-                                href="./representant/"
+                                href="#"
                               >
                                 <i
                                   data-feather="eye"
@@ -633,13 +647,6 @@
                                   height="16"
                                 ></i>
                               </a>
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="user-plus"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                             </div>
                           </td>
                         </tr>
@@ -656,10 +663,11 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nº de benefícios">000</td>
-                          <td data-title="Nome fantasia">Nome da empresa</td>
-                          <td data-title="Razão social">Razão social</td>
-                          <td data-title="CNPJ">000.000.000/0000-00</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Desconto">50%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da empresa</td>
+                          <td data-title="Plano">Nome do plano</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <a
@@ -670,7 +678,7 @@
                                   text-gray-tenth
                                   texty-decoration-none
                                 "
-                                href="./representant/"
+                                href="#"
                               >
                                 <i
                                   data-feather="eye"
@@ -694,13 +702,6 @@
                                   height="16"
                                 ></i>
                               </a>
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="user-plus"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                             </div>
                           </td>
                         </tr>
@@ -717,10 +718,11 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nº de benefícios">000</td>
-                          <td data-title="Nome fantasia">Nome da empresa</td>
-                          <td data-title="Razão social">Razão social</td>
-                          <td data-title="CNPJ">000.000.000/0000-00</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Desconto">50%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da empresa</td>
+                          <td data-title="Plano">Nome do plano</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <a
@@ -731,7 +733,7 @@
                                   text-gray-tenth
                                   texty-decoration-none
                                 "
-                                href="./representant/"
+                                href="#"
                               >
                                 <i
                                   data-feather="eye"
@@ -755,13 +757,6 @@
                                   height="16"
                                 ></i>
                               </a>
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="user-plus"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                             </div>
                           </td>
                         </tr>
@@ -778,10 +773,11 @@
                               Ativo
                             </span>
                           </td>
-                          <td data-title="Nº de benefícios">000</td>
-                          <td data-title="Nome fantasia">Nome da empresa</td>
-                          <td data-title="Razão social">Razão social</td>
-                          <td data-title="CNPJ">000.000.000/0000-00</td>
+                          <td data-title="Benefício">Nome do benefício</td>
+                          <td data-title="Desconto">50%</td>
+                          <td data-title="Valor">R$ 45,00</td>
+                          <td data-title="Empresa">Nome da empresa</td>
+                          <td data-title="Plano">Nome do plano</td>
                           <td data-title="Ações">
                             <div class="d-flex flex-row">
                               <a
@@ -792,7 +788,7 @@
                                   text-gray-tenth
                                   texty-decoration-none
                                 "
-                                href="./representant/"
+                                href="#"
                               >
                                 <i
                                   data-feather="eye"
@@ -816,74 +812,6 @@
                                   height="16"
                                 ></i>
                               </a>
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="user-plus"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td data-title="Status">
-                            <span
-                              class="
-                                badge
-                                rounded-pill
-                                text-green-first
-                                bg-green-first-opac
-                              "
-                            >
-                              Ativo
-                            </span>
-                          </td>
-                          <td data-title="Nº de benefícios">000</td>
-                          <td data-title="Nome fantasia">Nome da empresa</td>
-                          <td data-title="Razão social">Razão social</td>
-                          <td data-title="CNPJ">000.000.000/0000-00</td>
-                          <td data-title="Ações">
-                            <div class="d-flex flex-row">
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./representant/"
-                              >
-                                <i
-                                  data-feather="eye"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </a>
-                              <a
-                                class="
-                                  border-0
-                                  bg-transparent
-                                  px-awe-6
-                                  text-gray-tenth
-                                  texty-decoration-none
-                                "
-                                href="./edit.html"
-                              >
-                                <i
-                                  data-feather="edit-3"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </a>
-                              <button class="border-0 bg-transparent">
-                                <i
-                                  data-feather="user-plus"
-                                  width="16"
-                                  height="16"
-                                ></i>
-                              </button>
                             </div>
                           </td>
                         </tr>
