@@ -73,7 +73,7 @@
       color: $stage-text-label-current;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       &:not(.item-visible) {
         display: none;
       }
@@ -81,7 +81,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   [class*='remember'] {
     position: relative;
 

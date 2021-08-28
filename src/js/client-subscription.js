@@ -55,8 +55,9 @@ function initTabNavigation() {
   });
   prevTabEls.forEach((prevTabEl) => {
     prevTabEl.addEventListener('click', () => {
-      const prevTab =
-        document.querySelector('.tab-pane.active').previousElementSibling;
+      const prevTab = document.querySelector(
+        '.tab-stages > .tab-pane.active'
+      ).previousElementSibling;
       if (!prevTab) return false;
 
       const currentTab = document.querySelector(
@@ -82,6 +83,34 @@ function initTabNavigation() {
 function updateVisibleStages() {
   const sectionStagesEl = document.querySelector('#section-stages');
   const stagesArea = document.querySelector('.stages');
+  const stages = [...stagesArea.querySelectorAll('.stage')];
+
+  const currentStage = stagesArea.querySelector('.stage.current');
+
+  if (!currentStage) return;
+
+  stages.forEach((stageEl) => {
+    stageEl.classList.remove('item-visible');
+  });
+
+  const previousStage =
+    currentStage.previousElementSibling ||
+    stagesArea.querySelector('.stage:nth-child(2)');
+  let previousPreviousStage =
+    previousStage.previousElementSibling ||
+    stagesArea.querySelector('.stage:nth-child(3)');
+  if (previousPreviousStage === currentStage)
+    previousPreviousStage = stagesArea.querySelector('.stage:nth-child(3)');
+
+  const toBeVisibleStages = [
+    currentStage,
+    previousStage,
+    previousPreviousStage,
+  ];
+  toBeVisibleStages.forEach((stageEl) => {
+    stageEl && stageEl.classList.add('item-visible');
+  });
+
   let visibleStages = Array(
     ...stagesArea.querySelectorAll('.stage.item-visible')
   );
@@ -93,13 +122,6 @@ function updateVisibleStages() {
   visibleStages.forEach(
     (stage) => hasClass(stage, 'active') && allVisibleActive++
   );
-  firstNotVisible &&
-    allVisibleActive === 3 &&
-    (() => {
-      visibleStages[0].classList.remove('item-visible');
-
-      firstNotVisible.classList.add('item-visible');
-    })();
 
   visibleStages = Array(...stagesArea.querySelectorAll('.stage.item-visible'));
   const isFirstVisible = !!visibleStages.find((stage) => stage === firstStage);
@@ -110,6 +132,10 @@ function updateVisibleStages() {
   !isLastVisible
     ? sectionStagesEl.classList.add('remember-right')
     : sectionStagesEl.classList.remove('remember-right');
+
+  window.scrollTo({
+    top: 0,
+  });
 }
 
 function initInputs() {

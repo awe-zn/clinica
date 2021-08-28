@@ -3425,7 +3425,7 @@ function initTabNavigation() {
   });
   prevTabEls.forEach(function (prevTabEl) {
     prevTabEl.addEventListener('click', function () {
-      var prevTab = document.querySelector('.tab-pane.active').previousElementSibling;
+      var prevTab = document.querySelector('.tab-stages > .tab-pane.active').previousElementSibling;
       if (!prevTab) return false;
       var currentTab = document.querySelector('.tab-stages > .tab-pane.active');
       var prevStage = document.querySelector('.stage.current').previousElementSibling;
@@ -3443,16 +3443,27 @@ function initTabNavigation() {
 function updateVisibleStages() {
   var sectionStagesEl = document.querySelector('#section-stages');
   var stagesArea = document.querySelector('.stages');
+
+  var stages = (0,_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__.default)(stagesArea.querySelectorAll('.stage'));
+
+  var currentStage = stagesArea.querySelector('.stage.current');
+  if (!currentStage) return;
+  stages.forEach(function (stageEl) {
+    stageEl.classList.remove('item-visible');
+  });
+  var previousStage = currentStage.previousElementSibling || stagesArea.querySelector('.stage:nth-child(2)');
+  var previousPreviousStage = previousStage.previousElementSibling || stagesArea.querySelector('.stage:nth-child(3)');
+  if (previousPreviousStage === currentStage) previousPreviousStage = stagesArea.querySelector('.stage:nth-child(3)');
+  var toBeVisibleStages = [currentStage, previousStage, previousPreviousStage];
+  toBeVisibleStages.forEach(function (stageEl) {
+    stageEl && stageEl.classList.add('item-visible');
+  });
   var visibleStages = Array.apply(void 0, (0,_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__.default)(stagesArea.querySelectorAll('.stage.item-visible')));
   var firstNotVisible = stagesArea.querySelector('.stage:not(.item-visible):not(.active)');
   var allVisibleActive = 0;
   visibleStages.forEach(function (stage) {
     return (0,_utils_has_class__WEBPACK_IMPORTED_MODULE_4__.default)(stage, 'active') && allVisibleActive++;
   });
-  firstNotVisible && allVisibleActive === 3 && function () {
-    visibleStages[0].classList.remove('item-visible');
-    firstNotVisible.classList.add('item-visible');
-  }();
   visibleStages = Array.apply(void 0, (0,_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__.default)(stagesArea.querySelectorAll('.stage.item-visible')));
   var isFirstVisible = !!visibleStages.find(function (stage) {
     return stage === firstStage;
@@ -3462,6 +3473,9 @@ function updateVisibleStages() {
   });
   !isFirstVisible ? sectionStagesEl.classList.add('remember-left') : sectionStagesEl.classList.remove('remember-left');
   !isLastVisible ? sectionStagesEl.classList.add('remember-right') : sectionStagesEl.classList.remove('remember-right');
+  window.scrollTo({
+    top: 0
+  });
 }
 
 function initInputs() {

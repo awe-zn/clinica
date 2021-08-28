@@ -17853,13 +17853,13 @@ input:checked + .card .title,
   color: #3b6472;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .stages .stage:not(.item-visible) {
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   [class*='remember'] {
     position: relative;
     z-index: -10;
