@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica - Pré-cadastro - Novo</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="../../../dist/image/favicon.ico" />
+
+    <link rel="stylesheet" href="../../../dist/css/style.css" />
+  </head>
+
+  <body data-page="client-subscription">
+    <div class="sidebar">
+      <header class="d-flex justify-content-center p-4">
+        <div class="logo-area">
+          <img
+            src="../../../dist/image/logo-blue.svg"
+            alt="Logo"
+            class="img-fluid img-logo"
+          />
+        </div>
+      </header>
+      <nav class="links">
+        <ul>
+          <li>
+            <a href="../">
+              <i data-feather="home" class="icon"></i>Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="../plans/">
+              <i data-feather="grid" class="icon"></i>Planos
+            </a>
+          </li>
+          <li>
+            <a href="../subscribers.html">
+              <i data-feather="edit-3" class="icon"></i>Assinaturas
+            </a>
+          </li>
+          <li>
+            <a href="../clients/">
+              <i data-feather="users" class="icon"></i>Clientes
+            </a>
+          </li>
+          <li class="divider">
+            <a href="../register-service.html">
+              <i data-feather="message-square" class="icon"></i>
+              Registrar atendimento
+            </a>
+          </li>
+          <li>
+            <a href="../sales/">
+              <i data-feather="users" class="icon"></i> Vendas
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <i data-feather="file-plus" class="icon"></i>Pré-cadastro
+            </a>
+          </li>
+          <li class="divider">
+            <a href="../ranking.html">
+              <i data-feather="award" class="icon"></i>Ranking de vendas
+            </a>
+          </li>
+          <li>
+            <a href="../companies/">
+              <i data-feather="briefcase" class="icon"></i>Empresas
+            </a>
+          </li>
+          <li>
+            <a href="../benefits/">
+              <i data-feather="star" class="icon"></i>Benefícios
+            </a>
+          </li>
+          <li class="divider">
+            <a href="../contracts/">
+              <i data-feather="file-text" class="icon"></i>Contratos
+            </a>
+          </li>
+          <li>
+            <a href="../profile.html">
+              <i data-feather="user" class="icon"></i>Meu perfil
+            </a>
+          </li>
+          <li class="divider">
+            <a href="../admins/">
+              <i data-feather="users" class="icon"></i>Administradoes
+            </a>
+          </li>
+          <li>
+            <a href="../login/index.html" class="exit">
+              <i data-feather="log-out" class="icon"></i>Sair
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="page-content">
+      <header class="bg-brand-first">
+        <div class="container py-awe-32">
+          <div class="row">
+            <div class="col">
+              <div class="d-flex align-items-center h-100">
+                <button
+                  class="border-0 bg-transparent toggle-class hamburguer"
+                  data-toggle="hide"
+                  data-target=".sidebar"
+                >
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </button>
+              </div>
+            </div>
+            <div class="col-auto ml-auto">
+              <div class="d-flex justify-content-end align-items-center">
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    data-bs-toggle="dropdown"
+                  >
+                    <img
+                      src="../../../dist/image/avatar.png"
+                      alt="Avatar do usuário"
+                      class="img-fluid img-avatar me-2"
+                    />
+                    <span class="text-white ff-mulish fw-semi-bold name-user">
+                      Arthur Comiere
+                    </span>
+                  </a>
+
+                  <ul class="dropdown-menu mt-3">
+                    <li>
+                      <a class="dropdown-item" href="../profile.html">
+                        <i data-feather="user" width="20" height="20"></i>
+                        Meu perfil
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../login/">
+                        <i data-feather="log-out" width="20" height="20"></i>
+                        Sair
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="d-flex flex-column">
+        <section class="bg-brand-first remember-right" id="section-stages">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="position-relative">
+                  <div class="pt-3 pb-awe-64">
+                    <h1 class="fz-32 text-white fw-bold mb-awe-12">
+                      Novo pré-cadastro
+                    </h1>
+                    <nav>
+                      <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item">
+                          <a href="./">Pré-cadastro</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                          Novo pré-cadastro
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+
+                  <div class="stages">
+                    <div class="stage current item-visible">
+                      <span>Seu plano</span>
+                    </div>
+                    <div class="stage item-visible">
+                      <span>Tipo de assinatura</span>
+                    </div>
+                    <div class="stage item-visible">
+                      <span>Dados do titular</span>
+                    </div>
+                    <div class="stage"><span>Dependentes?</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pt-awe-108 pb-3 flex-1">
+          <form action="#">
+            <div class="tab-content tab-stages">
+              <div class="tab-pane active" id="plan">
+                <div class="container">
+                  <div class="row gapy-3">
+                    <div class="col-xxl-6">
+                      <div class="d-flex justify-content-center">
+                        <img
+                          src="../../../dist/image/ilustration-user-card.svg"
+                          alt="Ilustração de usuário segurando representação grande do cartão"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-xxl-6">
+                      <h2
+                        class="
+                          fz-24
+                          text-gray-fourth
+                          ff-mulish
+                          mt-4 mt-lg-0
+                          mb-4
+                        "
+                      >
+                        Escolha o seu plano
+                      </h2>
+
+                      <div class="container p-0">
+                        <div
+                          class="
+                            row
+                            row-cols-1
+                            row-cols-md-2
+                            row-cols-xl-3
+                            row-cols-xxl-2
+                          "
+                        >
+                          <div class="col">
+                            <div class="mb-3">
+                              <input
+                                type="radio"
+                                name="plan"
+                                value="family-check"
+                                id="family-check"
+                                class="d-none"
+                              />
+                              <label for="family-check" class="card">
+                                <div class="title">
+                                  <h2>Plano Família + Check-up</h2>
+                                </div>
+                                <div class="value">
+                                  <span class="price"
+                                    >R$ <span class="max">29</span>,90</span
+                                  >
+                                  <span class="period">mensal</span>
+                                  <span>Anual R$ 322,92</span>
+                                </div>
+                                <div class="radio">Quero este!</div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="mb-3">
+                              <input
+                                type="radio"
+                                name="plan"
+                                value="family"
+                                id="family"
+                                class="d-none"
+                              />
+                              <label for="family" class="card">
+                                <div class="title">
+                                  <h2>Plano Família</h2>
+                                </div>
+                                <div class="value">
+                                  <span class="price"
+                                    >R$ <span class="max">24</span>,90</span
+                                  >
+                                  <span class="period">mensal</span>
+                                  <span>Anual R$ 268,92</span>
+                                </div>
+                                <div class="radio">Quero este!</div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <button
+                          type="button"
+                          class="
+                            btn btn-brand-second
+                            text-white
+                            ff-mulish
+                            text-uppercase
+                            py-awe-12
+                            px-4
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal-end-register"
+                        >
+                          Prosseguir
+                          <i
+                            class="fas fa-chevron-right ms-2"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="subscription">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xxl-6">
+                      <div class="d-flex justify-content-center">
+                        <img
+                          src="../../../dist/image/ilustration-card-subscribe.svg"
+                          alt="Ilustração de usuário segurando representação grande do cartão"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-xxl-6">
+                      <h2
+                        class="
+                          fz-24
+                          text-gray-fourth
+                          ff-mulish
+                          mt-4 mt-lg-0
+                          mb-4
+                        "
+                      >
+                        Escolha a sua assinatura
+                      </h2>
+
+                      <div class="container p-0">
+                        <div
+                          class="
+                            row
+                            row-cols-1
+                            row-cols-md-2
+                            row-cols-xl-3
+                            row-cols-xxl-2
+                          "
+                        >
+                          <div class="col">
+                            <div class="mb-3">
+                              <input
+                                type="radio"
+                                name="period"
+                                value="monthly"
+                                id="monthly"
+                                class="d-none"
+                              />
+                              <label for="monthly" class="card">
+                                <div class="title">
+                                  <h2>Assinatura mensal</h2>
+                                </div>
+                                <div class="value">
+                                  <span class="price"
+                                    >R$ <span class="max">24</span>,90</span
+                                  >
+                                  <span class="period">mensal</span>
+                                </div>
+                                <div class="radio">Quero este!</div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="mb-3">
+                              <input
+                                type="radio"
+                                name="period"
+                                value="yearly"
+                                id="yearly"
+                                class="d-none"
+                              />
+                              <label for="yearly" class="card">
+                                <div class="title">
+                                  <h2>Assinatura anual</h2>
+                                </div>
+                                <div class="value">
+                                  <span class="price"
+                                    >R$ <span class="max">29</span>,90</span
+                                  >
+                                  <span class="period">mensal</span>
+                                </div>
+                                <div class="radio">Quero este!</div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="d-flex justify-content-between">
+                        <button
+                          type="button"
+                          class="
+                            prev-tab
+                            btn btn-outline-brand-second
+                            text-hover-white
+                          "
+                        >
+                          <i
+                            class="fas fa-arrow-left me-2"
+                            aria-hidden="true"
+                          ></i>
+                          Voltar
+                        </button>
+
+                        <button
+                          type="button"
+                          class="
+                            next-tab
+                            btn btn-brand-second
+                            text-white
+                            ff-mulish
+                            text-uppercase
+                            py-awe-12
+                            px-4
+                          "
+                        >
+                          Prosseguir
+                          <i
+                            class="fas fa-chevron-right ms-2"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="sub-data">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h2
+                        class="
+                          ff-mulish
+                          fz-24
+                          text-gray-fourth
+                          fw-normal
+                          mb-awe-32
+                        "
+                      >
+                        Dados do titular
+                      </h2>
+
+                      <div>
+                        <label for="titular_name" class="form-field">
+                          <input
+                            name="titular_name"
+                            id="titular_name"
+                            type="text"
+                            placeholder="Nome completo"
+                            class="validate-required"
+                            required=""
+                          />
+                          <span>Nome completo</span>
+                          <span
+                            class="input-feedback"
+                            data-target="#titular_name"
+                          >
+                            O preenchimento do nome é obrigatório
+                          </span>
+                        </label>
+                        <div class="d-grid grid-1 grid-md-2 gap-8 my-awe-32">
+                          <div>
+                            <label for="titular_birth-date" class="form-field">
+                              <input
+                                id="titular_birth-date"
+                                name="titular_birth-date"
+                                type="text"
+                                class="mask validate-required"
+                                placeholder="00/00/0000"
+                                data-mask="00/00/0000"
+                                pattern="(^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$)"
+                                required=""
+                              />
+                              <span>Data de nascimento</span>
+                              <span
+                                class="input-feedback"
+                                data-target="#titular_birth-date"
+                              >
+                                O preenchimento do data de nascimento é
+                                obrigatório
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <label for="titular_cpf-cnpj" class="form-field">
+                              <input
+                                id="titular_cpf-cnpj"
+                                name="titular_cpf-cnpj"
+                                type="text"
+                                class="mask validate-required"
+                                placeholder="000.000.000-00"
+                                data-mask="000.000.000-00,00.000.000/0000-00"
+                                pattern="(^\d{3}.\d{3}.\d{3}-\d{2}$)|(^\d{2}.\d{3}.\d{3}\/\d{4}-\d{2}$)"
+                                required=""
+                              />
+                              <span>CPF/CNPJ</span>
+                              <span
+                                class="input-feedback"
+                                data-target="#titular_cpf-cnpj"
+                              >
+                                O preenchimento do CPF é obrigatório
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="d-grid grid-1 grid-md-2 gap-8">
+                          <div>
+                            <label for="titular_phone" class="form-field">
+                              <input
+                                id="titular_phone"
+                                name="titular_phone"
+                                type="text"
+                                class="mask validate-required"
+                                placeholder="(00) 0 0000-0000"
+                                data-mask="(00) 0 0000-0000"
+                                pattern="(^[(][0-9]{2}[)][ ][0-9]{1}[ ][0-9]{4}[-][0-9]{4}$)"
+                                required=""
+                              />
+                              <span>Telefone</span>
+                              <span
+                                class="input-feedback"
+                                data-target="#titular_phone"
+                              >
+                                O preenchimento do telefone é obrigatório
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <label for="titular_email" class="form-field">
+                              <input
+                                id="titular_email"
+                                name="titular_email validate-required"
+                                type="email"
+                                placeholder="exemplo@email.com"
+                              />
+                              <span>E-mail</span>
+                              <span
+                                class="input-feedback"
+                                data-target="#titular_email"
+                              >
+                                O preenchimento do email é opcional, todavia, se
+                                preenchido, é obrigatório um email válido
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <h2
+                        class="
+                          ff-mulish
+                          fz-24
+                          text-gray-fourth
+                          fw-normal
+                          my-awe-32
+                          mt-lg-0
+                        "
+                      >
+                        Endereço
+                      </h2>
+
+                      <div class="mb-4">
+                        <div class="d-grid grid-1 grid-md-12 gap-8">
+                          <div class="column-md-5">
+                            <label for="titular_cep" class="form-field">
+                              <input
+                                id="titular_cep"
+                                name="titular_cep"
+                                type="text"
+                                class="mask validate-required"
+                                placeholder="00000-000"
+                                data-mask="00000-000"
+                                pattern="(^[0-9]{5}[-][0-9]{3}$)"
+                                required=""
+                              />
+                              <span>CEP</span>
+                              <span
+                                class="input-feedback"
+                                data-target="#titular_cep"
+                              >
+                                O preenchimento do CEP é obrigatório
+                              </span>
+                            </label>
+                          </div>
+                          <div class="column-md-7">
+                            <label for="titular_addres" class="form-field">
+                              <input
+                                id="titular_addres"
+                                name="titular_addres"
+                                class="validate-required"
+                                type="text"
+                                placeholder="Rua/avenida"
+                                required=""
+                              />
+                              <span>Logradouro</span>
+                              <span
+                                class="input-feedback"
+                                data-target="#titular_addres"
+                              >
+                                O preenchimento do logradouro é obrigatório
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="d-grid grid-1 grid-md-12 gap-8 my-awe-32">
+                          <div class="column-md-5">
+                            <label
+                              for="titular_addres-complement"
+                              class="form-field"
+                            >
+                              <input
+                                id="titular_addres-complement"
+                                name="titular_addres-complement"
+                                class="validate-required"
+                                type="text"
+                                placeholder="Complemento"
+                              />
+                              <span>Complemento</span>
+                            </label>
+                          </div>
+                          <div class="column-md-7">
+                            <label for="titular_district" class="form-field">
+                              <input
+                                id="titular_district"
+                                name="titular_district"
+                                class="validate-required"
+                                type="text"
+                                placeholder="Bairro"
+                                required=""
+                              />
+                              <span>Bairro</span>
+                              <span
+                                class="input-feedback"
+                                data-target="#titular_district"
+                              >
+                                O preenchimento do bairro é obrigatório
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="d-grid grid-1 grid-md-12 gap-8">
+                          <div class="column-md-5">
+                            <label for="titular_state" class="form-field">
+                              <select
+                                id="titular_state"
+                                name="titular_state"
+                                class="validate-required"
+                                required=""
+                              >
+                                <option
+                                  hidden=""
+                                  disabled=""
+                                  selected=""
+                                  value=""
+                                >
+                                  Selecione o estado
+                                </option>
+                                <option value="12">Acre</option>
+                                <option value="27">Alagoas</option>
+                                <option value="13">Amazonas</option>
+                                <option value="16">Amapá</option>
+                                <option value="29">Bahia</option>
+                                <option value="23">Ceará</option>
+                                <option value="53">Distrito Federal</option>
+                                <option value="32">Espírito Santo</option>
+                                <option value="52">Goiás</option>
+                                <option value="21">Maranhão</option>
+                                <option value="31">Minas Gerais</option>
+                                <option value="50">Mato Grosso do Sul</option>
+                                <option value="51">Mato Grosso</option>
+                                <option value="15">Pará</option>
+                                <option value="25">Paraíba</option>
+                                <option value="26">Pernambuco</option>
+                                <option value="22">Piauí</option>
+                                <option value="41">Paraná</option>
+                                <option value="33">Rio de Janeiro</option>
+                                <option value="24">Rio Grande do Norte</option>
+                                <option value="11">Rondônia</option>
+                                <option value="14">Roraima</option>
+                                <option value="43">Rio Grande do Sul</option>
+                                <option value="42">Santa Catarina</option>
+                                <option value="28">Sergipe</option>
+                                <option value="35">São Paulo</option>
+                                <option value="17">Tocantins</option>
+                              </select>
+                              <span>Estado</span>
+                              <span
+                                class="input-feedback"
+                                data-target="#titular_state"
+                              >
+                                A seleção do estado é obrigatório
+                              </span>
+                            </label>
+                          </div>
+                          <div class="column-md-7">
+                            <label for="titular_city" class="form-field">
+                              <select
+                                id="titular_city"
+                                name="titular_city"
+                                class="validate-required"
+                                required=""
+                              >
+                                <option
+                                  hidden=""
+                                  disabled=""
+                                  selected=""
+                                  value=""
+                                >
+                                  Selecione a cidade
+                                </option>
+                              </select>
+                              <span>Cidade</span>
+                              <span
+                                class="input-feedback"
+                                data-target="#titular_city"
+                              >
+                                A seleção da cidade é obrigatório
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-flex justify-content-between">
+                        <button
+                          type="button"
+                          class="
+                            prev-tab
+                            btn btn-outline-brand-second
+                            text-hover-white
+                          "
+                        >
+                          <i
+                            class="fas fa-arrow-left me-2"
+                            aria-hidden="true"
+                          ></i>
+                          Voltar
+                        </button>
+
+                        <button
+                          type="button"
+                          class="
+                            next-tab
+                            btn btn-brand-second
+                            text-white
+                            ff-mulish
+                            text-uppercase
+                            py-awe-12
+                            px-4
+                          "
+                        >
+                          Prosseguir
+                          <i
+                            class="fas fa-chevron-right ms-2"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="dependents">
+                <div class="container" id="dependents-area">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2
+                        class="mb-4 fz-24 ff-mulish text-gray-fourth fw-normal"
+                      >
+                        Dependentes?
+                      </h2>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <div class="mb-5">
+                        <label for="number_dependents" class="form-field">
+                          <select
+                            name="number_dependents"
+                            id="number_dependents"
+                            class="validate-required"
+                            required
+                            v-model.number="dependents"
+                          >
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                          <span>Número de dependentes</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div
+                      class="col-md-6 py-awe-12"
+                      v-for="dependent in dependents"
+                    >
+                      <div>
+                        <h3
+                          class="
+                            fz-24
+                            text-gray-fourth
+                            ff-mulish
+                            fw-normal
+                            mb-4
+                          "
+                        >
+                          Dados do dependente: {{dependent}}
+                        </h3>
+                        <div>
+                          <label
+                            :for="`dependent-${dependent}_name`"
+                            class="form-field"
+                          >
+                            <input
+                              :id="`dependent-${dependent}_name`"
+                              :name="`dependent-${dependent}_name`"
+                              class="validate-required"
+                              type="text"
+                              placeholder="Nome completo"
+                              required
+                            />
+                            <span>Nome completo</span>
+                            <span
+                              class="input-feedback"
+                              :data-target="`#dependent-${dependent}_name`"
+                            >
+                              O preenchimento do nome é obrigatório
+                            </span>
+                          </label>
+                          <label
+                            :for="`dependent-${dependent}_familiarship`"
+                            class="form-field my-4"
+                          >
+                            <select
+                              :id="`dependent-${dependent}_familiarship`"
+                              :name="`dependent-${dependent}_familiarship`"
+                              class="validate-required"
+                              type="text"
+                              required
+                            >
+                              <option disabled hidden selected value="">
+                                Pai/filho
+                              </option>
+                              <option value="pai">Pai</option>
+                              <option value="filho">Filho</option>
+                            </select>
+                            <span>Parentesco com o titular</span>
+                            <span
+                              class="input-feedback"
+                              :data-target="`#dependent-${dependent}_familiarship`"
+                            >
+                              A seleção do grau de parentesco é obrigatório
+                            </span>
+                          </label>
+                          <div class="d-grid grid-1 grid-md-2 gap-8 my-awe-32">
+                            <label
+                              :for="`dependent-${dependent}_birth-date`"
+                              class="form-field"
+                            >
+                              <input
+                                :id="`dependent-${dependent}_birth-date`"
+                                :name="`dependent-${dependent}_birth-date`"
+                                type="text"
+                                class="mask validate-required"
+                                placeholder="00/00/0000"
+                                data-mask="00/00/0000"
+                                pattern="(^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$)"
+                                required
+                              />
+                              <span>Data de nascimento</span>
+                              <span
+                                class="input-feedback"
+                                :data-target="`#dependent-${dependent}_birth-date`"
+                              >
+                                O preenchimento da data de nascimento é
+                                obrigatório
+                              </span>
+                            </label>
+
+                            <label
+                              :for="`dependent-${dependent}_cpf`"
+                              class="form-field"
+                            >
+                              <input
+                                :id="`dependent-${dependent}_cpf`"
+                                :name="`dependent-${dependent}_cpf`"
+                                type="text"
+                                class="mask validate-required"
+                                placeholder="000.000.000-00"
+                                data-mask="000.000.000-00"
+                                pattern="(^\d{3}.\d{3}.\d{3}-\d{2}$)"
+                              />
+                              <span>CPF</span>
+                              <span
+                                class="input-feedback"
+                                :data-target="`#dependent-${dependent}_cpf`"
+                              >
+                                O preenchimento do CPF é opcional, todavia, se
+                                preenchido, é obrigatório um CPF válido
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="d-flex justify-content-between">
+                        <button
+                          type="button"
+                          class="
+                            prev-tab
+                            btn btn-outline-brand-second
+                            text-hover-white
+                          "
+                        >
+                          <i class="fas fa-arrow-left me-2"></i> Voltar
+                        </button>
+
+                        <button
+                          type="button"
+                          class="
+                            next-tab
+                            btn btn-brand-second
+                            text-white
+                            ff-mulish
+                            text-uppercase
+                            py-awe-12
+                            px-4
+                          "
+                        >
+                          Prosseguir <i class="fas fa-chevron-right ms-2"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer class="bg-brand-first">
+      <div class="container-fluid py-awe-12">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="
+                d-flex
+                flex-row
+                gap-4
+                justify-content-between
+                flex-wrap
+                fz-14
+                ff-mulish
+                text-white-first
+              "
+            >
+              <span>Versão 1.7.0</span>
+              <span>
+                Desenvolvido por
+                <a
+                  href="https://technine.com.br"
+                  class="text-decoration-none text-reset"
+                >
+                  Technine
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="modal-end-register">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body p-awe-32">
+            <div class="d-flex flex-column gapy-4">
+              <div class="d-flex flex-row align-items-center">
+                <button
+                  class="ms-auto border-0 bg-transparent p-3 pe-0 pt-0"
+                  data-bs-dismiss="modal"
+                >
+                  <i data-feather="x"></i>
+                </button>
+              </div>
+              <div class="d-flex flex-column align-items-center gapy-5">
+                <div>
+                  <i
+                    data-feather="check"
+                    height="96"
+                    width="96"
+                    stroke="#3b6472"
+                  ></i>
+                </div>
+                <span class="fz-24 text-center text-gray-fourth">
+                  Novo pré-cadastro realizado com sucesso!
+                </span>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button
+                  class="
+                    next-tab
+                    btn btn-outline-brand-second
+                    text-white-hover
+                    px-awe-56
+                    fw-bold
+                  "
+                  data-bs-dismiss="modal"
+                >
+                  OK
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script
+      src="https://kit.fontawesome.com/113c46960f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../../dist/js/index.js"></script>
+  </body>
+</html>
