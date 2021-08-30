@@ -40,6 +40,8 @@
       border-radius: 50%;
 
       background-color: $stages-figure-background;
+
+      transition: 0.3s all;
     }
     span {
       width: max-content;
